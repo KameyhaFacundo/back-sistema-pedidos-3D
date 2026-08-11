@@ -10,7 +10,7 @@ use App\Http\Controllers\Api\PlatoController;
 use App\Http\Controllers\Api\SSEController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('login', [AuthController::class, 'login']);
+Route::post('login', [AuthController::class, 'login'])->name('login');
 
 Route::get('menu', [MenuController::class, 'index']);
 
