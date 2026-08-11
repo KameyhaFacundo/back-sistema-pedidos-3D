@@ -1,0 +1,52 @@
+<?php
+
+use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\CocinaController;
+use App\Http\Controllers\Api\MenuController;
+use App\Http\Controllers\Api\MesaController;
+use App\Http\Controllers\Api\MetricaController;
+use App\Http\Controllers\Api\PedidoController;
+use App\Http\Controllers\Api\PlatoController;
+use App\Http\Controllers\Api\SSEController;
+use Illuminate\Support\Facades\Route;
+
+Route::post('login', [AuthController::class, 'login']);
+
+Route::get('menu', [MenuController::class, 'index']);
+
+Route::post('ar-vistas/{plato}', [\App\Http\Controllers\Api\MetricaController::class, 'registrarVista']);
+
+Route::get('mesas', [MesaController::class, 'index']);
+Route::post('mesas/{mesa}/llamar', [MesaController::class, 'llamar']);
+
+Route::post('pedidos', [PedidoController::class, 'store']);
+
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('logout', [AuthController::class, 'logout']);
+    Route::get('me', [AuthController::class, 'me']);
+
+    Route::get('pedidos', [PedidoController::class, 'index']);
+    Route::get('pedidos/{pedido}', [PedidoController::class, 'show']);
+    Route::patch('pedidos/{pedido}/estado', [PedidoController::class, 'updateEstado']);
+    Route::patch('pedidos/{pedido}/pago', [PedidoController::class, 'updatePago']);
+    Route::patch('pedidos/{pedido}/cancelar', [PedidoController::class, 'cancelar']);
+
+    Route::get('llamados', [CocinaController::class, 'llamados']);
+    Route::patch('llamados/{llamado}/atender', [CocinaController::class, 'atenderLlamado']);
+
+    Route::get('metricas', [MetricaController::class, 'index']);
+
+    Route::get('platos', [PlatoController::class, 'index']);
+    Route::post('platos', [PlatoController::class, 'store']);
+    Route::get('platos/{plato}', [PlatoController::class, 'show']);
+    Route::put('platos/{plato}', [PlatoController::class, 'update']);
+    Route::delete('platos/{plato}', [PlatoController::class, 'destroy']);
+    Route::patch('platos/{plato}/toggle', [PlatoController::class, 'toggleDisponible']);
+
+    Route::get('sse', [SSEController::class, 'stream'])->middleware('token.query');
+
+    Route::post('demo/seed', function () {
+        \Illuminate\Support\Facades\Artisan::call('db:seed', ['--class' => \Database\Seeders\DemoSeeder::class]);
+        return response()->json(['message' => 'Datos demo cargados']);
+    });
+});
