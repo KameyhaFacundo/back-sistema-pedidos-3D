@@ -2,6 +2,6 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "php artisan migrate --force && php artisan storage:link && PHP_CLI_SERVER_WORKERS=${PHP_CLI_SERVER_WORKERS:-8} php -d upload_max_filesize=25M -d post_max_size=30M -d memory_limit=256M -S 0.0.0.0:${PORT:-8080} -t public/ router.php"
+startCommand = "php artisan migrate --force && php artisan storage:link && PHP_CLI_SERVER_WORKERS=${PHP_CLI_SERVER_WORKERS:-24} php -d upload_max_filesize=25M -d post_max_size=30M -d memory_limit=256M -S 0.0.0.0:${PORT:-8080} -t public/ router.php"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
