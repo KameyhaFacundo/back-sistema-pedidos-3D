@@ -21,6 +21,8 @@ Route::post('mesas/{mesa}/llamar', [MesaController::class, 'llamar']);
 
 Route::post('pedidos', [PedidoController::class, 'store']);
 
+Route::get('sse', [SSEController::class, 'stream'])->middleware('token.query');
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('logout', [AuthController::class, 'logout']);
     Route::get('me', [AuthController::class, 'me']);
@@ -42,8 +44,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('platos/{plato}', [PlatoController::class, 'update']);
     Route::delete('platos/{plato}', [PlatoController::class, 'destroy']);
     Route::patch('platos/{plato}/toggle', [PlatoController::class, 'toggleDisponible']);
-
-    Route::get('sse', [SSEController::class, 'stream'])->middleware('token.query');
 
     Route::post('demo/seed', function () {
         \Illuminate\Support\Facades\Artisan::call('db:seed', ['--class' => \Database\Seeders\DemoSeeder::class]);
