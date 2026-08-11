@@ -10,7 +10,7 @@ cmds = [
 ]
 
 [deploy]
-start_command = "php artisan migrate --force && php artisan storage:link && php -S 0.0.0.0:${PORT:-8080} -t public/"
+start_command = "php artisan migrate --force && php artisan storage:link && PHP_CLI_SERVER_WORKERS=${PHP_CLI_SERVER_WORKERS:-8} php -S 0.0.0.0:${PORT:-8080} -t public/ router.php"
 
 [service]
 name = "pedidos-3d-back"

@@ -6,10 +6,5 @@ if ($uri !== '/' && file_exists(__DIR__ . '/public' . $uri)) {
     return false;
 }
 
-if (str_starts_with($uri, '/api/') || $uri === '/sanctum/csrf-cookie') {
-    $_SERVER['SCRIPT_NAME'] = '/index.php';
-    require __DIR__ . '/public/index.php';
-    return;
-}
-
-require __DIR__ . '/public/index.html';
+$_SERVER['SCRIPT_NAME'] = '/index.php';
+require __DIR__ . '/public/index.php';
