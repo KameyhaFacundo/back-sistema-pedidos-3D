@@ -8,6 +8,7 @@ use App\Models\Mesa;
 use App\Models\Llamado;
 use App\Models\Pedido;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class MesaController extends Controller
 {
@@ -52,7 +53,9 @@ class MesaController extends Controller
         $empresa = $this->resolveAdminEmpresa($request);
 
         $validated = $request->validate([
-            'numero' => 'required|integer|min:1|unique:mesas,numero',
+            'numero' => ['required', 'integer', 'min:1', Rule::unique('mesas', 'numero')->where(function ($q) use ($empresa) {
+                $q->whereNull('empresa_id')->orWhere('empresa_id', $empresa?->id);
+            })],
             'forma' => 'sometimes|in:circular,rectangular',
             'pos_x' => 'sometimes|nullable|numeric|min:0|max:100',
             'pos_y' => 'sometimes|nullable|numeric|min:0|max:100',
