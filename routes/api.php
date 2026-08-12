@@ -20,6 +20,7 @@ Route::get('mesas', [MesaController::class, 'index']);
 Route::post('mesas/{mesa}/llamar', [MesaController::class, 'llamar']);
 
 Route::post('pedidos', [PedidoController::class, 'store']);
+Route::get('pedidos/{pedido}', [PedidoController::class, 'show']);
 
 Route::get('sse', [SSEController::class, 'stream'])->middleware('token.query');
 
@@ -28,7 +29,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('me', [AuthController::class, 'me']);
 
     Route::get('pedidos', [PedidoController::class, 'index']);
-    Route::get('pedidos/{pedido}', [PedidoController::class, 'show']);
     Route::patch('pedidos/{pedido}/estado', [PedidoController::class, 'updateEstado']);
     Route::patch('pedidos/{pedido}/pago', [PedidoController::class, 'updatePago']);
     Route::patch('pedidos/{pedido}/cancelar', [PedidoController::class, 'cancelar']);

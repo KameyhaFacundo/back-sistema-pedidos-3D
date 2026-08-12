@@ -33,6 +33,8 @@ class PedidoController extends Controller
         $validated = $request->validate([
             'tipo' => ['required', Rule::in(['mesa', 'retiro'])],
             'mesa_id' => 'nullable|exists:mesas,id',
+            'nombre' => 'nullable|string|max:100',
+            'celular' => 'nullable|string|max:30',
             'medio_pago' => ['required', Rule::in(['efectivo', 'transferencia'])],
             'items' => 'required|array|min:1',
             'items.*.plato_id' => 'required|integer',
@@ -54,6 +56,8 @@ class PedidoController extends Controller
             $pedido = Pedido::create([
                 'tipo' => $validated['tipo'],
                 'mesa_id' => $validated['mesa_id'] ?? null,
+                'nombre' => $validated['nombre'] ?? null,
+                'celular' => $validated['celular'] ?? null,
                 'medio_pago' => $validated['medio_pago'],
                 'estado' => 'nuevo',
                 'estado_pago' => 'pendiente',
