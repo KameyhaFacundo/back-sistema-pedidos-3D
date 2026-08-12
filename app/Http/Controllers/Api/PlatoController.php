@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Plato;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
 class PlatoController extends Controller
@@ -22,6 +23,18 @@ class PlatoController extends Controller
                 $fail("El campo {$attribute} debe ser un archivo .{$extension}.");
             }
         };
+    }
+
+    /**
+     * store() names files via guessExtension(), which is MIME-detection based
+     * and produces wrong extensions (e.g. .bin) for glb/usdz uploads. Keep
+     * the original client extension instead.
+     */
+    private static function storeWithOriginalExtension($file, string $directory): string
+    {
+        $filename = Str::random(40) . '.' . $file->getClientOriginalExtension();
+
+        return $file->storeAs($directory, $filename, 'public');
     }
 
     public function index()
@@ -51,11 +64,11 @@ class PlatoController extends Controller
         }
 
         if ($request->hasFile('modelo_glb')) {
-            $data['modelo_glb'] = asset('storage/' . $request->file('modelo_glb')->store('modelos', 'public'));
+            $data['modelo_glb'] = asset('storage/' . self::storeWithOriginalExtension($request->file('modelo_glb'), 'modelos'));
         }
 
         if ($request->hasFile('modelo_usdz')) {
-            $data['modelo_usdz'] = asset('storage/' . $request->file('modelo_usdz')->store('modelos', 'public'));
+            $data['modelo_usdz'] = asset('storage/' . self::storeWithOriginalExtension($request->file('modelo_usdz'), 'modelos'));
         }
 
         $plato = Plato::create($data);
@@ -96,7 +109,7 @@ class PlatoController extends Controller
                 $path = str_replace(asset('storage/'), '', $plato->modelo_glb);
                 Storage::disk('public')->delete($path);
             }
-            $data['modelo_glb'] = asset('storage/' . $request->file('modelo_glb')->store('modelos', 'public'));
+            $data['modelo_glb'] = asset('storage/' . self::storeWithOriginalExtension($request->file('modelo_glb'), 'modelos'));
         }
 
         if ($request->hasFile('modelo_usdz')) {
@@ -104,7 +117,7 @@ class PlatoController extends Controller
                 $path = str_replace(asset('storage/'), '', $plato->modelo_usdz);
                 Storage::disk('public')->delete($path);
             }
-            $data['modelo_usdz'] = asset('storage/' . $request->file('modelo_usdz')->store('modelos', 'public'));
+            $data['modelo_usdz'] = asset('storage/' . self::storeWithOriginalExtension($request->file('modelo_usdz'), 'modelos'));
         }
 
         $plato->update($data);
