@@ -13,6 +13,11 @@ use Illuminate\Validation\Rule;
 
 class RegistroController extends Controller
 {
+    // Must match the RESERVED list in the frontend's CompanyContext.jsx --
+    // those path segments are treated as app routes (/admin, /login, etc),
+    // not company slugs, so a company can't be reached at a slug on this list.
+    private const RESERVED_SLUGS = ['admin', 'cocina', 'llamados', 'login', 'landing', 'demo'];
+
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -30,10 +35,12 @@ class RegistroController extends Controller
 
         $slug = $slug ?: 'local';
 
-        // Asegurar unicidad del slug
+        // Asegurar unicidad del slug y que no choque con una ruta reservada
+        // de la app (/admin, /login, etc.), que dejaría a la empresa
+        // inalcanzable por su propio slug.
         $baseSlug = $slug;
         $i = 1;
-        while (Empresa::where('slug', $slug)->exists()) {
+        while (Empresa::where('slug', $slug)->exists() || in_array($slug, self::RESERVED_SLUGS, true)) {
             $slug = $baseSlug . '-' . $i;
             $i++;
         }
