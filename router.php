@@ -13,6 +13,11 @@ if (str_starts_with($uri, '/storage/')) {
         header('Access-Control-Allow-Origin: *');
         header('Content-Type: ' . (mime_content_type($path) ?: 'application/octet-stream'));
         header('Content-Length: ' . filesize($path));
+        // Uploads get a fresh random filename every time (see
+        // storeWithOriginalExtension in PlatoController), so a given URL's
+        // content never changes -- safe to cache indefinitely and lets the
+        // frontend's <link rel="prefetch"> actually pay off.
+        header('Cache-Control: public, max-age=31536000, immutable');
         readfile($path);
     } else {
         http_response_code(404);
