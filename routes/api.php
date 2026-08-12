@@ -8,10 +8,13 @@ use App\Http\Controllers\Api\MesaController;
 use App\Http\Controllers\Api\MetricaController;
 use App\Http\Controllers\Api\PedidoController;
 use App\Http\Controllers\Api\PlatoController;
+use App\Http\Controllers\Api\RegistroController;
 use App\Http\Controllers\Api\SSEController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('login', [AuthController::class, 'login'])->name('login');
+
+Route::post('registro', [RegistroController::class, 'store']);
 
 Route::get('empresa', [EmpresaController::class, 'show']);
 
