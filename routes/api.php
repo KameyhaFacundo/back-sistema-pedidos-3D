@@ -45,6 +45,12 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('metricas', [MetricaController::class, 'index']);
 
+    Route::post('mesas', [MesaController::class, 'store']);
+    Route::put('mesas/{mesa}', [MesaController::class, 'update']);
+    Route::delete('mesas/{mesa}', [MesaController::class, 'destroy']);
+    Route::patch('mesas/{mesa}/toggle', [MesaController::class, 'toggleActiva']);
+    Route::put('empresa/layout', [EmpresaController::class, 'updateLayout']);
+
     Route::get('platos', [PlatoController::class, 'index']);
     Route::post('platos', [PlatoController::class, 'store']);
     Route::get('platos/{plato}', [PlatoController::class, 'show']);

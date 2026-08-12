@@ -7,10 +7,11 @@ use Illuminate\Http\Request;
 
 class Empresa extends Model
 {
-    protected $fillable = ['slug', 'nombre', 'whatsapp', 'activo'];
+    protected $fillable = ['slug', 'nombre', 'whatsapp', 'activo', 'layout'];
 
     protected $casts = [
         'activo' => 'boolean',
+        'layout' => 'array',
     ];
 
     public static function resolveFromRequest(Request $request): ?self

@@ -23,8 +23,14 @@ class DemoSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS=1');
 
         $mesas = [];
+        $posiciones = Mesa::posicionesPorDefecto(8);
         for ($i = 1; $i <= 8; $i++) {
-            $mesas[$i] = Mesa::create(['numero' => $i, 'activa' => true]);
+            $mesas[$i] = Mesa::create([
+                'numero' => $i,
+                'activa' => true,
+                'pos_x' => $posiciones[$i - 1]['pos_x'],
+                'pos_y' => $posiciones[$i - 1]['pos_y'],
+            ]);
         }
 
         $platos = [

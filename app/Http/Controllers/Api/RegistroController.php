@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Empresa;
+use App\Models\Mesa;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -53,8 +54,14 @@ class RegistroController extends Controller
             ]);
 
             // Mesas por defecto
+            $posiciones = Mesa::posicionesPorDefecto(15);
             for ($i = 1; $i <= 15; $i++) {
-                $empresa->mesas()->create(['numero' => $i, 'activa' => true]);
+                $empresa->mesas()->create([
+                    'numero' => $i,
+                    'activa' => true,
+                    'pos_x' => $posiciones[$i - 1]['pos_x'],
+                    'pos_y' => $posiciones[$i - 1]['pos_y'],
+                ]);
             }
 
             $token = $user->createToken('admin-token', ['*'])->plainTextToken;
