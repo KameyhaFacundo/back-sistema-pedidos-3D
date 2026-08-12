@@ -11,6 +11,7 @@ use App\Models\PedidoItem;
 use App\Models\Plato;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
 class PedidoController extends Controller
@@ -96,6 +97,7 @@ class PedidoController extends Controller
         $pedido = DB::transaction(function () use ($validated, $platos, $cupon, &$descuento, $empresa) {
             $pedido = Pedido::create([
                 'empresa_id' => $empresa->id,
+                'token' => Str::random(40),
                 'tipo' => $validated['tipo'],
                 'mesa_id' => $validated['mesa_id'] ?? null,
                 'nombre' => $validated['nombre'] ?? null,
@@ -248,10 +250,31 @@ class PedidoController extends Controller
         return response()->json($pedido->load('items.plato', 'mesa'));
     }
 
-    public function show(Pedido $pedido)
+    public function show(Request $request, Pedido $pedido)
     {
-        if (!$this->authorizePedido($pedido)) {
-            return response()->json(['message' => 'Pedido no encontrado'], 404);
+        // Public route: an authenticated admin may view any pedido from
+        // their own empresa; an anonymous customer (the common case, e.g.
+        // polling their own order's status) must present the token they
+        // were handed when the pedido was created. Pedido ids are
+        // sequential, so without this token check anyone could enumerate
+        // and read every other customer's (and every other company's) order.
+        //
+        // This route isn't behind the auth:sanctum middleware (it must stay
+        // reachable with no token at all), so the bearer token is resolved
+        // manually here instead of via auth()->user().
+        $bearer = $request->bearerToken();
+        $user = $bearer ? \Laravel\Sanctum\PersonalAccessToken::findToken($bearer)?->tokenable : null;
+
+        if ($user) {
+            $empresa = $user->empresa;
+            if (!$empresa || $pedido->empresa_id !== $empresa->id) {
+                return response()->json(['message' => 'Pedido no encontrado'], 404);
+            }
+        } else {
+            $token = $request->query('token');
+            if (!$token || !$pedido->token || !hash_equals($pedido->token, $token)) {
+                return response()->json(['message' => 'Pedido no encontrado'], 404);
+            }
         }
 
         return response()->json($pedido->load('items.plato', 'mesa', 'cupon'));

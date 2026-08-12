@@ -46,7 +46,7 @@ class MesaController extends Controller
 
     public function store(Request $request)
     {
-        $empresa = $this->resolveAdminEmpresa($request);
+        $empresa = auth()->user()?->empresa;
 
         if (!$empresa) {
             return response()->json(['message' => 'Empresa no encontrada'], 404);
@@ -78,9 +78,9 @@ class MesaController extends Controller
 
     public function update(Request $request, Mesa $mesa)
     {
-        $empresa = $this->resolveAdminEmpresa($request);
+        $empresa = auth()->user()?->empresa;
 
-        if ($empresa && $mesa->empresa_id && $mesa->empresa_id !== $empresa->id) {
+        if (!$empresa || $mesa->empresa_id !== $empresa->id) {
             return response()->json(['message' => 'No tenés acceso a esta mesa'], 403);
         }
 
@@ -100,9 +100,9 @@ class MesaController extends Controller
 
     public function destroy(Request $request, Mesa $mesa)
     {
-        $empresa = $this->resolveAdminEmpresa($request);
+        $empresa = auth()->user()?->empresa;
 
-        if ($empresa && $mesa->empresa_id && $mesa->empresa_id !== $empresa->id) {
+        if (!$empresa || $mesa->empresa_id !== $empresa->id) {
             return response()->json(['message' => 'No tenés acceso a esta mesa'], 403);
         }
 
@@ -113,9 +113,9 @@ class MesaController extends Controller
 
     public function toggleActiva(Request $request, Mesa $mesa)
     {
-        $empresa = $this->resolveAdminEmpresa($request);
+        $empresa = auth()->user()?->empresa;
 
-        if ($empresa && $mesa->empresa_id && $mesa->empresa_id !== $empresa->id) {
+        if (!$empresa || $mesa->empresa_id !== $empresa->id) {
             return response()->json(['message' => 'No tenés acceso a esta mesa'], 403);
         }
 
@@ -124,9 +124,13 @@ class MesaController extends Controller
         return response()->json($mesa);
     }
 
-    public function llamar(Mesa $mesa)
+    public function llamar(Request $request, Mesa $mesa)
     {
-        $empresa = $this->resolveAdminEmpresa(request());
+        // Public route (customer calling the waiter from their table, no
+        // login) -- this is the one legitimate place to trust the
+        // client-supplied slug, since there's no authenticated session to
+        // fall back to.
+        $empresa = Empresa::resolveFromRequest($request);
 
         if (!$empresa || $mesa->empresa_id !== $empresa->id) {
             return response()->json(['message' => 'Mesa no encontrada'], 404);
@@ -139,10 +143,5 @@ class MesaController extends Controller
         ]);
 
         return response()->json(['message' => 'Mozo llamado a la mesa ' . $mesa->numero]);
-    }
-
-    private function resolveAdminEmpresa(Request $request): ?Empresa
-    {
-        return Empresa::resolveFromRequest($request);
     }
 }

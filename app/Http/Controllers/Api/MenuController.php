@@ -13,14 +13,17 @@ class MenuController extends Controller
     {
         $empresa = Empresa::resolveFromRequest($request);
 
-        $query = Plato::with(['presentaciones', 'agregados'])
-            ->where('disponible', true);
-
-        if ($empresa) {
-            $query->where('empresa_id', $empresa->id);
+        // Without a resolved empresa there's no tenant to scope by -- return
+        // empty instead of every company's menu merged together.
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
         }
 
-        $platos = $query->orderBy('nombre')->get();
+        $platos = Plato::with(['presentaciones', 'agregados'])
+            ->where('disponible', true)
+            ->where('empresa_id', $empresa->id)
+            ->orderBy('nombre')
+            ->get();
 
         return response()->json([
             'empresa' => $empresa,
