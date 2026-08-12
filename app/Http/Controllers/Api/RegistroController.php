@@ -24,7 +24,7 @@ class RegistroController extends Controller
             'password' => 'required|string|min:6',
         ]);
 
-        $slug = $validated['slug']
+        $slug = isset($validated['slug']) && $validated['slug']
             ? Str::slug($validated['slug'])
             : Str::slug($validated['empresa']);
 
