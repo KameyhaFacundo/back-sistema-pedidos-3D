@@ -12,6 +12,12 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        // Railway terminates TLS at its edge proxy and forwards plain HTTP
+        // to the app, so without trusting it, isSecure() is always false
+        // and asset()/url() generate http:// links -- which get blocked as
+        // mixed content when fetched from the https:// frontend.
+        $middleware->trustProxies(at: '*');
+
         $middleware->api(prepend: [
             \Illuminate\Http\Middleware\HandleCors::class,
         ]);
