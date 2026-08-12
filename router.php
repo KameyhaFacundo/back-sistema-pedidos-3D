@@ -2,15 +2,26 @@
 
 $uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
-if ($uri !== '/' && file_exists(__DIR__ . '/public' . $uri)) {
-    // Served directly by PHP's built-in server, bypassing Laravel's
-    // middleware/CORS config -- add the header here so the frontend
-    // (a different Railway subdomain) can fetch these public assets
-    // (plato photos, GLB/USDZ models) via model-viewer/fetch.
-    if (str_starts_with($uri, '/storage/')) {
+// Storage files (plato photos, GLB/USDZ models) need CORS since the
+// frontend lives on a different Railway subdomain. Headers set with
+// header() before `return false` are discarded once the built-in
+// server takes over to serve the file itself, so serve it manually here.
+if (str_starts_with($uri, '/storage/')) {
+    $path = __DIR__ . '/public' . $uri;
+
+    if (is_file($path)) {
         header('Access-Control-Allow-Origin: *');
+        header('Content-Type: ' . (mime_content_type($path) ?: 'application/octet-stream'));
+        header('Content-Length: ' . filesize($path));
+        readfile($path);
+    } else {
+        http_response_code(404);
     }
 
+    return true;
+}
+
+if ($uri !== '/' && file_exists(__DIR__ . '/public' . $uri)) {
     return false;
 }
 
