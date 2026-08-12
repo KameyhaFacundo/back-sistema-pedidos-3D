@@ -22,7 +22,11 @@ class Empresa extends Model
             return static::where('slug', $slug)->where('activo', true)->first();
         }
 
-        return static::where('activo', true)->first();
+        if (auth()->check() && auth()->user()->empresa_id) {
+            return auth()->user()->empresa;
+        }
+
+        return null;
     }
 
     public function platos()

@@ -17,10 +17,17 @@ class SSEController extends Controller
         $response->headers->set('Connection', 'keep-alive');
         $response->headers->set('X-Accel-Buffering', 'no');
 
+        $empresa = auth()->user()?->empresa;
+
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
+        }
+
         $lastCheck = now()->subSeconds(5);
 
-        $callback = function () use (&$lastCheck) {
+        $callback = function () use (&$lastCheck, $empresa) {
             $pedidos = Pedido::with(['items.plato', 'mesa'])
+                ->where('empresa_id', $empresa->id)
                 ->where('updated_at', '>', $lastCheck)
                 ->orderBy('updated_at', 'desc')
                 ->get();

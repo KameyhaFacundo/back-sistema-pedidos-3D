@@ -39,7 +39,16 @@ class PlatoController extends Controller
 
     public function index()
     {
-        $platos = Plato::with(['presentaciones', 'agregados'])->orderBy('nombre')->get();
+        $empresa = auth()->user()?->empresa;
+
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
+        }
+
+        $platos = Plato::with(['presentaciones', 'agregados'])
+            ->where('empresa_id', $empresa->id)
+            ->orderBy('nombre')
+            ->get();
 
         return response()->json($platos);
     }
@@ -65,7 +74,14 @@ class PlatoController extends Controller
             'agregados.*.precio' => 'required|numeric|min:0',
         ]);
 
+        $empresa = auth()->user()?->empresa;
+
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
+        }
+
         $data = collect($validated)->except(['foto', 'modelo_glb', 'modelo_usdz', 'presentaciones', 'agregados'])->toArray();
+        $data['empresa_id'] = $empresa->id;
 
         if ($request->hasFile('foto')) {
             $data['foto'] = asset('storage/' . $request->file('foto')->store('fotos', 'public'));
@@ -86,13 +102,28 @@ class PlatoController extends Controller
         return response()->json($plato->load('presentaciones', 'agregados'), 201);
     }
 
+    private function authorizePlato(Plato $plato): bool
+    {
+        $empresa = auth()->user()?->empresa;
+
+        return $empresa && $plato->empresa_id === $empresa->id;
+    }
+
     public function show(Plato $plato)
     {
+        if (!$this->authorizePlato($plato)) {
+            return response()->json(['message' => 'Plato no encontrado'], 404);
+        }
+
         return response()->json($plato->load('presentaciones', 'agregados'));
     }
 
     public function update(Request $request, Plato $plato)
     {
+        if (!$this->authorizePlato($plato)) {
+            return response()->json(['message' => 'Plato no encontrado'], 404);
+        }
+
         $validated = $request->validate([
             'nombre' => 'sometimes|string|max:255',
             'precio' => 'sometimes|numeric|min:0',
@@ -176,6 +207,10 @@ class PlatoController extends Controller
 
     public function destroy(Plato $plato)
     {
+        if (!$this->authorizePlato($plato)) {
+            return response()->json(['message' => 'Plato no encontrado'], 404);
+        }
+
         foreach (['foto', 'modelo_glb', 'modelo_usdz'] as $field) {
             if ($plato->$field) {
                 $path = str_replace(asset('storage/'), '', $plato->$field);
@@ -190,6 +225,10 @@ class PlatoController extends Controller
 
     public function toggleDisponible(Plato $plato)
     {
+        if (!$this->authorizePlato($plato)) {
+            return response()->json(['message' => 'Plato no encontrado'], 404);
+        }
+
         $plato->update(['disponible' => !$plato->disponible]);
 
         return response()->json($plato);

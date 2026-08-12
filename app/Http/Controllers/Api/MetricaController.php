@@ -13,19 +13,31 @@ class MetricaController extends Controller
 {
     public function index()
     {
+        $empresa = auth()->user()?->empresa;
+
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
+        }
+
         $hoy = now()->format('Y-m-d');
 
-        $totalPedidos = Pedido::whereDate('created_at', $hoy)->count();
+        $totalPedidos = Pedido::where('empresa_id', $empresa->id)
+            ->whereDate('created_at', $hoy)
+            ->count();
 
-        $ventasHoy = PedidoItem::whereHas('pedido', function ($q) use ($hoy) {
-            $q->whereDate('created_at', $hoy);
+        $ventasHoy = PedidoItem::whereHas('pedido', function ($q) use ($hoy, $empresa) {
+            $q->where('empresa_id', $empresa->id)
+                ->whereDate('created_at', $hoy);
         })->sum('subtotal');
 
-        $activos = Pedido::whereIn('estado', ['nuevo', 'preparacion', 'listo'])->count();
+        $activos = Pedido::where('empresa_id', $empresa->id)
+            ->whereIn('estado', ['nuevo', 'preparacion', 'listo'])
+            ->count();
 
         $masPedido = PedidoItem::select('plato_id', DB::raw('SUM(cantidad) as total'))
-            ->whereHas('pedido', function ($q) use ($hoy) {
-                $q->whereDate('created_at', $hoy);
+            ->whereHas('pedido', function ($q) use ($hoy, $empresa) {
+                $q->where('empresa_id', $empresa->id)
+                    ->whereDate('created_at', $hoy);
             })
             ->groupBy('plato_id')
             ->orderByDesc('total')
@@ -33,11 +45,12 @@ class MetricaController extends Controller
 
         $masPedidoNombre = null;
         if ($masPedido) {
-            $plato = Plato::find($masPedido->plato_id);
+            $plato = Plato::where('empresa_id', $empresa->id)->find($masPedido->plato_id);
             $masPedidoNombre = $plato?->nombre;
         }
 
         $arVistas = ArVista::select('plato_id', DB::raw('COUNT(*) as total'))
+            ->where('empresa_id', $empresa->id)
             ->whereDate('created_at', '>=', now()->subDays(7))
             ->groupBy('plato_id')
             ->get()
@@ -52,9 +65,18 @@ class MetricaController extends Controller
         ]);
     }
 
-    public function registrarVista(Plato $plato)
+    public function registrarVista(Request $request, Plato $plato)
     {
-        ArVista::create(['plato_id' => $plato->id]);
+        $empresa = Empresa::resolveFromRequest($request);
+
+        if (!$empresa || $plato->empresa_id !== $empresa->id) {
+            return response()->json(['message' => 'Plato no encontrado'], 404);
+        }
+
+        ArVista::create([
+            'empresa_id' => $empresa->id,
+            'plato_id' => $plato->id,
+        ]);
 
         return response()->json(['message' => 'Vista AR registrada']);
     }

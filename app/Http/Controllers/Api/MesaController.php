@@ -16,27 +16,23 @@ class MesaController extends Controller
     {
         $empresa = Empresa::resolveFromRequest($request);
 
-        $query = Mesa::query();
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
+        }
+
+        $query = Mesa::where('empresa_id', $empresa->id);
 
         if (!$request->boolean('all')) {
             $query->where('activa', true);
         }
 
-        if ($empresa) {
-            $query->where(function ($q) use ($empresa) {
-                $q->where('empresa_id', $empresa->id)->orWhereNull('empresa_id');
-            });
-        }
-
         $mesas = $query->orderBy('numero')->get();
 
         $ocupadasPedido = Pedido::select('mesa_id')
+            ->where('empresa_id', $empresa->id)
             ->whereIn('estado', ['nuevo', 'preparacion', 'listo'])
             ->where('tipo', 'mesa')
             ->whereNotNull('mesa_id')
-            ->when($empresa, function ($q) use ($empresa) {
-                $q->where(fn ($sub) => $sub->where('empresa_id', $empresa->id)->orWhereNull('empresa_id'));
-            })
             ->pluck('mesa_id');
 
         $ocupadas = $ocupadasPedido->flip();
@@ -52,9 +48,13 @@ class MesaController extends Controller
     {
         $empresa = $this->resolveAdminEmpresa($request);
 
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
+        }
+
         $validated = $request->validate([
             'numero' => ['required', 'integer', 'min:1', Rule::unique('mesas', 'numero')->where(function ($q) use ($empresa) {
-                $q->whereNull('empresa_id')->orWhere('empresa_id', $empresa?->id);
+                $q->where('empresa_id', $empresa->id);
             })],
             'forma' => 'sometimes|in:circular,rectangular',
             'pos_x' => 'sometimes|nullable|numeric|min:0|max:100',
@@ -64,7 +64,7 @@ class MesaController extends Controller
         ]);
 
         $mesa = Mesa::create([
-            'empresa_id' => $empresa?->id,
+            'empresa_id' => $empresa->id,
             'numero' => $validated['numero'],
             'forma' => $validated['forma'] ?? 'circular',
             'pos_x' => $validated['pos_x'] ?? null,
@@ -126,6 +126,12 @@ class MesaController extends Controller
 
     public function llamar(Mesa $mesa)
     {
+        $empresa = $this->resolveAdminEmpresa(request());
+
+        if (!$empresa || $mesa->empresa_id !== $empresa->id) {
+            return response()->json(['message' => 'Mesa no encontrada'], 404);
+        }
+
         Llamado::create([
             'empresa_id' => $mesa->empresa_id,
             'mesa_id' => $mesa->id,
