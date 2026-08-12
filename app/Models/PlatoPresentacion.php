@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class PlatoPresentacion extends Model
 {
+    protected $table = 'plato_presentaciones';
+
     protected $fillable = ['plato_id', 'nombre', 'descripcion', 'precio', 'orden'];
 
     protected $casts = [
