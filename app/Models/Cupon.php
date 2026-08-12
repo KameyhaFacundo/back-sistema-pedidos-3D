@@ -8,7 +8,7 @@ class Cupon extends Model
 {
     protected $table = 'cupones';
 
-    protected $fillable = ['codigo', 'descuento', 'tipo', 'activo'];
+    protected $fillable = ['empresa_id', 'codigo', 'descuento', 'tipo', 'activo'];
 
     protected $casts = [
         'descuento' => 'float',

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Cupon;
+use App\Models\Empresa;
 use App\Models\Pedido;
 use App\Models\PedidoItem;
 use App\Models\Plato;
@@ -31,6 +32,8 @@ class PedidoController extends Controller
 
     public function store(Request $request)
     {
+        $empresa = Empresa::resolveFromRequest($request);
+
         $validated = $request->validate([
             'tipo' => ['required', Rule::in(['mesa', 'retiro', 'envio'])],
             'mesa_id' => 'nullable|exists:mesas,id',
@@ -68,8 +71,9 @@ class PedidoController extends Controller
             }
         }
 
-        $pedido = DB::transaction(function () use ($validated, $platos, $cupon, &$descuento) {
+        $pedido = DB::transaction(function () use ($validated, $platos, $cupon, &$descuento, $empresa) {
             $pedido = Pedido::create([
+                'empresa_id' => $empresa?->id,
                 'tipo' => $validated['tipo'],
                 'mesa_id' => $validated['mesa_id'] ?? null,
                 'nombre' => $validated['nombre'] ?? null,

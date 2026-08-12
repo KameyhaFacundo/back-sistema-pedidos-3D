@@ -7,13 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Plato extends Model
 {
     protected $fillable = [
-        'nombre', 'categoria', 'descripcion', 'precio', 'foto', 'modelo_glb', 'modelo_usdz', 'disponible',
+        'empresa_id', 'nombre', 'categoria', 'descripcion', 'precio', 'foto', 'modelo_glb', 'modelo_usdz', 'disponible',
     ];
 
     protected $casts = [
         'precio' => 'float',
         'disponible' => 'boolean',
     ];
+
+    public function empresa()
+    {
+        return $this->belongsTo(Empresa::class);
+    }
 
     public function presentaciones()
     {

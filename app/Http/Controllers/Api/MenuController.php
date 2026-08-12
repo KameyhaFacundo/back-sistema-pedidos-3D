@@ -3,17 +3,28 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Empresa;
 use App\Models\Plato;
+use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $platos = Plato::with(['presentaciones', 'agregados'])
-            ->where('disponible', true)
-            ->orderBy('nombre')
-            ->get();
+        $empresa = Empresa::resolveFromRequest($request);
 
-        return response()->json($platos);
+        $query = Plato::with(['presentaciones', 'agregados'])
+            ->where('disponible', true);
+
+        if ($empresa) {
+            $query->where('empresa_id', $empresa->id);
+        }
+
+        $platos = $query->orderBy('nombre')->get();
+
+        return response()->json([
+            'empresa' => $empresa,
+            'platos' => $platos,
+        ]);
     }
 }

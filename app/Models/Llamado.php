@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Llamado extends Model
 {
-    protected $fillable = ['mesa_id', 'atendido'];
+    protected $fillable = ['empresa_id', 'mesa_id', 'atendido'];
 
     protected $casts = [
         'atendido' => 'boolean',

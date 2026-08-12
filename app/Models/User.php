@@ -20,6 +20,7 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
+        'empresa_id',
         'name',
         'email',
         'password',
@@ -34,6 +35,11 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function empresa()
+    {
+        return $this->belongsTo(\App\Models\Empresa::class);
+    }
 
     /**
      * Get the attributes that should be cast.

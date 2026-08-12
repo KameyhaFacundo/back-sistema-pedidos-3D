@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\CocinaController;
+use App\Http\Controllers\Api\EmpresaController;
 use App\Http\Controllers\Api\MenuController;
 use App\Http\Controllers\Api\MesaController;
 use App\Http\Controllers\Api\MetricaController;
@@ -11,6 +12,8 @@ use App\Http\Controllers\Api\SSEController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('login', [AuthController::class, 'login'])->name('login');
+
+Route::get('empresa', [EmpresaController::class, 'show']);
 
 Route::get('menu', [MenuController::class, 'index']);
 
