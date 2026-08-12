@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pedido extends Model
 {
     protected $fillable = [
-        'tipo', 'mesa_id', 'nombre', 'celular', 'estado', 'medio_pago', 'estado_pago',
+        'tipo', 'mesa_id', 'nombre', 'celular', 'direccion', 'descuento', 'cupon_id', 'estado', 'medio_pago', 'estado_pago',
     ];
 
     public function mesa()
@@ -18,5 +18,10 @@ class Pedido extends Model
     public function items()
     {
         return $this->hasMany(PedidoItem::class);
+    }
+
+    public function cupon()
+    {
+        return $this->belongsTo(Cupon::class);
     }
 }

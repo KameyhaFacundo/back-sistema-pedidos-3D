@@ -21,6 +21,7 @@ Route::post('mesas/{mesa}/llamar', [MesaController::class, 'llamar']);
 
 Route::post('pedidos', [PedidoController::class, 'store']);
 Route::get('pedidos/{pedido}', [PedidoController::class, 'show']);
+Route::post('cupones/validar', [PedidoController::class, 'validarCupon']);
 
 Route::get('sse', [SSEController::class, 'stream'])->middleware('token.query');
 

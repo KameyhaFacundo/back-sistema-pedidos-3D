@@ -9,7 +9,8 @@ class MenuController extends Controller
 {
     public function index()
     {
-        $platos = Plato::where('disponible', true)
+        $platos = Plato::with(['presentaciones', 'agregados'])
+            ->where('disponible', true)
             ->orderBy('nombre')
             ->get();
 

@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class PedidoItem extends Model
 {
-    protected $fillable = ['pedido_id', 'plato_id', 'cantidad', 'subtotal'];
+    protected $fillable = ['pedido_id', 'plato_id', 'cantidad', 'presentacion_nombre', 'agregados', 'observacion', 'subtotal'];
 
     protected $casts = [
         'subtotal' => 'float',
+        'agregados' => 'array',
     ];
 
     public function pedido()

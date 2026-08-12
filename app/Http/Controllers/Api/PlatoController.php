@@ -39,7 +39,7 @@ class PlatoController extends Controller
 
     public function index()
     {
-        $platos = Plato::orderBy('nombre')->get();
+        $platos = Plato::with(['presentaciones', 'agregados'])->orderBy('nombre')->get();
 
         return response()->json($platos);
     }
@@ -55,9 +55,17 @@ class PlatoController extends Controller
             'modelo_glb' => ['nullable', 'file', 'max:10240', self::extensionRule('glb')],
             'modelo_usdz' => ['nullable', 'file', 'max:10240', self::extensionRule('usdz')],
             'disponible' => 'boolean',
+            'presentaciones' => 'nullable|array',
+            'presentaciones.*.nombre' => 'required|string|max:255',
+            'presentaciones.*.descripcion' => 'nullable|string',
+            'presentaciones.*.precio' => 'required|numeric|min:0',
+            'agregados' => 'nullable|array',
+            'agregados.*.nombre' => 'required|string|max:255',
+            'agregados.*.descripcion' => 'nullable|string',
+            'agregados.*.precio' => 'required|numeric|min:0',
         ]);
 
-        $data = collect($validated)->except(['foto', 'modelo_glb', 'modelo_usdz'])->toArray();
+        $data = collect($validated)->except(['foto', 'modelo_glb', 'modelo_usdz', 'presentaciones', 'agregados'])->toArray();
 
         if ($request->hasFile('foto')) {
             $data['foto'] = asset('storage/' . $request->file('foto')->store('fotos', 'public'));
@@ -73,12 +81,14 @@ class PlatoController extends Controller
 
         $plato = Plato::create($data);
 
-        return response()->json($plato, 201);
+        $this->syncCustomization($plato, $validated);
+
+        return response()->json($plato->load('presentaciones', 'agregados'), 201);
     }
 
     public function show(Plato $plato)
     {
-        return response()->json($plato);
+        return response()->json($plato->load('presentaciones', 'agregados'));
     }
 
     public function update(Request $request, Plato $plato)
@@ -92,9 +102,17 @@ class PlatoController extends Controller
             'modelo_glb' => ['nullable', 'file', 'max:10240', self::extensionRule('glb')],
             'modelo_usdz' => ['nullable', 'file', 'max:10240', self::extensionRule('usdz')],
             'disponible' => 'boolean',
+            'presentaciones' => 'nullable|array',
+            'presentaciones.*.nombre' => 'required|string|max:255',
+            'presentaciones.*.descripcion' => 'nullable|string',
+            'presentaciones.*.precio' => 'required|numeric|min:0',
+            'agregados' => 'nullable|array',
+            'agregados.*.nombre' => 'required|string|max:255',
+            'agregados.*.descripcion' => 'nullable|string',
+            'agregados.*.precio' => 'required|numeric|min:0',
         ]);
 
-        $data = collect($validated)->except(['foto', 'modelo_glb', 'modelo_usdz'])->toArray();
+        $data = collect($validated)->except(['foto', 'modelo_glb', 'modelo_usdz', 'presentaciones', 'agregados'])->toArray();
 
         if ($request->hasFile('foto')) {
             if ($plato->foto) {
@@ -122,7 +140,38 @@ class PlatoController extends Controller
 
         $plato->update($data);
 
-        return response()->json($plato);
+        if (array_key_exists('presentaciones', $validated) || array_key_exists('agregados', $validated)) {
+            $this->syncCustomization($plato, $validated);
+        }
+
+        return response()->json($plato->load('presentaciones', 'agregados'));
+    }
+
+    private function syncCustomization(Plato $plato, array $validated): void
+    {
+        if (array_key_exists('presentaciones', $validated)) {
+            $plato->presentaciones()->delete();
+            foreach ($validated['presentaciones'] ?? [] as $i => $p) {
+                $plato->presentaciones()->create([
+                    'nombre' => $p['nombre'],
+                    'descripcion' => $p['descripcion'] ?? null,
+                    'precio' => $p['precio'],
+                    'orden' => $i,
+                ]);
+            }
+        }
+
+        if (array_key_exists('agregados', $validated)) {
+            $plato->agregados()->delete();
+            foreach ($validated['agregados'] ?? [] as $i => $a) {
+                $plato->agregados()->create([
+                    'nombre' => $a['nombre'],
+                    'descripcion' => $a['descripcion'] ?? null,
+                    'precio' => $a['precio'],
+                    'orden' => $i,
+                ]);
+            }
+        }
     }
 
     public function destroy(Plato $plato)

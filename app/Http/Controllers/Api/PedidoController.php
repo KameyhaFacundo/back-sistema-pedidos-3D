@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Cupon;
 use App\Models\Pedido;
 use App\Models\PedidoItem;
 use App\Models\Plato;
@@ -14,8 +15,8 @@ class PedidoController extends Controller
 {
     public function index(Request $request)
     {
-        $query = Pedido::with(['items.plato', 'mesa'])
-            ->select('id', 'tipo', 'mesa_id', 'estado', 'medio_pago', 'estado_pago', 'created_at', 'updated_at');
+        $query = Pedido::with(['items.plato', 'mesa', 'cupon'])
+            ->select('id', 'tipo', 'mesa_id', 'nombre', 'celular', 'direccion', 'descuento', 'cupon_id', 'estado', 'medio_pago', 'estado_pago', 'created_at', 'updated_at');
 
         if ($request->has('estado')) {
             $query->where('estado', $request->estado);
@@ -31,14 +32,19 @@ class PedidoController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'tipo' => ['required', Rule::in(['mesa', 'retiro'])],
+            'tipo' => ['required', Rule::in(['mesa', 'retiro', 'envio'])],
             'mesa_id' => 'nullable|exists:mesas,id',
             'nombre' => 'nullable|string|max:100',
             'celular' => 'nullable|string|max:30',
+            'direccion' => 'nullable|string|max:255',
             'medio_pago' => ['required', Rule::in(['efectivo', 'transferencia'])],
+            'cupon_codigo' => 'nullable|string|max:50',
             'items' => 'required|array|min:1',
             'items.*.plato_id' => 'required|integer',
             'items.*.cantidad' => 'required|integer|min:1',
+            'items.*.presentacion_nombre' => 'nullable|string|max:255',
+            'items.*.agregados' => 'nullable|array',
+            'items.*.observacion' => 'nullable|string|max:150',
         ]);
 
         if ($validated['tipo'] === 'mesa' && empty($validated['mesa_id'])) {
@@ -46,31 +52,77 @@ class PedidoController extends Controller
         }
 
         $platoIds = array_column($validated['items'], 'plato_id');
-        $platos = Plato::whereIn('id', $platoIds)->get()->keyBy('id');
+        $platos = Plato::with(['presentaciones', 'agregados'])->whereIn('id', $platoIds)->get()->keyBy('id');
 
         if ($platos->count() !== count(array_unique($platoIds))) {
             return response()->json(['message' => 'Uno o más platos no existen.'], 422);
         }
 
-        $pedido = DB::transaction(function () use ($validated, $platos) {
+        $cupon = null;
+        $descuento = 0;
+
+        if (!empty($validated['cupon_codigo'])) {
+            $cupon = Cupon::where('codigo', $validated['cupon_codigo'])->where('activo', true)->first();
+            if (!$cupon) {
+                return response()->json(['message' => 'El cupón ingresado no es válido.'], 422);
+            }
+        }
+
+        $pedido = DB::transaction(function () use ($validated, $platos, $cupon, &$descuento) {
             $pedido = Pedido::create([
                 'tipo' => $validated['tipo'],
                 'mesa_id' => $validated['mesa_id'] ?? null,
                 'nombre' => $validated['nombre'] ?? null,
                 'celular' => $validated['celular'] ?? null,
+                'direccion' => $validated['direccion'] ?? null,
                 'medio_pago' => $validated['medio_pago'],
                 'estado' => 'nuevo',
                 'estado_pago' => 'pendiente',
+                'cupon_id' => $cupon?->id,
+                'descuento' => 0,
             ]);
 
             $itemsData = [];
+            $total = 0;
+
             foreach ($validated['items'] as $item) {
                 $plato = $platos[$item['plato_id']];
+
+                $precioBase = (float) $plato->precio;
+
+                if (!empty($item['presentacion_nombre'])) {
+                    $presentacion = $plato->presentaciones->firstWhere('nombre', $item['presentacion_nombre']);
+                    if ($presentacion) {
+                        $precioBase = (float) $presentacion->precio;
+                    }
+                }
+
+                $agregados = [];
+                $precioAgregados = 0;
+                foreach ($item['agregados'] ?? [] as $ag) {
+                    $nombre = is_array($ag) ? ($ag['nombre'] ?? '') : $ag;
+                    $cantidad = is_array($ag) ? ($ag['cantidad'] ?? 1) : 1;
+                    $agregadoModel = $plato->agregados->firstWhere('nombre', $nombre);
+                    $precioUnitario = $agregadoModel ? (float) $agregadoModel->precio : 0;
+                    $precioAgregados += $precioUnitario * $cantidad;
+                    $agregados[] = [
+                        'nombre' => $nombre,
+                        'cantidad' => $cantidad,
+                        'precio' => $precioUnitario,
+                    ];
+                }
+
+                $subtotal = ($precioBase + $precioAgregados) * $item['cantidad'];
+                $total += $subtotal;
+
                 $itemsData[] = [
                     'pedido_id' => $pedido->id,
                     'plato_id' => $plato->id,
                     'cantidad' => $item['cantidad'],
-                    'subtotal' => $plato->precio * $item['cantidad'],
+                    'presentacion_nombre' => $item['presentacion_nombre'] ?? null,
+                    'agregados' => $agregados ? json_encode($agregados) : null,
+                    'observacion' => $item['observacion'] ?? null,
+                    'subtotal' => $subtotal,
                     'created_at' => now(),
                     'updated_at' => now(),
                 ];
@@ -78,10 +130,39 @@ class PedidoController extends Controller
 
             PedidoItem::insert($itemsData);
 
-            return $pedido->load('items.plato', 'mesa');
+            if ($cupon) {
+                if ($cupon->tipo === 'porcentaje') {
+                    $descuento = round($total * ($cupon->descuento / 100), 2);
+                } else {
+                    $descuento = min((float) $cupon->descuento, $total);
+                }
+                $pedido->update(['descuento' => $descuento]);
+            }
+
+            return $pedido->load('items.plato', 'mesa', 'cupon');
         });
 
         return response()->json($pedido, 201);
+    }
+
+    public function validarCupon(Request $request)
+    {
+        $validated = $request->validate([
+            'codigo' => 'required|string|max:50',
+        ]);
+
+        $cupon = Cupon::where('codigo', $validated['codigo'])->where('activo', true)->first();
+
+        if (!$cupon) {
+            return response()->json(['message' => 'El cupón ingresado no es válido.'], 422);
+        }
+
+        return response()->json([
+            'id' => $cupon->id,
+            'codigo' => $cupon->codigo,
+            'descuento' => (float) $cupon->descuento,
+            'tipo' => $cupon->tipo,
+        ]);
     }
 
     public function updateEstado(Request $request, Pedido $pedido)
@@ -123,7 +204,7 @@ class PedidoController extends Controller
 
     public function show(Pedido $pedido)
     {
-        return response()->json($pedido->load('items.plato', 'mesa'));
+        return response()->json($pedido->load('items.plato', 'mesa', 'cupon'));
     }
 
     public function updatePago(Pedido $pedido)

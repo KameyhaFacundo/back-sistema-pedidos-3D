@@ -14,4 +14,14 @@ class Plato extends Model
         'precio' => 'float',
         'disponible' => 'boolean',
     ];
+
+    public function presentaciones()
+    {
+        return $this->hasMany(PlatoPresentacion::class)->orderBy('orden');
+    }
+
+    public function agregados()
+    {
+        return $this->hasMany(PlatoAgregado::class)->orderBy('orden');
+    }
 }
