@@ -10,6 +10,20 @@ use Illuminate\Validation\Rule;
 
 class PlatoController extends Controller
 {
+    /**
+     * PHP's fileinfo/magic database detects .glb and .usdz as inconsistent
+     * MIME types across environments, so Laravel's mime-based `mimes:` rule
+     * unreliably rejects valid files. Validate by extension instead.
+     */
+    private static function extensionRule(string $extension)
+    {
+        return function ($attribute, $value, $fail) use ($extension) {
+            if ($value && strtolower($value->getClientOriginalExtension()) !== $extension) {
+                $fail("El campo {$attribute} debe ser un archivo .{$extension}.");
+            }
+        };
+    }
+
     public function index()
     {
         $platos = Plato::orderBy('nombre')->get();
@@ -25,8 +39,8 @@ class PlatoController extends Controller
             'categoria' => ['nullable', Rule::in(['principales', 'entradas', 'postres', 'bebidas'])],
             'descripcion' => 'nullable|string',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:8192',
-            'modelo_glb' => 'nullable|file|mimes:glb|max:10240',
-            'modelo_usdz' => 'nullable|file|mimes:usdz|max:10240',
+            'modelo_glb' => ['nullable', 'file', 'max:10240', self::extensionRule('glb')],
+            'modelo_usdz' => ['nullable', 'file', 'max:10240', self::extensionRule('usdz')],
             'disponible' => 'boolean',
         ]);
 
@@ -62,8 +76,8 @@ class PlatoController extends Controller
             'categoria' => ['nullable', Rule::in(['principales', 'entradas', 'postres', 'bebidas'])],
             'descripcion' => 'nullable|string',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:8192',
-            'modelo_glb' => 'nullable|file|mimes:glb|max:10240',
-            'modelo_usdz' => 'nullable|file|mimes:usdz|max:10240',
+            'modelo_glb' => ['nullable', 'file', 'max:10240', self::extensionRule('glb')],
+            'modelo_usdz' => ['nullable', 'file', 'max:10240', self::extensionRule('usdz')],
             'disponible' => 'boolean',
         ]);
 
