@@ -1,0 +1,617 @@
+{
+  "communities": {
+    "0": [
+      "app_http_controllers_api_authcontroller_authcontroller",
+      "app_http_controllers_api_authcontroller_authcontroller_login",
+      "app_http_controllers_api_authcontroller_authcontroller_logout",
+      "app_http_controllers_api_authcontroller_authcontroller_me",
+      "app_http_controllers_api_empresacontroller",
+      "app_http_controllers_api_empresacontroller_empresacontroller",
+      "app_http_controllers_api_empresacontroller_empresacontroller_show",
+      "app_http_controllers_api_empresacontroller_empresacontroller_updatelayout",
+      "app_http_controllers_api_menucontroller",
+      "app_http_controllers_api_menucontroller_menucontroller",
+      "app_http_controllers_api_menucontroller_menucontroller_index",
+      "app_http_controllers_api_mesacontroller",
+      "app_http_controllers_api_mesacontroller_mesacontroller",
+      "app_http_controllers_api_mesacontroller_mesacontroller_destroy",
+      "app_http_controllers_api_mesacontroller_mesacontroller_index",
+      "app_http_controllers_api_mesacontroller_mesacontroller_llamar",
+      "app_http_controllers_api_mesacontroller_mesacontroller_store",
+      "app_http_controllers_api_mesacontroller_mesacontroller_toggleactiva",
+      "app_http_controllers_api_mesacontroller_mesacontroller_update",
+      "app_http_controllers_api_pedidocontroller",
+      "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
+      "app_http_controllers_api_platocontroller",
+      "app_http_controllers_api_registrocontroller",
+      "app_http_controllers_api_registrocontroller_registrocontroller",
+      "app_http_controllers_api_registrocontroller_registrocontroller_store",
+      "app_http_controllers_api_ssecontroller",
+      "app_http_controllers_api_ssecontroller_ssecontroller",
+      "app_http_controllers_api_ssecontroller_ssecontroller_stream",
+      "app_http_controllers_controller",
+      "app_http_controllers_controller_controller",
+      "app_models_empresa",
+      "app_models_empresa_empresa",
+      "app_models_empresa_empresa_mesas",
+      "app_models_empresa_empresa_pedidos",
+      "app_models_empresa_empresa_platos",
+      "app_models_empresa_empresa_resolvefromrequest",
+      "app_models_mesa_mesa",
+      "app_models_mesa_mesa_empresa",
+      "app_models_mesa_mesa_llamados",
+      "app_models_mesa_mesa_pedidos",
+      "app_models_mesa_mesa_posicionespordefecto",
+      "database_migrations_2026_08_12_140002_seed_posiciones_mesas",
+      "database_migrations_2026_08_12_140002_seed_posiciones_mesas_down",
+      "database_migrations_2026_08_12_140002_seed_posiciones_mesas_up",
+      "illuminate_http_request",
+      "illuminate_http_response",
+      "illuminate_support_facades_route",
+      "illuminate_support_facades_storage",
+      "illuminate_validation_rule",
+      "routes_api",
+      "routes_web"
+    ],
+    "1": [
+      "composer",
+      "composer_allow_plugins_pestphp_pest_plugin",
+      "composer_allow_plugins_php_http_discovery",
+      "composer_autoload",
+      "composer_autoload_dev",
+      "composer_autoload_dev_psr_4",
+      "composer_autoload_psr_4",
+      "composer_config",
+      "composer_config_allow_plugins",
+      "composer_config_optimize_autoloader",
+      "composer_config_preferred_install",
+      "composer_config_sort_packages",
+      "composer_description",
+      "composer_extra",
+      "composer_extra_laravel",
+      "composer_keywords",
+      "composer_laravel_dont_discover",
+      "composer_license",
+      "composer_minimum_stability",
+      "composer_name",
+      "composer_prefer_stable",
+      "composer_psr_4_app",
+      "composer_psr_4_database_factories",
+      "composer_psr_4_database_seeders",
+      "composer_psr_4_tests",
+      "composer_require",
+      "composer_require_dev",
+      "composer_require_dev_fakerphp_faker",
+      "composer_require_dev_laravel_pail",
+      "composer_require_dev_laravel_pint",
+      "composer_require_dev_laravel_sail",
+      "composer_require_dev_mockery_mockery",
+      "composer_require_dev_nunomaduro_collision",
+      "composer_require_dev_phpunit_phpunit",
+      "composer_require_laravel_framework",
+      "composer_require_laravel_sanctum",
+      "composer_require_laravel_tinker",
+      "composer_require_php",
+      "composer_schema",
+      "composer_type",
+      "ref_framework",
+      "ref_laravel"
+    ],
+    "2": [
+      "app_http_controllers_api_cocinacontroller",
+      "app_http_controllers_api_cocinacontroller_cocinacontroller",
+      "app_http_controllers_api_cocinacontroller_cocinacontroller_atenderllamado",
+      "app_http_controllers_api_cocinacontroller_cocinacontroller_llamados",
+      "app_http_controllers_api_metricacontroller",
+      "app_http_controllers_api_metricacontroller_metricacontroller",
+      "app_http_controllers_api_metricacontroller_metricacontroller_index",
+      "app_http_controllers_api_metricacontroller_metricacontroller_registrarvista",
+      "app_http_controllers_api_metricacontroller_php_request",
+      "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon",
+      "app_models_arvista",
+      "app_models_arvista_arvista",
+      "app_models_arvista_arvista_plato",
+      "app_models_cupon",
+      "app_models_cupon_cupon",
+      "app_models_llamado",
+      "app_models_llamado_llamado",
+      "app_models_llamado_llamado_mesa",
+      "app_models_mesa",
+      "app_models_pedido",
+      "app_models_pedidoitem",
+      "app_models_pedidoitem_pedidoitem",
+      "app_models_pedidoitem_pedidoitem_pedido",
+      "app_models_pedidoitem_pedidoitem_plato",
+      "app_models_plato",
+      "app_models_platoagregado",
+      "app_models_platoagregado_platoagregado",
+      "app_models_platoagregado_platoagregado_plato",
+      "app_models_platopresentacion",
+      "app_models_platopresentacion_platopresentacion",
+      "app_models_platopresentacion_platopresentacion_plato",
+      "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos",
+      "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos_down",
+      "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos_up",
+      "database_seeders_demoseeder",
+      "database_seeders_demoseeder_demoseeder",
+      "database_seeders_demoseeder_demoseeder_crearpedido",
+      "database_seeders_demoseeder_demoseeder_run",
+      "illuminate_database_eloquent_model",
+      "illuminate_support_facades_db"
+    ],
+    "3": [
+      "app_http_controllers_api_authcontroller",
+      "app_models_user",
+      "app_models_user_user",
+      "app_models_user_user_casts",
+      "app_models_user_user_empresa",
+      "config_auth",
+      "database_factories_userfactory",
+      "database_factories_userfactory_userfactory",
+      "database_factories_userfactory_userfactory_definition",
+      "database_factories_userfactory_userfactory_unverified",
+      "database_seeders_databaseseeder",
+      "database_seeders_databaseseeder_databaseseeder",
+      "database_seeders_databaseseeder_databaseseeder_run",
+      "database_seeders_empresaseeder",
+      "database_seeders_empresaseeder_empresaseeder",
+      "database_seeders_empresaseeder_empresaseeder_run",
+      "database_seeders_mesaseeder",
+      "database_seeders_mesaseeder_mesaseeder",
+      "database_seeders_mesaseeder_mesaseeder_run",
+      "database_seeders_platoseeder",
+      "database_seeders_platoseeder_platoseeder",
+      "database_seeders_platoseeder_platoseeder_run",
+      "database_seeders_userseeder",
+      "database_seeders_userseeder_userseeder",
+      "database_seeders_userseeder_userseeder_run",
+      "illuminate_database_eloquent_factories_factory",
+      "illuminate_database_eloquent_factories_hasfactory",
+      "illuminate_database_seeder",
+      "illuminate_foundation_auth_user",
+      "illuminate_notifications_notifiable",
+      "illuminate_support_facades_hash",
+      "illuminate_validation_validationexception",
+      "laravel_sanctum_hasapitokens",
+      "static"
+    ],
+    "4": [
+      "composer_scripts",
+      "composer_scripts_dev",
+      "composer_scripts_post_autoload_dump",
+      "composer_scripts_post_create_project_cmd",
+      "composer_scripts_post_root_package_install",
+      "composer_scripts_post_update_cmd",
+      "composer_scripts_pre_package_uninstall",
+      "composer_scripts_setup",
+      "composer_scripts_test",
+      "ref_composer_config_disableprocesstimeout",
+      "ref_composer_install",
+      "ref_illuminate_foundation_composerscripts_postautoloaddump",
+      "ref_illuminate_foundation_composerscripts_prepackageuninstall",
+      "ref_npm_install",
+      "ref_npm_run_build",
+      "ref_npx_concurrently_c_93c5fd_c4b5fd_fb7185_fdba74_php_artisan_serve_php_artisan_queue_listen_tries_1_timeout_0_php_artisan_pail_timeout_0_npm_run_dev_names_server_queue_logs_vite_kill_others",
+      "ref_php_artisan_config_clear_ansi",
+      "ref_php_artisan_key_generate",
+      "ref_php_artisan_key_generate_ansi",
+      "ref_php_artisan_migrate_force",
+      "ref_php_artisan_migrate_graceful_ansi",
+      "ref_php_artisan_package_discover_ansi",
+      "ref_php_artisan_test",
+      "ref_php_artisan_vendor_publish_tag_laravel_assets_ansi_force",
+      "ref_php_r_file_exists_database_database_sqlite_touch_database_database_sqlite",
+      "ref_php_r_file_exists_env_copy_env_example_env"
+    ],
+    "5": [
+      "app_http_controllers_api_platocontroller_platocontroller",
+      "app_http_controllers_api_platocontroller_platocontroller_authorizeplato",
+      "app_http_controllers_api_platocontroller_platocontroller_destroy",
+      "app_http_controllers_api_platocontroller_platocontroller_extensionrule",
+      "app_http_controllers_api_platocontroller_platocontroller_index",
+      "app_http_controllers_api_platocontroller_platocontroller_show",
+      "app_http_controllers_api_platocontroller_platocontroller_store",
+      "app_http_controllers_api_platocontroller_platocontroller_storewithoriginalextension",
+      "app_http_controllers_api_platocontroller_platocontroller_synccustomization",
+      "app_http_controllers_api_platocontroller_platocontroller_toggledisponible",
+      "app_http_controllers_api_platocontroller_platocontroller_update",
+      "app_models_plato_plato",
+      "app_models_plato_plato_agregados",
+      "app_models_plato_plato_empresa",
+      "app_models_plato_plato_presentaciones",
+      "self"
+    ],
+    "6": [
+      "app_http_controllers_api_pedidocontroller_pedidocontroller",
+      "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido",
+      "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar",
+      "app_http_controllers_api_pedidocontroller_pedidocontroller_index",
+      "app_http_controllers_api_pedidocontroller_pedidocontroller_show",
+      "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado",
+      "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago",
+      "app_models_pedido_pedido",
+      "app_models_pedido_pedido_cupon",
+      "app_models_pedido_pedido_empresa",
+      "app_models_pedido_pedido_items",
+      "app_models_pedido_pedido_mesa"
+    ],
+    "7": [
+      "app_providers_appserviceprovider",
+      "app_providers_appserviceprovider_appserviceprovider",
+      "app_providers_appserviceprovider_appserviceprovider_boot",
+      "app_providers_appserviceprovider_appserviceprovider_register",
+      "bootstrap_providers",
+      "illuminate_cache_ratelimiting_limit",
+      "illuminate_support_facades_ratelimiter",
+      "illuminate_support_serviceprovider"
+    ],
+    "8": [
+      "database_migrations_0001_01_01_000000_create_users_table",
+      "database_migrations_0001_01_01_000000_create_users_table_down",
+      "database_migrations_0001_01_01_000000_create_users_table_up",
+      "database_migrations_2026_08_11_140507_create_platos_table",
+      "database_migrations_2026_08_11_140507_create_platos_table_down",
+      "database_migrations_2026_08_11_140507_create_platos_table_up",
+      "illuminate_database_migrations_migration"
+    ],
+    "9": [
+      "database_migrations_0001_01_01_000001_create_cache_table",
+      "database_migrations_0001_01_01_000001_create_cache_table_down",
+      "database_migrations_0001_01_01_000001_create_cache_table_up",
+      "database_migrations_2026_08_12_140001_add_plano_to_mesas",
+      "database_migrations_2026_08_12_140001_add_plano_to_mesas_down",
+      "database_migrations_2026_08_12_140001_add_plano_to_mesas_up",
+      "illuminate_support_facades_schema"
+    ],
+    "10": [
+      "database_migrations_0001_01_01_000002_create_jobs_table",
+      "database_migrations_0001_01_01_000002_create_jobs_table_down",
+      "database_migrations_0001_01_01_000002_create_jobs_table_up",
+      "database_migrations_2026_08_12_114502_add_customization_to_pedido_items",
+      "database_migrations_2026_08_12_114502_add_customization_to_pedido_items_down",
+      "database_migrations_2026_08_12_114502_add_customization_to_pedido_items_up",
+      "illuminate_database_schema_blueprint"
+    ],
+    "11": [
+      "illuminate_foundation_testing_testcase",
+      "tests_feature_exampletest",
+      "tests_feature_exampletest_exampletest",
+      "tests_feature_exampletest_exampletest_test_the_application_returns_a_successful_response",
+      "tests_testcase",
+      "tests_testcase_testcase"
+    ],
+    "12": [
+      "app_http_middleware_tokenfromquery",
+      "app_http_middleware_tokenfromquery_tokenfromquery",
+      "app_http_middleware_tokenfromquery_tokenfromquery_handle",
+      "closure",
+      "laravel_sanctum_personalaccesstoken"
+    ],
+    "13": [
+      "bootstrap_app",
+      "illuminate_foundation_application",
+      "illuminate_foundation_configuration_exceptions",
+      "illuminate_foundation_configuration_middleware",
+      "public_index"
+    ],
+    "14": [
+      "config_cache",
+      "config_database",
+      "config_session",
+      "illuminate_support_str",
+      "pdo_mysql"
+    ],
+    "15": [
+      "config_logging",
+      "monolog_handler_nullhandler",
+      "monolog_handler_streamhandler",
+      "monolog_handler_syslogudphandler",
+      "monolog_processor_psrlogmessageprocessor"
+    ],
+    "16": [
+      "phpunit_framework_testcase",
+      "tests_unit_exampletest",
+      "tests_unit_exampletest_exampletest",
+      "tests_unit_exampletest_exampletest_test_that_true_is_true"
+    ],
+    "17": [
+      "database_migrations_2019_12_14_000001_create_personal_access_tokens_table",
+      "database_migrations_2019_12_14_000001_create_personal_access_tokens_table_down",
+      "database_migrations_2019_12_14_000001_create_personal_access_tokens_table_up"
+    ],
+    "18": [
+      "database_migrations_2026_08_11_140506_create_mesas_table",
+      "database_migrations_2026_08_11_140506_create_mesas_table_down",
+      "database_migrations_2026_08_11_140506_create_mesas_table_up"
+    ],
+    "19": [
+      "database_migrations_2026_08_11_140507_create_pedidos_table",
+      "database_migrations_2026_08_11_140507_create_pedidos_table_down",
+      "database_migrations_2026_08_11_140507_create_pedidos_table_up"
+    ],
+    "20": [
+      "database_migrations_2026_08_11_140509_create_llamados_table",
+      "database_migrations_2026_08_11_140509_create_llamados_table_down",
+      "database_migrations_2026_08_11_140509_create_llamados_table_up"
+    ],
+    "21": [
+      "database_migrations_2026_08_11_140509_create_pedido_items_table",
+      "database_migrations_2026_08_11_140509_create_pedido_items_table_down",
+      "database_migrations_2026_08_11_140509_create_pedido_items_table_up"
+    ],
+    "22": [
+      "database_migrations_2026_08_11_142426_add_performance_indexes",
+      "database_migrations_2026_08_11_142426_add_performance_indexes_down",
+      "database_migrations_2026_08_11_142426_add_performance_indexes_up"
+    ],
+    "23": [
+      "database_migrations_2026_08_11_145317_add_categoria_to_platos",
+      "database_migrations_2026_08_11_145317_add_categoria_to_platos_down",
+      "database_migrations_2026_08_11_145317_add_categoria_to_platos_up"
+    ],
+    "24": [
+      "database_migrations_2026_08_11_155414_create_ar_vistas_table",
+      "database_migrations_2026_08_11_155414_create_ar_vistas_table_down",
+      "database_migrations_2026_08_11_155414_create_ar_vistas_table_up"
+    ],
+    "25": [
+      "database_migrations_2026_08_12_113635_add_nombre_celular_to_pedidos",
+      "database_migrations_2026_08_12_113635_add_nombre_celular_to_pedidos_down",
+      "database_migrations_2026_08_12_113635_add_nombre_celular_to_pedidos_up"
+    ],
+    "26": [
+      "database_migrations_2026_08_12_114500_create_plato_presentaciones_table",
+      "database_migrations_2026_08_12_114500_create_plato_presentaciones_table_down",
+      "database_migrations_2026_08_12_114500_create_plato_presentaciones_table_up"
+    ],
+    "27": [
+      "database_migrations_2026_08_12_114501_create_plato_agregados_table",
+      "database_migrations_2026_08_12_114501_create_plato_agregados_table_down",
+      "database_migrations_2026_08_12_114501_create_plato_agregados_table_up"
+    ],
+    "28": [
+      "database_migrations_2026_08_12_114503_add_envio_cupones_to_pedidos",
+      "database_migrations_2026_08_12_114503_add_envio_cupones_to_pedidos_down",
+      "database_migrations_2026_08_12_114503_add_envio_cupones_to_pedidos_up"
+    ],
+    "29": [
+      "database_migrations_2026_08_12_131913_create_empresas_table",
+      "database_migrations_2026_08_12_131913_create_empresas_table_down",
+      "database_migrations_2026_08_12_131913_create_empresas_table_up"
+    ],
+    "30": [
+      "database_migrations_2026_08_12_140000_add_layout_to_empresas",
+      "database_migrations_2026_08_12_140000_add_layout_to_empresas_down",
+      "database_migrations_2026_08_12_140000_add_layout_to_empresas_up"
+    ],
+    "31": [
+      "database_migrations_2026_08_12_150000_make_mesa_numero_unique_per_empresa",
+      "database_migrations_2026_08_12_150000_make_mesa_numero_unique_per_empresa_down",
+      "database_migrations_2026_08_12_150000_make_mesa_numero_unique_per_empresa_up"
+    ],
+    "32": [
+      "database_migrations_2026_08_12_160000_add_token_to_pedidos",
+      "database_migrations_2026_08_12_160000_add_token_to_pedidos_down",
+      "database_migrations_2026_08_12_160000_add_token_to_pedidos_up"
+    ],
+    "33": [
+      "illuminate_foundation_inspiring",
+      "illuminate_support_facades_artisan",
+      "routes_console"
+    ],
+    "34": [
+      "artisan"
+    ],
+    "35": [
+      "config_app"
+    ],
+    "36": [
+      "config_cors"
+    ],
+    "37": [
+      "config_filesystems"
+    ],
+    "38": [
+      "config_mail"
+    ],
+    "39": [
+      "config_queue"
+    ],
+    "40": [
+      "config_services"
+    ],
+    "41": [
+      "router"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08549019607843138,
+    "1": 0.047619047619047616,
+    "2": 0.07307692307692308,
+    "3": 0.0855614973262032,
+    "4": 0.08,
+    "5": 0.25833333333333336,
+    "6": 0.2878787878787879,
+    "7": 0.2857142857142857,
+    "8": 0.2857142857142857,
+    "9": 0.2857142857142857,
+    "10": 0.2857142857142857,
+    "11": 0.4,
+    "12": 0.5,
+    "13": 0.4,
+    "14": 0.4,
+    "15": 0.4,
+    "16": 0.6666666666666666,
+    "17": 0.6666666666666666,
+    "18": 0.6666666666666666,
+    "19": 0.6666666666666666,
+    "20": 0.6666666666666666,
+    "21": 0.6666666666666666,
+    "22": 0.6666666666666666,
+    "23": 0.6666666666666666,
+    "24": 0.6666666666666666,
+    "25": 0.6666666666666666,
+    "26": 0.6666666666666666,
+    "27": 0.6666666666666666,
+    "28": 0.6666666666666666,
+    "29": 0.6666666666666666,
+    "30": 0.6666666666666666,
+    "31": 0.6666666666666666,
+    "32": 0.6666666666666666,
+    "33": 0.6666666666666666,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_models_plato_plato",
+      "label": "Plato",
+      "degree": 26
+    },
+    {
+      "id": "app_models_mesa_mesa",
+      "label": "Mesa",
+      "degree": 24
+    },
+    {
+      "id": "app_models_pedido_pedido",
+      "label": "Pedido",
+      "degree": 23
+    },
+    {
+      "id": "app_models_empresa_empresa",
+      "label": "Empresa",
+      "degree": 22
+    },
+    {
+      "id": "app_http_controllers_controller_controller",
+      "label": "Controller",
+      "degree": 21
+    },
+    {
+      "id": "app_models_user_user",
+      "label": "User",
+      "degree": 17
+    },
+    {
+      "id": "app_http_controllers_api_platocontroller_platocontroller",
+      "label": "PlatoController",
+      "degree": 13
+    },
+    {
+      "id": "app_models_pedidoitem_pedidoitem",
+      "label": "PedidoItem",
+      "degree": 11
+    },
+    {
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller",
+      "label": "PedidoController",
+      "degree": 11
+    },
+    {
+      "id": "app_models_llamado_llamado",
+      "label": "Llamado",
+      "degree": 10
+    }
+  ],
+  "surprises": [
+    {
+      "source": "up()",
+      "target": "Empresa",
+      "source_files": [
+        "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
+        "app/Models/Empresa.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "up()",
+      "target": "Mesa",
+      "source_files": [
+        "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
+        "app/Models/Mesa.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "CocinaController",
+      "target": "Controller",
+      "source_files": [
+        "app/Http/Controllers/Api/CocinaController.php",
+        "app/Http/Controllers/Controller.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "MetricaController",
+      "target": "Controller",
+      "source_files": [
+        "app/Http/Controllers/Api/MetricaController.php",
+        "app/Http/Controllers/Controller.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "PedidoController",
+      "target": "Controller",
+      "source_files": [
+        "app/Http/Controllers/Api/PedidoController.php",
+        "app/Http/Controllers/Controller.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Mesa` connect `Auth & Empresa Controllers` to `Cocina & Métricas Controllers`, `User Model & Auth`?",
+      "why": "High betweenness centrality (0.087) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Empresa` connect `Auth & Empresa Controllers` to `Cocina & Métricas Controllers`, `User Model & Auth`?",
+      "why": "High betweenness centrality (0.085) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Plato` connect `Plato Controller` to `Auth & Empresa Controllers`, `Cocina & Métricas Controllers`, `User Model & Auth`?",
+      "why": "High betweenness centrality (0.057) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `pestphp/pest-plugin`, `php-http/discovery`, `optimize-autoloader` to the rest of the system?",
+      "why": "46 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Auth & Empresa Controllers` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08549019607843138 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Composer Package Config` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Cocina & Métricas Controllers` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07307692307692308 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
