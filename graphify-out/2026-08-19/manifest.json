@@ -15,9 +15,9 @@
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/MenuController.php": {
-    "mtime": 1786569277.7515483,
-    "ast_hash": "3ae1e2e579698a284ea21608bfd933e5",
-    "semantic_hash": "3ae1e2e579698a284ea21608bfd933e5"
+    "mtime": 1787147021.8087814,
+    "ast_hash": "bf9597f801293a546b2968a399fbb68f",
+    "semantic_hash": ""
   },
   "app/Http/Controllers/Api/MesaController.php": {
     "mtime": 1786569240.3118703,
@@ -25,19 +25,19 @@
     "semantic_hash": "59c3cb60fa61598aeb6606e61be86db8"
   },
   "app/Http/Controllers/Api/MetricaController.php": {
-    "mtime": 1786558034.574255,
-    "ast_hash": "49fa721908e07a36a5694225d0151c31",
-    "semantic_hash": "49fa721908e07a36a5694225d0151c31"
+    "mtime": 1787147303.4304383,
+    "ast_hash": "3b4251ff515dc4a46769c92d76997e76",
+    "semantic_hash": ""
   },
   "app/Http/Controllers/Api/PedidoController.php": {
-    "mtime": 1786569380.15777,
-    "ast_hash": "5fb0f9800f3cb2d3abfb550348c11024",
-    "semantic_hash": "5fb0f9800f3cb2d3abfb550348c11024"
+    "mtime": 1787146937.5544016,
+    "ast_hash": "90e0e456d4e4c2d2aeec02cabd7adfa6",
+    "semantic_hash": ""
   },
   "app/Http/Controllers/Api/PlatoController.php": {
-    "mtime": 1786557976.5510461,
-    "ast_hash": "e2ea013363aa5003cc47889bdf7a388a",
-    "semantic_hash": "e2ea013363aa5003cc47889bdf7a388a"
+    "mtime": 1787147011.1938043,
+    "ast_hash": "75687c708b0d6170312af663af837d2d",
+    "semantic_hash": ""
   },
   "app/Http/Controllers/Api/RegistroController.php": {
     "mtime": 1786570246.620311,
@@ -95,9 +95,9 @@
     "semantic_hash": "779d1043efcd227cee242e970968ba87"
   },
   "app/Models/Plato.php": {
-    "mtime": 1786551594.230822,
-    "ast_hash": "0f7d2cc5aeb2bab5396b63ece60e100e",
-    "semantic_hash": "0f7d2cc5aeb2bab5396b63ece60e100e"
+    "mtime": 1787147017.0333152,
+    "ast_hash": "e7c45aa5bde07dcbad863c73a66f656a",
+    "semantic_hash": ""
   },
   "app/Models/PlatoAgregado.php": {
     "mtime": 1786548322.5761669,
@@ -360,8 +360,8 @@
     "semantic_hash": "5b74d2aaca8f3c0022d39904d96dae89"
   },
   "routes/api.php": {
-    "mtime": 1787108465.9490857,
-    "ast_hash": "9abafbc85a4f23084e852eba4b4415cf",
+    "mtime": 1787147041.4055705,
+    "ast_hash": "f7a113f22fa62b09dd7af65e3c868ef7",
     "semantic_hash": ""
   },
   "routes/console.php": {
@@ -411,7 +411,7 @@
   },
   ".claude/settings.json": {
     "mtime": 1786846536.336687,
-    "ast_hash": "d63945663ac5a70eebb1756ab927f4f5",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   "tests/Feature/AuthTest.php": {
@@ -427,6 +427,56 @@
   "tests/Feature/PlatoTest.php": {
     "mtime": 1787112007.5382774,
     "ast_hash": "5254bde39ae100dadc07c00f87fe05fc",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Api/CuponController.php": {
+    "mtime": 1787147585.5373907,
+    "ast_hash": "bf997bce4caeddc0df5c1b60fe5426a5",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Api/StaffController.php": {
+    "mtime": 1787146959.3542588,
+    "ast_hash": "4fc28888864838b8a26fa6a3b463726f",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_08_19_000000_add_orden_to_platos.php": {
+    "mtime": 1787146964.232232,
+    "ast_hash": "233d6c98efb2aca109dca71e39333af2",
+    "semantic_hash": ""
+  },
+  "tests/Feature/CuponTest.php": {
+    "mtime": 1787147079.7551608,
+    "ast_hash": "a037337801d6b3c70d7344feaa65b9d8",
+    "semantic_hash": ""
+  },
+  "tests/Feature/EmpresaTest.php": {
+    "mtime": 1787147118.930156,
+    "ast_hash": "f2d6238c7415429e160090033d346828",
+    "semantic_hash": ""
+  },
+  "tests/Feature/MesaTest.php": {
+    "mtime": 1787147096.2012482,
+    "ast_hash": "6650e0867c2936831a010833a997c3a7",
+    "semantic_hash": ""
+  },
+  "tests/Feature/MetricaTest.php": {
+    "mtime": 1787147106.9344308,
+    "ast_hash": "aab1e78ed208425b6453e969a6b035b7",
+    "semantic_hash": ""
+  },
+  "tests/Feature/RegistroTest.php": {
+    "mtime": 1787147137.0667439,
+    "ast_hash": "c099f5e9a5960523ae89326911a40761",
+    "semantic_hash": ""
+  },
+  "tests/Feature/StaffTest.php": {
+    "mtime": 1787147150.109496,
+    "ast_hash": "f8e0ec776cb4e464899b4b1ef529d359",
+    "semantic_hash": ""
+  },
+  ".github/workflows/backend-ci.yml": {
+    "mtime": 1787147159.4281735,
+    "ast_hash": "148729f264b953f6fa8f73a795a394d1",
     "semantic_hash": ""
   }
 }
