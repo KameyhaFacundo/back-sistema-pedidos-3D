@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\ArVista;
+use App\Models\Empresa;
 use App\Models\Pedido;
 use App\Models\PedidoItem;
 use App\Models\Plato;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class MetricaController extends Controller

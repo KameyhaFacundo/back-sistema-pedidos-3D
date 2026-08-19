@@ -47,6 +47,7 @@ class PlatoController extends Controller
 
         $platos = Plato::with(['presentaciones', 'agregados'])
             ->where('empresa_id', $empresa->id)
+            ->orderBy('orden')
             ->orderBy('nombre')
             ->get();
 
@@ -82,6 +83,7 @@ class PlatoController extends Controller
 
         $data = collect($validated)->except(['foto', 'modelo_glb', 'modelo_usdz', 'presentaciones', 'agregados'])->toArray();
         $data['empresa_id'] = $empresa->id;
+        $data['orden'] = (int) Plato::where('empresa_id', $empresa->id)->max('orden') + 1;
 
         if ($request->hasFile('foto')) {
             $data['foto'] = asset('storage/' . $request->file('foto')->store('fotos', 'public'));
@@ -203,6 +205,36 @@ class PlatoController extends Controller
                 ]);
             }
         }
+    }
+
+    public function reordenar(Request $request)
+    {
+        $empresa = auth()->user()?->empresa;
+
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
+        }
+
+        $validated = $request->validate([
+            'platos' => 'required|array|min:1',
+            'platos.*' => 'required|integer',
+        ]);
+
+        $ids = array_values(array_unique($validated['platos']));
+
+        $existen = Plato::where('empresa_id', $empresa->id)
+            ->whereIn('id', $ids)
+            ->count();
+
+        if ($existen !== count($ids)) {
+            return response()->json(['message' => 'Uno o más platos no existen para esta empresa.'], 422);
+        }
+
+        foreach ($ids as $i => $id) {
+            Plato::where('empresa_id', $empresa->id)->where('id', $id)->update(['orden' => $i]);
+        }
+
+        return response()->json(['message' => 'Orden actualizado']);
     }
 
     public function destroy(Plato $plato)

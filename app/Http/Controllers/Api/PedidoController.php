@@ -175,7 +175,9 @@ class PedidoController extends Controller
 
     public function validarCupon(Request $request)
     {
-        $empresa = auth()->user()?->empresa;
+        // Public route (customer typing a code at checkout, no login) --
+        // resolve the tenant from the client-supplied slug like store() does.
+        $empresa = Empresa::resolveFromRequest($request);
 
         $validated = $request->validate([
             'codigo' => 'required|string|max:50',

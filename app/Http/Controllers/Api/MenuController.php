@@ -22,6 +22,7 @@ class MenuController extends Controller
         $platos = Plato::with(['presentaciones', 'agregados'])
             ->where('disponible', true)
             ->where('empresa_id', $empresa->id)
+            ->orderBy('orden')
             ->orderBy('nombre')
             ->get();
 

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\CocinaController;
+use App\Http\Controllers\Api\CuponController;
 use App\Http\Controllers\Api\EmpresaController;
 use App\Http\Controllers\Api\MenuController;
 use App\Http\Controllers\Api\MesaController;
@@ -10,6 +11,7 @@ use App\Http\Controllers\Api\PedidoController;
 use App\Http\Controllers\Api\PlatoController;
 use App\Http\Controllers\Api\RegistroController;
 use App\Http\Controllers\Api\SSEController;
+use App\Http\Controllers\Api\StaffController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('login', [AuthController::class, 'login'])->name('login')->middleware('throttle:login');
@@ -58,6 +60,17 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('platos/{plato}', [PlatoController::class, 'update']);
     Route::delete('platos/{plato}', [PlatoController::class, 'destroy']);
     Route::patch('platos/{plato}/toggle', [PlatoController::class, 'toggleDisponible']);
+    Route::put('platos/orden', [PlatoController::class, 'reordenar']);
+
+    Route::get('cupones', [CuponController::class, 'index']);
+    Route::post('cupones', [CuponController::class, 'store']);
+    Route::put('cupones/{cupon}', [CuponController::class, 'update']);
+    Route::patch('cupones/{cupon}/toggle', [CuponController::class, 'toggleActivo']);
+    Route::delete('cupones/{cupon}', [CuponController::class, 'destroy']);
+
+    Route::get('staff', [StaffController::class, 'index']);
+    Route::post('staff', [StaffController::class, 'store']);
+    Route::delete('staff/{user}', [StaffController::class, 'destroy']);
 
     Route::post('demo/seed', function () {
         \Illuminate\Support\Facades\Artisan::call('db:seed', ['--class' => \Database\Seeders\DemoSeeder::class]);

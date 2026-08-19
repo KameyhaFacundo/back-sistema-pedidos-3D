@@ -413,5 +413,20 @@
     "mtime": 1786846536.336687,
     "ast_hash": "d63945663ac5a70eebb1756ab927f4f5",
     "semantic_hash": ""
+  },
+  "tests/Feature/AuthTest.php": {
+    "mtime": 1787111869.3989272,
+    "ast_hash": "10cdfa9ee2c8377946a34312ce33993b",
+    "semantic_hash": ""
+  },
+  "tests/Feature/PedidoTest.php": {
+    "mtime": 1787111991.1448996,
+    "ast_hash": "64eb6a3abe220dc6b221a3279abc5310",
+    "semantic_hash": ""
+  },
+  "tests/Feature/PlatoTest.php": {
+    "mtime": 1787112007.5382774,
+    "ast_hash": "5254bde39ae100dadc07c00f87fe05fc",
+    "semantic_hash": ""
   }
 }
