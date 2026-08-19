@@ -13,7 +13,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "authcontroller",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_authcontroller_authcontroller"
     },
     {
@@ -26,7 +26,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "empresacontroller",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_empresacontroller_empresacontroller"
     },
     {
@@ -39,7 +39,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "menucontroller",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_menucontroller_menucontroller"
     },
     {
@@ -52,7 +52,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "mesacontroller",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_mesacontroller_mesacontroller"
     },
     {
@@ -65,7 +65,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "registrocontroller",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_registrocontroller_registrocontroller"
     },
     {
@@ -78,7 +78,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "ssecontroller",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_ssecontroller_ssecontroller"
     },
     {
@@ -91,7 +91,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "controller",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_controller_controller"
     },
     {
@@ -104,7 +104,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "empresa",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_empresa_empresa"
     },
     {
@@ -117,7 +117,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "mesa",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_mesa_mesa"
     },
     {
@@ -160,19 +160,6 @@
       "id": "app_http_middleware_tokenfromquery_tokenfromquery"
     },
     {
-      "label": "UserFactory",
-      "file_type": "code",
-      "source_file": "database/factories/UserFactory.php",
-      "source_location": "L13",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "userfactory",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "database_factories_userfactory_userfactory"
-    },
-    {
       "label": "ExampleTest",
       "file_type": "code",
       "source_file": "tests/Unit/ExampleTest.php",
@@ -195,7 +182,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "cocinacontroller",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_cocinacontroller_cocinacontroller"
     },
     {
@@ -208,21 +195,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "metricacontroller",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_metricacontroller_metricacontroller"
-    },
-    {
-      "label": "PedidoController",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L17",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "pedidocontroller",
-      "community_name": "Pedido",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller"
     },
     {
       "label": "ArVista",
@@ -234,7 +208,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "arvista",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_arvista_arvista"
     },
     {
@@ -247,7 +221,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "cupon",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_cupon_cupon"
     },
     {
@@ -260,21 +234,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "llamado",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_llamado_llamado"
-    },
-    {
-      "label": "Pedido",
-      "file_type": "code",
-      "source_file": "app/Models/Pedido.php",
-      "source_location": "L7",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "pedido",
-      "community_name": "Pedido",
-      "id": "app_models_pedido_pedido"
     },
     {
       "label": "PedidoItem",
@@ -286,7 +247,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "pedidoitem",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_pedidoitem_pedidoitem"
     },
     {
@@ -299,7 +260,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "platoagregado",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_platoagregado_platoagregado"
     },
     {
@@ -312,7 +273,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "platopresentacion",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_platopresentacion_platopresentacion"
     },
     {
@@ -325,7 +286,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "demoseeder",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "database_seeders_demoseeder_demoseeder"
     },
     {
@@ -338,8 +299,21 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "user",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "app_models_user_user"
+    },
+    {
+      "label": "UserFactory",
+      "file_type": "code",
+      "source_file": "database/factories/UserFactory.php",
+      "source_location": "L13",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "userfactory",
+      "community_name": "User Model & Auth",
+      "id": "database_factories_userfactory_userfactory"
     },
     {
       "label": "DatabaseSeeder",
@@ -349,23 +323,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "database_seeders_databaseseeder_databaseseeder",
       "community": 3,
-      "community_name": "User",
-      "norm_label": "databaseseeder"
-    },
-    {
-      "label": "DemoEmpresaSeeder",
-      "file_type": "code",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L15",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "database_seeders_demoempresaseeder_demoempresaseeder",
-      "community": 3,
-      "community_name": "User",
-      "norm_label": "demoempresaseeder"
+      "norm_label": "databaseseeder",
+      "community_name": "User Model & Auth",
+      "id": "database_seeders_databaseseeder_databaseseeder"
     },
     {
       "label": "EmpresaSeeder",
@@ -377,7 +338,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "empresaseeder",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_empresaseeder_empresaseeder"
     },
     {
@@ -390,7 +351,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "mesaseeder",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_mesaseeder_mesaseeder"
     },
     {
@@ -403,7 +364,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "platoseeder",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_platoseeder_platoseeder"
     },
     {
@@ -416,7 +377,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "userseeder",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_userseeder_userseeder"
     },
     {
@@ -446,6 +407,32 @@
       "id": "app_models_plato_plato"
     },
     {
+      "label": "PedidoController",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L17",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "pedidocontroller",
+      "community_name": "Pedido Controller",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller"
+    },
+    {
+      "label": "Pedido",
+      "file_type": "code",
+      "source_file": "app/Models/Pedido.php",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "pedido",
+      "community_name": "Pedido Controller",
+      "id": "app_models_pedido_pedido"
+    },
+    {
       "label": "AppServiceProvider",
       "file_type": "code",
       "source_file": "app/Providers/AppServiceProvider.php",
@@ -467,7 +454,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".login()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_authcontroller_authcontroller_login"
     },
     {
@@ -479,7 +466,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".logout()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_authcontroller_authcontroller_logout"
     },
     {
@@ -491,7 +478,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".me()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_authcontroller_authcontroller_me"
     },
     {
@@ -503,7 +490,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".show()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_empresacontroller_empresacontroller_show"
     },
     {
@@ -515,7 +502,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".updatelayout()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_empresacontroller_empresacontroller_updatelayout"
     },
     {
@@ -527,7 +514,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".index()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_menucontroller_menucontroller_index"
     },
     {
@@ -539,7 +526,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".destroy()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_mesacontroller_mesacontroller_destroy"
     },
     {
@@ -551,7 +538,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".index()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_mesacontroller_mesacontroller_index"
     },
     {
@@ -563,7 +550,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".llamar()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_mesacontroller_mesacontroller_llamar"
     },
     {
@@ -575,7 +562,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".store()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_mesacontroller_mesacontroller_store"
     },
     {
@@ -587,7 +574,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".toggleactiva()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_mesacontroller_mesacontroller_toggleactiva"
     },
     {
@@ -599,7 +586,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".update()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_mesacontroller_mesacontroller_update"
     },
     {
@@ -611,7 +598,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".store()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_store"
     },
     {
@@ -623,7 +610,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".store()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_registrocontroller_registrocontroller_store"
     },
     {
@@ -635,7 +622,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".stream()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_ssecontroller_ssecontroller_stream"
     },
     {
@@ -647,7 +634,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".mesas()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_empresa_empresa_mesas"
     },
     {
@@ -659,7 +646,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".pedidos()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_empresa_empresa_pedidos"
     },
     {
@@ -671,7 +658,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".platos()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_empresa_empresa_platos"
     },
     {
@@ -683,7 +670,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".resolvefromrequest()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_empresa_empresa_resolvefromrequest"
     },
     {
@@ -695,7 +682,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".empresa()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_mesa_mesa_empresa"
     },
     {
@@ -707,7 +694,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".llamados()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_mesa_mesa_llamados"
     },
     {
@@ -719,7 +706,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".pedidos()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_mesa_mesa_pedidos"
     },
     {
@@ -731,7 +718,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".posicionespordefecto()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_models_mesa_mesa_posicionespordefecto"
     },
     {
@@ -743,7 +730,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "down()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas_down"
     },
     {
@@ -755,20 +742,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "up()",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas_up"
-    },
-    {
-      "label": ".run()",
-      "file_type": "code",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L17",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "database_seeders_demoempresaseeder_demoempresaseeder_run",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".run()"
     },
     {
       "label": "down()",
@@ -841,30 +816,6 @@
       "norm_label": ".handle()",
       "community_name": "Sanctum Token Middleware",
       "id": "app_http_middleware_tokenfromquery_tokenfromquery_handle"
-    },
-    {
-      "label": ".definition()",
-      "file_type": "code",
-      "source_file": "database/factories/UserFactory.php",
-      "source_location": "L25",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": ".definition()",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "database_factories_userfactory_userfactory_definition"
-    },
-    {
-      "label": ".unverified()",
-      "file_type": "code",
-      "source_file": "database/factories/UserFactory.php",
-      "source_location": "L39",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": ".unverified()",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "database_factories_userfactory_userfactory_unverified"
     },
     {
       "label": ".test_that_true_is_true()",
@@ -959,7 +910,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".atenderllamado()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_cocinacontroller_cocinacontroller_atenderllamado"
     },
     {
@@ -971,7 +922,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".llamados()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_cocinacontroller_cocinacontroller_llamados"
     },
     {
@@ -983,7 +934,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".index()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_metricacontroller_metricacontroller_index"
     },
     {
@@ -995,80 +946,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".registrarvista()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_metricacontroller_metricacontroller_registrarvista"
-    },
-    {
-      "label": ".authorizePedido()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L201",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".authorizepedido()",
-      "community_name": "Pedido",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido"
-    },
-    {
-      "label": ".cancelar()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L236",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".cancelar()",
-      "community_name": "Pedido",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar"
-    },
-    {
-      "label": ".index()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L19",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".index()",
-      "community_name": "Pedido",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_index"
-    },
-    {
-      "label": ".show()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L253",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".show()",
-      "community_name": "Pedido",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_show"
-    },
-    {
-      "label": ".updateEstado()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L208",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".updateestado()",
-      "community_name": "Pedido",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado"
-    },
-    {
-      "label": ".updatePago()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L283",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".updatepago()",
-      "community_name": "Pedido",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago"
     },
     {
       "label": ".validarCupon()",
@@ -1079,7 +958,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".validarcupon()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon"
     },
     {
@@ -1091,7 +970,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".plato()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_arvista_arvista_plato"
     },
     {
@@ -1103,56 +982,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".mesa()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_llamado_llamado_mesa"
-    },
-    {
-      "label": ".cupon()",
-      "file_type": "code",
-      "source_file": "app/Models/Pedido.php",
-      "source_location": "L28",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".cupon()",
-      "community_name": "Pedido",
-      "id": "app_models_pedido_pedido_cupon"
-    },
-    {
-      "label": ".empresa()",
-      "file_type": "code",
-      "source_file": "app/Models/Pedido.php",
-      "source_location": "L13",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".empresa()",
-      "community_name": "Pedido",
-      "id": "app_models_pedido_pedido_empresa"
-    },
-    {
-      "label": ".items()",
-      "file_type": "code",
-      "source_file": "app/Models/Pedido.php",
-      "source_location": "L23",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".items()",
-      "community_name": "Pedido",
-      "id": "app_models_pedido_pedido_items"
-    },
-    {
-      "label": ".mesa()",
-      "file_type": "code",
-      "source_file": "app/Models/Pedido.php",
-      "source_location": "L18",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": ".mesa()",
-      "community_name": "Pedido",
-      "id": "app_models_pedido_pedido_mesa"
     },
     {
       "label": ".pedido()",
@@ -1163,7 +994,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".pedido()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_pedidoitem_pedidoitem_pedido"
     },
     {
@@ -1175,7 +1006,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".plato()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_pedidoitem_pedidoitem_plato"
     },
     {
@@ -1187,7 +1018,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".plato()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_platoagregado_platoagregado_plato"
     },
     {
@@ -1199,7 +1030,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".plato()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_platopresentacion_platopresentacion_plato"
     },
     {
@@ -1211,7 +1042,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "down()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos_down"
     },
     {
@@ -1223,7 +1054,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "up()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos_up"
     },
     {
@@ -1235,7 +1066,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".crearpedido()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "database_seeders_demoseeder_demoseeder_crearpedido"
     },
     {
@@ -1247,7 +1078,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": ".run()",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "database_seeders_demoseeder_demoseeder_run"
     },
     {
@@ -1499,7 +1330,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": ".casts()",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "app_models_user_user_casts"
     },
     {
@@ -1511,8 +1342,32 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": ".empresa()",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "app_models_user_user_empresa"
+    },
+    {
+      "label": ".definition()",
+      "file_type": "code",
+      "source_file": "database/factories/UserFactory.php",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": ".definition()",
+      "community_name": "User Model & Auth",
+      "id": "database_factories_userfactory_userfactory_definition"
+    },
+    {
+      "label": ".unverified()",
+      "file_type": "code",
+      "source_file": "database/factories/UserFactory.php",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": ".unverified()",
+      "community_name": "User Model & Auth",
+      "id": "database_factories_userfactory_userfactory_unverified"
     },
     {
       "label": ".run()",
@@ -1521,10 +1376,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_seeders_databaseseeder_databaseseeder_run",
       "community": 3,
-      "community_name": "User",
-      "norm_label": ".run()"
+      "norm_label": ".run()",
+      "community_name": "User Model & Auth",
+      "id": "database_seeders_databaseseeder_databaseseeder_run"
     },
     {
       "label": ".run()",
@@ -1535,7 +1390,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": ".run()",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_empresaseeder_empresaseeder_run"
     },
     {
@@ -1547,7 +1402,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": ".run()",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_mesaseeder_mesaseeder_run"
     },
     {
@@ -1559,7 +1414,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": ".run()",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_platoseeder_platoseeder_run"
     },
     {
@@ -1571,7 +1426,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": ".run()",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_userseeder_userseeder_run"
     },
     {
@@ -1803,6 +1658,126 @@
       "id": "app_models_plato_plato_presentaciones"
     },
     {
+      "label": ".authorizePedido()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L201",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".authorizepedido()",
+      "community_name": "Pedido Controller",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido"
+    },
+    {
+      "label": ".cancelar()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L236",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".cancelar()",
+      "community_name": "Pedido Controller",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L19",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".index()",
+      "community_name": "Pedido Controller",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_index"
+    },
+    {
+      "label": ".show()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L253",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".show()",
+      "community_name": "Pedido Controller",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_show"
+    },
+    {
+      "label": ".updateEstado()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L208",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".updateestado()",
+      "community_name": "Pedido Controller",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado"
+    },
+    {
+      "label": ".updatePago()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L283",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".updatepago()",
+      "community_name": "Pedido Controller",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago"
+    },
+    {
+      "label": ".cupon()",
+      "file_type": "code",
+      "source_file": "app/Models/Pedido.php",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".cupon()",
+      "community_name": "Pedido Controller",
+      "id": "app_models_pedido_pedido_cupon"
+    },
+    {
+      "label": ".empresa()",
+      "file_type": "code",
+      "source_file": "app/Models/Pedido.php",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".empresa()",
+      "community_name": "Pedido Controller",
+      "id": "app_models_pedido_pedido_empresa"
+    },
+    {
+      "label": ".items()",
+      "file_type": "code",
+      "source_file": "app/Models/Pedido.php",
+      "source_location": "L23",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".items()",
+      "community_name": "Pedido Controller",
+      "id": "app_models_pedido_pedido_items"
+    },
+    {
+      "label": ".mesa()",
+      "file_type": "code",
+      "source_file": "app/Models/Pedido.php",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".mesa()",
+      "community_name": "Pedido Controller",
+      "id": "app_models_pedido_pedido_mesa"
+    },
+    {
       "label": ".boot()",
       "file_type": "code",
       "source_file": "app/Providers/AppServiceProvider.php",
@@ -1930,7 +1905,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "empresacontroller.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_empresacontroller"
     },
     {
@@ -1941,7 +1916,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "menucontroller.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_menucontroller"
     },
     {
@@ -1952,7 +1927,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "mesacontroller.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_mesacontroller"
     },
     {
@@ -1963,7 +1938,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "pedidocontroller.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_pedidocontroller"
     },
     {
@@ -1974,7 +1949,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "platocontroller.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_platocontroller"
     },
     {
@@ -1985,7 +1960,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "registrocontroller.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_registrocontroller"
     },
     {
@@ -1996,7 +1971,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "ssecontroller.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_api_ssecontroller"
     },
     {
@@ -2007,19 +1982,19 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "controller.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "app_http_controllers_controller"
     },
     {
-      "label": "App\\Models\\Empresa",
+      "label": "Empresa.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Models/Empresa.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_models_empresa",
       "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\models\\empresa"
+      "norm_label": "empresa.php",
+      "community_name": "Auth & Empresa Controllers",
+      "id": "app_models_empresa"
     },
     {
       "label": "2026_08_12_140002_seed_posiciones_mesas.php",
@@ -2029,7 +2004,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "2026_08_12_140002_seed_posiciones_mesas.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas"
     },
     {
@@ -2040,7 +2015,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "illuminate\\http\\request",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "illuminate_http_request"
     },
     {
@@ -2051,7 +2026,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "illuminate\\http\\response",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "illuminate_http_response"
     },
     {
@@ -2062,7 +2037,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "illuminate\\support\\facades\\route",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "illuminate_support_facades_route"
     },
     {
@@ -2073,7 +2048,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "illuminate\\support\\facades\\storage",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "illuminate_support_facades_storage"
     },
     {
@@ -2084,7 +2059,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "illuminate\\validation\\rule",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "illuminate_validation_rule"
     },
     {
@@ -2095,7 +2070,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "api.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "routes_api"
     },
     {
@@ -2106,7 +2081,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "web.php",
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Auth & Empresa Controllers",
       "id": "routes_web"
     },
     {
@@ -2726,17 +2701,6 @@
       "id": "public_index"
     },
     {
-      "label": "AuthController.php",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/AuthController.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "authcontroller.php",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "app_http_controllers_api_authcontroller"
-    },
-    {
       "label": "cache.php",
       "file_type": "code",
       "source_file": "config/cache.php",
@@ -2744,7 +2708,7 @@
       "_origin": "ast",
       "community": 14,
       "norm_label": "cache.php",
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "Cache/DB/Session Config",
       "id": "config_cache"
     },
     {
@@ -2755,7 +2719,7 @@
       "_origin": "ast",
       "community": 14,
       "norm_label": "database.php",
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "Cache/DB/Session Config",
       "id": "config_database"
     },
     {
@@ -2766,41 +2730,8 @@
       "_origin": "ast",
       "community": 14,
       "norm_label": "session.php",
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "Cache/DB/Session Config",
       "id": "config_session"
-    },
-    {
-      "label": "UserFactory.php",
-      "file_type": "code",
-      "source_file": "database/factories/UserFactory.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "userfactory.php",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "database_factories_userfactory"
-    },
-    {
-      "label": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "illuminate\\database\\eloquent\\factories\\factory",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "illuminate_database_eloquent_factories_factory"
-    },
-    {
-      "label": "Illuminate\\Support\\Facades\\Hash",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "illuminate\\support\\facades\\hash",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "illuminate_support_facades_hash"
     },
     {
       "label": "Illuminate\\Support\\Str",
@@ -2810,19 +2741,8 @@
       "_origin": "ast",
       "community": 14,
       "norm_label": "illuminate\\support\\str",
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "Cache/DB/Session Config",
       "id": "illuminate_support_str"
-    },
-    {
-      "label": "Illuminate\\Validation\\ValidationException",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "illuminate\\validation\\validationexception",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "illuminate_validation_validationexception"
     },
     {
       "label": "Pdo\\Mysql",
@@ -2832,19 +2752,8 @@
       "_origin": "ast",
       "community": 14,
       "norm_label": "pdo\\mysql",
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "Cache/DB/Session Config",
       "id": "pdo_mysql"
-    },
-    {
-      "label": "static",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "static",
-      "community_name": "Illuminate\\Support\\Str",
-      "id": "static"
     },
     {
       "label": "logging.php",
@@ -2964,7 +2873,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "cocinacontroller.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_cocinacontroller"
     },
     {
@@ -2975,7 +2884,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "metricacontroller.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_metricacontroller"
     },
     {
@@ -2986,7 +2895,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "request",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_http_controllers_api_metricacontroller_php_request"
     },
     {
@@ -2997,7 +2906,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "arvista.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_arvista"
     },
     {
@@ -3008,7 +2917,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "cupon.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_cupon"
     },
     {
@@ -3019,8 +2928,19 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "llamado.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_llamado"
+    },
+    {
+      "label": "Mesa.php",
+      "file_type": "code",
+      "source_file": "app/Models/Mesa.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "mesa.php",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
+      "id": "app_models_mesa"
     },
     {
       "label": "Pedido.php",
@@ -3030,7 +2950,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "pedido.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_pedido"
     },
     {
@@ -3041,7 +2961,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "pedidoitem.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_pedidoitem"
     },
     {
@@ -3052,7 +2972,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "plato.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_plato"
     },
     {
@@ -3063,7 +2983,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "platoagregado.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_platoagregado"
     },
     {
@@ -3074,7 +2994,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "platopresentacion.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "app_models_platopresentacion"
     },
     {
@@ -3085,7 +3005,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "2026_08_11_155853_add_cancelado_to_pedidos.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos"
     },
     {
@@ -3096,7 +3016,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "demoseeder.php",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "database_seeders_demoseeder"
     },
     {
@@ -3107,7 +3027,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "illuminate\\database\\eloquent\\model",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "illuminate_database_eloquent_model"
     },
     {
@@ -3118,7 +3038,7 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "illuminate\\support\\facades\\db",
-      "community_name": "Pedido",
+      "community_name": "Cocina & M\u00e9tricas Controllers",
       "id": "illuminate_support_facades_db"
     },
     {
@@ -3232,15 +3152,15 @@
       "id": "database_migrations_2026_08_12_131913_create_empresas_table"
     },
     {
-      "label": "App\\Models\\Mesa",
+      "label": "AuthController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/AuthController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_models_mesa",
       "community": 3,
-      "community_name": "User",
-      "norm_label": "app\\models\\mesa"
+      "norm_label": "authcontroller.php",
+      "community_name": "User Model & Auth",
+      "id": "app_http_controllers_api_authcontroller"
     },
     {
       "label": "User.php",
@@ -3250,7 +3170,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "user.php",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "app_models_user"
     },
     {
@@ -3261,8 +3181,19 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "auth.php",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "config_auth"
+    },
+    {
+      "label": "UserFactory.php",
+      "file_type": "code",
+      "source_file": "database/factories/UserFactory.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "userfactory.php",
+      "community_name": "User Model & Auth",
+      "id": "database_factories_userfactory"
     },
     {
       "label": "DatabaseSeeder.php",
@@ -3270,21 +3201,10 @@
       "source_file": "database/seeders/DatabaseSeeder.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "database_seeders_databaseseeder",
       "community": 3,
-      "community_name": "User",
-      "norm_label": "databaseseeder.php"
-    },
-    {
-      "label": "DemoEmpresaSeeder.php",
-      "file_type": "code",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "database_seeders_demoempresaseeder",
-      "community": 3,
-      "community_name": "User",
-      "norm_label": "demoempresaseeder.php"
+      "norm_label": "databaseseeder.php",
+      "community_name": "User Model & Auth",
+      "id": "database_seeders_databaseseeder"
     },
     {
       "label": "EmpresaSeeder.php",
@@ -3294,7 +3214,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "empresaseeder.php",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_empresaseeder"
     },
     {
@@ -3305,7 +3225,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "mesaseeder.php",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_mesaseeder"
     },
     {
@@ -3316,7 +3236,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "platoseeder.php",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_platoseeder"
     },
     {
@@ -3327,8 +3247,19 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "userseeder.php",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "database_seeders_userseeder"
+    },
+    {
+      "label": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "illuminate\\database\\eloquent\\factories\\factory",
+      "community_name": "User Model & Auth",
+      "id": "illuminate_database_eloquent_factories_factory"
     },
     {
       "label": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
@@ -3338,7 +3269,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "illuminate\\database\\eloquent\\factories\\hasfactory",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "illuminate_database_eloquent_factories_hasfactory"
     },
     {
@@ -3347,10 +3278,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_database_seeder",
       "community": 3,
-      "community_name": "User",
-      "norm_label": "illuminate\\database\\seeder"
+      "norm_label": "illuminate\\database\\seeder",
+      "community_name": "User Model & Auth",
+      "id": "illuminate_database_seeder"
     },
     {
       "label": "Illuminate\\Foundation\\Auth\\User",
@@ -3360,7 +3291,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "illuminate\\foundation\\auth\\user",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "illuminate_foundation_auth_user"
     },
     {
@@ -3371,8 +3302,30 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "illuminate\\notifications\\notifiable",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "illuminate_notifications_notifiable"
+    },
+    {
+      "label": "Illuminate\\Support\\Facades\\Hash",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "illuminate\\support\\facades\\hash",
+      "community_name": "User Model & Auth",
+      "id": "illuminate_support_facades_hash"
+    },
+    {
+      "label": "Illuminate\\Validation\\ValidationException",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "illuminate\\validation\\validationexception",
+      "community_name": "User Model & Auth",
+      "id": "illuminate_validation_validationexception"
     },
     {
       "label": "Laravel\\Sanctum\\HasApiTokens",
@@ -3382,8 +3335,19 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "laravel\\sanctum\\hasapitokens",
-      "community_name": "User",
+      "community_name": "User Model & Auth",
       "id": "laravel_sanctum_hasapitokens"
+    },
+    {
+      "label": "static",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "static",
+      "community_name": "User Model & Auth",
+      "id": "static"
     },
     {
       "label": "2026_08_12_140000_add_layout_to_empresas.php",
@@ -3835,28 +3799,6 @@
       "norm_label": "self",
       "community_name": "Plato Controller",
       "id": "self"
-    },
-    {
-      "label": "CLAUDE.md",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude",
-      "community": 6,
-      "community_name": "CLAUDE.md",
-      "norm_label": "claude.md"
-    },
-    {
-      "label": "graphify",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_graphify",
-      "community": 6,
-      "community_name": "CLAUDE.md",
-      "norm_label": "graphify"
     },
     {
       "label": "AppServiceProvider.php",
@@ -6941,45 +6883,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_seeders_databaseseeder",
-      "target": "illuminate_database_seeder",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "database_seeders_demoempresaseeder",
-      "target": "app_models_empresa",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "database_seeders_demoempresaseeder",
-      "target": "app_models_mesa",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "database_seeders_demoempresaseeder",
-      "target": "illuminate_database_seeder",
-      "confidence_score": 1.0
+      "target": "illuminate_database_seeder"
     },
     {
       "relation": "imports",
@@ -8220,17 +8126,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude",
-      "target": "claude_graphify",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "composer.json",
       "source_location": "L14",
       "weight": 1.0,
@@ -9302,20 +9197,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_seeders_databaseseeder",
-      "target": "database_seeders_databaseseeder_databaseseeder",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "database_seeders_demoempresaseeder",
-      "target": "database_seeders_demoempresaseeder_demoempresaseeder",
-      "confidence_score": 1.0
+      "target": "database_seeders_databaseseeder_databaseseeder"
     },
     {
       "relation": "contains",
@@ -9654,20 +9538,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_seeders_databaseseeder_databaseseeder",
-      "target": "illuminate_database_seeder",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "database_seeders_demoempresaseeder_demoempresaseeder",
-      "target": "illuminate_database_seeder",
-      "confidence_score": 1.0
+      "target": "illuminate_database_seeder"
     },
     {
       "relation": "inherits",
@@ -10468,20 +10341,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_seeders_databaseseeder_databaseseeder",
-      "target": "database_seeders_databaseseeder_databaseseeder_run",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "database_seeders_demoempresaseeder_demoempresaseeder",
-      "target": "database_seeders_demoempresaseeder_demoempresaseeder_run",
-      "confidence_score": 1.0
+      "target": "database_seeders_databaseseeder_databaseseeder_run"
     },
     {
       "relation": "method",
@@ -10662,32 +10524,8 @@
       "_origin": "ast",
       "source": "app_models_empresa_empresa_resolvefromrequest",
       "target": "static"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L19",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "database_seeders_demoempresaseeder_demoempresaseeder_run",
-      "target": "app_models_empresa_empresa"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "database/seeders/DemoEmpresaSeeder.php",
-      "source_location": "L25",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "database_seeders_demoempresaseeder_demoempresaseeder_run",
-      "target": "app_models_mesa_mesa"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e6878e05b03f88d2657aad1ffa1ae95b56b015a8"
+  "built_at_commit": "9b23583f4170e51cc3a0064b76d184e9dd5ce712"
 }

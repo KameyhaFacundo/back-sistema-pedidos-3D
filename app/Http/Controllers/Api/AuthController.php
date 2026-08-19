@@ -27,6 +27,8 @@ class AuthController extends Controller
 
         $token = $user->createToken('admin-token', ['*'])->plainTextToken;
 
+        $user->setAttribute('slug', $user->empresa?->slug);
+
         return response()->json([
             'token' => $token,
             'user' => $user,
