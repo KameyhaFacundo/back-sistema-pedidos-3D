@@ -26,7 +26,7 @@ class StaffController extends Controller
 
         $users = User::where('empresa_id', $empresa->id)
             ->orderBy('name')
-            ->get(['id', 'name', 'email', 'created_at']);
+            ->get(['id', 'name', 'email', 'rol', 'created_at']);
 
         return response()->json($users);
     }
@@ -39,6 +39,7 @@ class StaffController extends Controller
             'nombre' => 'required|string|max:100',
             'email' => ['required', 'email', Rule::unique('users', 'email')],
             'password' => 'required|string|min:6',
+            'rol' => ['nullable', Rule::in(['admin', 'cocina', 'mozo'])],
         ]);
 
         $user = User::create([
@@ -46,9 +47,10 @@ class StaffController extends Controller
             'name' => $validated['nombre'],
             'email' => strtolower($validated['email']),
             'password' => $validated['password'],
+            'rol' => $validated['rol'] ?? 'cocina',
         ]);
 
-        return response()->json(['id' => $user->id, 'name' => $user->name, 'email' => $user->email], 201);
+        return response()->json(['id' => $user->id, 'name' => $user->name, 'email' => $user->email, 'rol' => $user->rol], 201);
     }
 
     public function destroy(Request $request, User $user)

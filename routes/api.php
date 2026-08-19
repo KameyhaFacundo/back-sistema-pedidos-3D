@@ -37,40 +37,49 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('logout', [AuthController::class, 'logout']);
     Route::get('me', [AuthController::class, 'me']);
 
-    Route::get('pedidos', [PedidoController::class, 'index']);
-    Route::patch('pedidos/{pedido}/estado', [PedidoController::class, 'updateEstado']);
-    Route::patch('pedidos/{pedido}/pago', [PedidoController::class, 'updatePago']);
-    Route::patch('pedidos/{pedido}/cancelar', [PedidoController::class, 'cancelar']);
+    // Cocina gestiona la cola de pedidos; el cobro (pago) queda solo para admin.
+    Route::middleware('role:admin,cocina')->group(function () {
+        Route::get('pedidos', [PedidoController::class, 'index']);
+        Route::patch('pedidos/{pedido}/estado', [PedidoController::class, 'updateEstado']);
+        Route::patch('pedidos/{pedido}/cancelar', [PedidoController::class, 'cancelar']);
+    });
+    Route::patch('pedidos/{pedido}/pago', [PedidoController::class, 'updatePago'])->middleware('role:admin');
 
-    Route::get('llamados', [CocinaController::class, 'llamados']);
-    Route::patch('llamados/{llamado}/atender', [CocinaController::class, 'atenderLlamado']);
+    // Mozo atiende los llamados de mesa.
+    Route::middleware('role:admin,mozo')->group(function () {
+        Route::get('llamados', [CocinaController::class, 'llamados']);
+        Route::patch('llamados/{llamado}/atender', [CocinaController::class, 'atenderLlamado']);
+    });
 
-    Route::get('metricas', [MetricaController::class, 'index']);
+    // El resto de la administración (config, menú, mesas, cupones, equipo) es solo del dueño/admin.
+    Route::middleware('role:admin')->group(function () {
+        Route::get('metricas', [MetricaController::class, 'index']);
 
-    Route::post('mesas', [MesaController::class, 'store']);
-    Route::put('mesas/{mesa}', [MesaController::class, 'update']);
-    Route::delete('mesas/{mesa}', [MesaController::class, 'destroy']);
-    Route::patch('mesas/{mesa}/toggle', [MesaController::class, 'toggleActiva']);
-    Route::put('empresa/layout', [EmpresaController::class, 'updateLayout']);
-    Route::put('empresa', [EmpresaController::class, 'update']);
+        Route::post('mesas', [MesaController::class, 'store']);
+        Route::put('mesas/{mesa}', [MesaController::class, 'update']);
+        Route::delete('mesas/{mesa}', [MesaController::class, 'destroy']);
+        Route::patch('mesas/{mesa}/toggle', [MesaController::class, 'toggleActiva']);
+        Route::put('empresa/layout', [EmpresaController::class, 'updateLayout']);
+        Route::put('empresa', [EmpresaController::class, 'update']);
 
-    Route::get('platos', [PlatoController::class, 'index']);
-    Route::post('platos', [PlatoController::class, 'store']);
-    Route::get('platos/{plato}', [PlatoController::class, 'show']);
-    Route::put('platos/{plato}', [PlatoController::class, 'update']);
-    Route::delete('platos/{plato}', [PlatoController::class, 'destroy']);
-    Route::patch('platos/{plato}/toggle', [PlatoController::class, 'toggleDisponible']);
-    Route::put('platos/orden', [PlatoController::class, 'reordenar']);
+        Route::get('platos', [PlatoController::class, 'index']);
+        Route::post('platos', [PlatoController::class, 'store']);
+        Route::get('platos/{plato}', [PlatoController::class, 'show']);
+        Route::put('platos/{plato}', [PlatoController::class, 'update']);
+        Route::delete('platos/{plato}', [PlatoController::class, 'destroy']);
+        Route::patch('platos/{plato}/toggle', [PlatoController::class, 'toggleDisponible']);
+        Route::put('platos/orden', [PlatoController::class, 'reordenar']);
 
-    Route::get('cupones', [CuponController::class, 'index']);
-    Route::post('cupones', [CuponController::class, 'store']);
-    Route::put('cupones/{cupon}', [CuponController::class, 'update']);
-    Route::patch('cupones/{cupon}/toggle', [CuponController::class, 'toggleActivo']);
-    Route::delete('cupones/{cupon}', [CuponController::class, 'destroy']);
+        Route::get('cupones', [CuponController::class, 'index']);
+        Route::post('cupones', [CuponController::class, 'store']);
+        Route::put('cupones/{cupon}', [CuponController::class, 'update']);
+        Route::patch('cupones/{cupon}/toggle', [CuponController::class, 'toggleActivo']);
+        Route::delete('cupones/{cupon}', [CuponController::class, 'destroy']);
 
-    Route::get('staff', [StaffController::class, 'index']);
-    Route::post('staff', [StaffController::class, 'store']);
-    Route::delete('staff/{user}', [StaffController::class, 'destroy']);
+        Route::get('staff', [StaffController::class, 'index']);
+        Route::post('staff', [StaffController::class, 'store']);
+        Route::delete('staff/{user}', [StaffController::class, 'destroy']);
+    });
 
     Route::post('demo/seed', function () {
         \Illuminate\Support\Facades\Artisan::call('db:seed', ['--class' => \Database\Seeders\DemoSeeder::class]);
