@@ -50,6 +50,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('mesas/{mesa}', [MesaController::class, 'destroy']);
     Route::patch('mesas/{mesa}/toggle', [MesaController::class, 'toggleActiva']);
     Route::put('empresa/layout', [EmpresaController::class, 'updateLayout']);
+    Route::put('empresa', [EmpresaController::class, 'update']);
 
     Route::get('platos', [PlatoController::class, 'index']);
     Route::post('platos', [PlatoController::class, 'store']);

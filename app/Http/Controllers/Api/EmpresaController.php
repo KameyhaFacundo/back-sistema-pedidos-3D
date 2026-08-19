@@ -19,6 +19,24 @@ class EmpresaController extends Controller
         return response()->json($empresa);
     }
 
+    public function update(Request $request)
+    {
+        $empresa = auth()->user()?->empresa;
+
+        if (!$empresa) {
+            return response()->json(['message' => 'Empresa no encontrada'], 404);
+        }
+
+        $validated = $request->validate([
+            'nombre' => 'sometimes|string|max:120',
+            'whatsapp' => 'sometimes|nullable|string|max:40',
+        ]);
+
+        $empresa->update($validated);
+
+        return response()->json($empresa);
+    }
+
     public function updateLayout(Request $request)
     {
         // Authenticated route: always the logged-in admin's own empresa,

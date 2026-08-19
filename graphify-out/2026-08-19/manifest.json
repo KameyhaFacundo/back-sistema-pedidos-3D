@@ -10,9 +10,9 @@
     "semantic_hash": "3f1914f1f4de0ac5b77496f2dbd76931"
   },
   "app/Http/Controllers/Api/EmpresaController.php": {
-    "mtime": 1787108451.2815788,
-    "ast_hash": "a918e1b45ed41b9e0142ab7c4f76a298",
-    "semantic_hash": ""
+    "mtime": 1786569260.2174733,
+    "ast_hash": "8bb7148de99e1d0f5058293554c3bca0",
+    "semantic_hash": "8bb7148de99e1d0f5058293554c3bca0"
   },
   "app/Http/Controllers/Api/MenuController.php": {
     "mtime": 1786569277.7515483,
@@ -360,9 +360,9 @@
     "semantic_hash": "5b74d2aaca8f3c0022d39904d96dae89"
   },
   "routes/api.php": {
-    "mtime": 1787108465.9490857,
-    "ast_hash": "9abafbc85a4f23084e852eba4b4415cf",
-    "semantic_hash": ""
+    "mtime": 1786570564.6935527,
+    "ast_hash": "7affaf3c6d0f5e8dedd0cfa45dbf4871",
+    "semantic_hash": "7affaf3c6d0f5e8dedd0cfa45dbf4871"
   },
   "routes/console.php": {
     "mtime": 1773492840.0,
@@ -411,7 +411,7 @@
   },
   ".claude/settings.json": {
     "mtime": 1786846536.336687,
-    "ast_hash": "",
+    "ast_hash": "d63945663ac5a70eebb1756ab927f4f5",
     "semantic_hash": ""
   }
 }
