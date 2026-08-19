@@ -1,16 +1,16 @@
 # Graph Report - back-sistema-pedidos-3D  (2026-08-19)
 
 ## Corpus Check
-- 94 files · ~15,139 words
+- 97 files · ~15,474 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 450 nodes · 868 edges · 47 communities (40 shown, 7 thin omitted)
+- 466 nodes · 902 edges · 49 communities (42 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `93595cce`
+- Built from commit: `19e6d92a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,8 +23,8 @@
 - Plato
 - CLAUDE.md
 - App Service Provider
+- Illuminate\Database\Schema\Blueprint
 - Illuminate\Support\Facades\Schema
-- Illuminate\Database\Migrations\Migration
 - Cupon
 - Empresa
 - TokenFromQuery.php
@@ -32,43 +32,44 @@
 - UserFactory.php
 - Logging Config
 - Unit Test Example
-- Illuminate\Database\Schema\Blueprint
+- RoleTest
 - PedidoTest
 - README.md
+- Illuminate\Database\Migrations\Migration
 - Console Commands
 
 ## God Nodes (most connected - your core abstractions)
 1. `Empresa` - 61 edges
-2. `User` - 47 edges
+2. `User` - 49 edges
 3. `Plato` - 39 edges
 4. `Mesa` - 31 edges
 5. `Pedido` - 31 edges
-6. `Controller` - 25 edges
+6. `Controller` - 23 edges
 7. `TestCase` - 22 edges
 8. `Cupon` - 20 edges
 9. `PedidoTest` - 20 edges
 10. `CuponTest` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `up()` --calls--> `Empresa`  [EXTRACTED]
-  database/migrations/2026_08_12_140002_seed_posiciones_mesas.php → app/Models/Empresa.php
-- `CuponTest` --references--> `Empresa`  [EXTRACTED]
-  tests/Feature/CuponTest.php → app/Models/Empresa.php
-- `PedidoTest` --references--> `Empresa`  [EXTRACTED]
-  tests/Feature/PedidoTest.php → app/Models/Empresa.php
+- `CuponTest` --references--> `User`  [EXTRACTED]
+  tests/Feature/CuponTest.php → app/Models/User.php
+- `PedidoTest` --references--> `User`  [EXTRACTED]
+  tests/Feature/PedidoTest.php → app/Models/User.php
 - `MesaTest` --references--> `Mesa`  [EXTRACTED]
   tests/Feature/MesaTest.php → app/Models/Mesa.php
+- `CuponTest` --references--> `Empresa`  [EXTRACTED]
+  tests/Feature/CuponTest.php → app/Models/Empresa.php
 - `CuponTest` --references--> `Plato`  [EXTRACTED]
   tests/Feature/CuponTest.php → app/Models/Plato.php
 
 ## Import Cycles
 - None detected.
 
-## Communities (47 total, 7 thin omitted)
+## Communities (49 total, 7 thin omitted)
 
 ### Community 0 - "Illuminate\Http\Request"
 Cohesion: 0.07
-Nodes (19): AuthController, EmpresaController, MenuController, MesaController, RegistroController, SSEController, StaffController, Controller (+11 more)
+Nodes (30): App\Http\Controllers\Api\AuthController, AuthController, App\Http\Controllers\Api\CuponController, App\Http\Controllers\Api\EmpresaController, EmpresaController, App\Http\Controllers\Api\MenuController, MenuController, App\Http\Controllers\Api\MesaController (+22 more)
 
 ### Community 1 - "Composer Package Config"
 Cohesion: 0.05
@@ -76,7 +77,7 @@ Nodes (41): pestphp/pest-plugin, php-http/discovery, autoload, autoload-dev, psr
 
 ### Community 2 - "Pedido"
 Cohesion: 0.08
-Nodes (9): CocinaController, PedidoController, Llamado, Pedido, PedidoItem, PlatoAgregado, PlatoPresentacion, DemoSeeder (+1 more)
+Nodes (10): App\Http\Controllers\Api\CocinaController, CocinaController, PedidoController, Llamado, Pedido, PedidoItem, PlatoAgregado, PlatoPresentacion (+2 more)
 
 ### Community 3 - "Illuminate\Database\Seeder"
 Cohesion: 0.14
@@ -99,12 +100,12 @@ Cohesion: 0.18
 Nodes (3): CuponController, Cupon, CuponTest
 
 ### Community 11 - "Empresa"
-Cohesion: 0.06
+Cohesion: 0.05
 Nodes (19): ArVista, Empresa, User, Illuminate\Database\Eloquent\Factories\HasFactory, Illuminate\Foundation\Auth\User, Illuminate\Foundation\Testing\RefreshDatabase, Illuminate\Foundation\Testing\TestCase, Illuminate\Notifications\Notifiable (+11 more)
 
 ### Community 12 - "TokenFromQuery.php"
-Cohesion: 0.50
-Nodes (3): TokenFromQuery, Closure, Laravel\Sanctum\PersonalAccessToken
+Cohesion: 0.32
+Nodes (4): EnsureRole, TokenFromQuery, Closure, Laravel\Sanctum\PersonalAccessToken
 
 ### Community 13 - "App Bootstrap Config"
 Cohesion: 0.40
@@ -112,35 +113,39 @@ Nodes (3): Illuminate\Foundation\Application, Illuminate\Foundation\Configuratio
 
 ### Community 14 - "UserFactory.php"
 Cohesion: 0.38
-Nodes (3): UserFactory, Illuminate\Database\Eloquent\Factories\Factory, static
+Nodes (4): Database\Factories\UserFactory, UserFactory, Illuminate\Database\Eloquent\Factories\Factory, static
 
 ### Community 15 - "Logging Config"
 Cohesion: 0.40
 Nodes (4): Monolog\Handler\NullHandler, Monolog\Handler\StreamHandler, Monolog\Handler\SyslogUdpHandler, Monolog\Processor\PsrLogMessageProcessor
+
+### Community 18 - "RoleTest"
+Cohesion: 0.27
+Nodes (4): App\Models\Empresa, Empresa, RoleTest, Tests\TestCase
 
 ### Community 27 - "README.md"
 Cohesion: 0.22
 Nodes (8): About Laravel, Code of Conduct, Contributing, Laravel Sponsors, Learning Laravel, License, Premium Partners, Security Vulnerabilities
 
 ## Knowledge Gaps
-- **54 isolated node(s):** `$schema`, `name`, `type`, `description`, `laravel` (+49 more)
+- **54 isolated node(s):** `pestphp/pest-plugin`, `php-http/discovery`, `optimize-autoloader`, `preferred-install`, `sort-packages` (+49 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Empresa` connect `Empresa` to `Illuminate\Http\Request`, `Pedido`, `Illuminate\Database\Seeder`, `Plato`, `Cupon`, `UserFactory.php`, `PedidoTest`?**
+- **Why does `Empresa` connect `Empresa` to `Illuminate\Http\Request`, `Pedido`, `Illuminate\Database\Seeder`, `Plato`, `Cupon`, `UserFactory.php`, `RoleTest`, `PedidoTest`?**
   _High betweenness centrality (0.199) - this node is a cross-community bridge._
-- **Why does `User` connect `Empresa` to `Illuminate\Http\Request`, `Pedido`, `Illuminate\Database\Seeder`, `Cupon`, `UserFactory.php`, `PedidoTest`?**
-  _High betweenness centrality (0.080) - this node is a cross-community bridge._
+- **Why does `User` connect `Empresa` to `Illuminate\Http\Request`, `Pedido`, `Illuminate\Database\Seeder`, `Cupon`, `UserFactory.php`, `RoleTest`, `PedidoTest`?**
+  _High betweenness centrality (0.086) - this node is a cross-community bridge._
 - **Why does `Mesa` connect `Illuminate\Http\Request` to `Empresa`, `Pedido`, `Illuminate\Database\Seeder`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
-- **What connects `$schema`, `name`, `type` to the rest of the system?**
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
+- **What connects `pestphp/pest-plugin`, `php-http/discovery`, `optimize-autoloader` to the rest of the system?**
   _54 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Illuminate\Http\Request` be split into smaller, more focused modules?**
-  _Cohesion score 0.06775956284153005 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06994535519125683 - nodes in this community are weakly interconnected._
 - **Should `Composer Package Config` be split into smaller, more focused modules?**
   _Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected._
 - **Should `Pedido` be split into smaller, more focused modules?**
-  _Cohesion score 0.08048780487804878 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._

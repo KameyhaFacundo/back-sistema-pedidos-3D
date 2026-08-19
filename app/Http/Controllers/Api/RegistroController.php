@@ -58,6 +58,7 @@ class RegistroController extends Controller
                 'name' => $validated['nombre'],
                 'email' => $validated['email'],
                 'password' => bcrypt($validated['password']),
+                'rol' => 'admin',
             ]);
 
             // Mesas por defecto

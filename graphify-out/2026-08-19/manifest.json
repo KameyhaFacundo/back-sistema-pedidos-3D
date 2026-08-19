@@ -411,7 +411,7 @@
   },
   ".claude/settings.json": {
     "mtime": 1786846536.336687,
-    "ast_hash": "d63945663ac5a70eebb1756ab927f4f5",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   "tests/Feature/AuthTest.php": {
