@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Empresa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class EmpresaController extends Controller
 {
@@ -30,11 +31,32 @@ class EmpresaController extends Controller
         $validated = $request->validate([
             'nombre' => 'sometimes|string|max:120',
             'whatsapp' => 'sometimes|nullable|string|max:40',
+            'logo' => 'sometimes|nullable|image|mimes:jpeg,png,jpg,webp|max:8192',
             'abierto' => 'sometimes|boolean',
             'tiempo_estimado' => 'sometimes|nullable|integer|min:0|max:600',
         ]);
 
-        $empresa->update($validated);
+        $data = collect($validated)->except('logo')->toArray();
+
+        if ($request->hasFile('logo')) {
+            if ($empresa->logo) {
+                $oldPath = str_replace(asset('storage/'), '', $empresa->logo);
+                if ($oldPath && Storage::disk('public')->exists($oldPath)) {
+                    Storage::disk('public')->delete($oldPath);
+                }
+            }
+            $data['logo'] = asset('storage/' . $request->file('logo')->store('logos', 'public'));
+        } elseif (array_key_exists('logo', $validated) && $validated['logo'] === null) {
+            if ($empresa->logo) {
+                $oldPath = str_replace(asset('storage/'), '', $empresa->logo);
+                if ($oldPath && Storage::disk('public')->exists($oldPath)) {
+                    Storage::disk('public')->delete($oldPath);
+                }
+            }
+            $data['logo'] = null;
+        }
+
+        $empresa->update($data);
 
         return response()->json($empresa);
     }

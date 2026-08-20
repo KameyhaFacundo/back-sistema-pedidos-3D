@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class Empresa extends Model
 {
-    protected $fillable = ['slug', 'nombre', 'whatsapp', 'activo', 'abierto', 'tiempo_estimado', 'layout'];
+    protected $fillable = ['slug', 'nombre', 'whatsapp', 'logo', 'activo', 'abierto', 'tiempo_estimado', 'layout'];
 
     protected $casts = [
         'activo' => 'boolean',
