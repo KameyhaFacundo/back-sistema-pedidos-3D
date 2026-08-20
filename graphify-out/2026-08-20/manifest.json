@@ -10,8 +10,8 @@
     "semantic_hash": "3f1914f1f4de0ac5b77496f2dbd76931"
   },
   "app/Http/Controllers/Api/EmpresaController.php": {
-    "mtime": 1787108451.2815788,
-    "ast_hash": "a918e1b45ed41b9e0142ab7c4f76a298",
+    "mtime": 1787228737.3796954,
+    "ast_hash": "c9368ccb8a465fe5ef2617be61e9e639",
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/MenuController.php": {
@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/PlatoController.php": {
-    "mtime": 1787147011.1938043,
-    "ast_hash": "75687c708b0d6170312af663af837d2d",
+    "mtime": 1787190752.0115395,
+    "ast_hash": "b465792ae44ec4e7f58cd493716321b7",
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/RegistroController.php": {
@@ -70,9 +70,9 @@
     "semantic_hash": "54dbd748d681c50c7d2ce151a241f126"
   },
   "app/Models/Empresa.php": {
-    "mtime": 1786557882.5481813,
-    "ast_hash": "276c08ee724d71f5d231d7c182bbbec4",
-    "semantic_hash": "276c08ee724d71f5d231d7c182bbbec4"
+    "mtime": 1787228723.0383115,
+    "ast_hash": "7fc7793f2d3cdd03a4b31e4c8b3fe79f",
+    "semantic_hash": ""
   },
   "app/Models/Llamado.php": {
     "mtime": 1786551599.8318555,
@@ -95,8 +95,8 @@
     "semantic_hash": "779d1043efcd227cee242e970968ba87"
   },
   "app/Models/Plato.php": {
-    "mtime": 1787147017.0333152,
-    "ast_hash": "e7c45aa5bde07dcbad863c73a66f656a",
+    "mtime": 1787190711.4621818,
+    "ast_hash": "e038240652ec1188196b2945b460d4b4",
     "semantic_hash": ""
   },
   "app/Models/PlatoAgregado.php": {
@@ -115,9 +115,9 @@
     "semantic_hash": ""
   },
   "app/Providers/AppServiceProvider.php": {
-    "mtime": 1786570556.6840672,
-    "ast_hash": "75e3df36192c774e29abbf58a90252d5",
-    "semantic_hash": "75e3df36192c774e29abbf58a90252d5"
+    "mtime": 1787191160.6347203,
+    "ast_hash": "5d3725a442d698be194c6983f89d2c90",
+    "semantic_hash": ""
   },
   "artisan": {
     "mtime": 1773492840.0,
@@ -360,8 +360,8 @@
     "semantic_hash": "5b74d2aaca8f3c0022d39904d96dae89"
   },
   "routes/api.php": {
-    "mtime": 1787161811.6646097,
-    "ast_hash": "64d291e022042cfb40158c7e8cd8917e",
+    "mtime": 1787191166.582109,
+    "ast_hash": "601cd943a8740e08238f6e98f2a563c4",
     "semantic_hash": ""
   },
   "routes/console.php": {
@@ -492,6 +492,21 @@
   "tests/Feature/RoleTest.php": {
     "mtime": 1787161909.2624922,
     "ast_hash": "c42a81315f9a58eaa79de427f14b0151",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table.php": {
+    "mtime": 1787190116.2417219,
+    "ast_hash": "e50915366afd1760e642862d70f1372a",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_08_19_000001_add_ingredientes_to_platos_table.php": {
+    "mtime": 1787190694.0366037,
+    "ast_hash": "be13fa16a13f62b16a208a70c356fed0",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php": {
+    "mtime": 1787228719.578244,
+    "ast_hash": "1d000a48fa9e6c8986571e54a27c75df",
     "semantic_hash": ""
   }
 }

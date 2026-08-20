@@ -10,8 +10,8 @@
     "semantic_hash": "3f1914f1f4de0ac5b77496f2dbd76931"
   },
   "app/Http/Controllers/Api/EmpresaController.php": {
-    "mtime": 1787190179.369507,
-    "ast_hash": "210d6f0c9a6a97b22ed1fc4d37c6cc39",
+    "mtime": 1787228737.3796954,
+    "ast_hash": "c9368ccb8a465fe5ef2617be61e9e639",
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/MenuController.php": {
@@ -70,8 +70,8 @@
     "semantic_hash": "54dbd748d681c50c7d2ce151a241f126"
   },
   "app/Models/Empresa.php": {
-    "mtime": 1787190120.4627821,
-    "ast_hash": "a894cb657540d6eda97d90bd8d9a1dfc",
+    "mtime": 1787228723.0383115,
+    "ast_hash": "7fc7793f2d3cdd03a4b31e4c8b3fe79f",
     "semantic_hash": ""
   },
   "app/Models/Llamado.php": {
@@ -502,6 +502,11 @@
   "database/migrations/2026_08_19_000001_add_ingredientes_to_platos_table.php": {
     "mtime": 1787190694.0366037,
     "ast_hash": "be13fa16a13f62b16a208a70c356fed0",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php": {
+    "mtime": 1787228719.578244,
+    "ast_hash": "1d000a48fa9e6c8986571e54a27c75df",
     "semantic_hash": ""
   }
 }

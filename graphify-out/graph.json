@@ -20,7 +20,7 @@
       "label": "EmpresaController",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L9",
+      "source_location": "L10",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
@@ -303,19 +303,6 @@
       "id": "tests_feature_registrotest_registrotest"
     },
     {
-      "label": "RoleTest",
-      "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L11",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": "roletest",
-      "id": "tests_feature_roletest_roletest"
-    },
-    {
       "label": "StaffTest",
       "file_type": "code",
       "source_file": "tests/Feature/StaffTest.php",
@@ -550,6 +537,19 @@
       "id": "database_seeders_userseeder_userseeder"
     },
     {
+      "label": "RoleTest",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "RoleTest",
+      "norm_label": "roletest",
+      "id": "tests_feature_roletest_roletest"
+    },
+    {
       "label": "UserFactory",
       "file_type": "code",
       "source_file": "database/factories/UserFactory.php",
@@ -558,7 +558,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "UserFactory.php",
       "norm_label": "userfactory",
       "id": "database_factories_userfactory_userfactory"
     },
@@ -583,10 +583,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": "platocontroller"
+      "norm_label": "platocontroller",
+      "id": "app_http_controllers_api_platocontroller_platocontroller"
     },
     {
       "label": "ArVista",
@@ -609,10 +609,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "app_models_plato_plato",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": "plato"
+      "norm_label": "plato",
+      "id": "app_models_plato_plato"
     },
     {
       "label": "AppServiceProvider",
@@ -622,10 +622,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "app_providers_appserviceprovider_appserviceprovider",
       "community": 7,
       "community_name": "App Service Provider",
-      "norm_label": "appserviceprovider"
+      "norm_label": "appserviceprovider",
+      "id": "app_providers_appserviceprovider_appserviceprovider"
     },
     {
       "label": ".login()",
@@ -667,7 +667,7 @@
       "label": ".show()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L11",
+      "source_location": "L12",
       "_callable": true,
       "_origin": "ast",
       "id": "app_http_controllers_api_empresacontroller_empresacontroller_show",
@@ -679,7 +679,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L22",
+      "source_location": "L23",
       "_callable": true,
       "_origin": "ast",
       "id": "app_http_controllers_api_empresacontroller_empresacontroller_update",
@@ -691,7 +691,7 @@
       "label": ".updateLayout()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L42",
+      "source_location": "L64",
       "_callable": true,
       "_origin": "ast",
       "id": "app_http_controllers_api_empresacontroller_empresacontroller_updatelayout",
@@ -1590,90 +1590,6 @@
     {
       "label": ".setUp()",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L17",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".setup()",
-      "id": "tests_feature_roletest_roletest_setup"
-    },
-    {
-      "label": ".test_admin_accede_a_todo()",
-      "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L75",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_admin_accede_a_todo()",
-      "id": "tests_feature_roletest_roletest_test_admin_accede_a_todo"
-    },
-    {
-      "label": ".test_cocina_no_puede_ver_metricas_ni_equipo()",
-      "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L57",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_cocina_no_puede_ver_metricas_ni_equipo()",
-      "id": "tests_feature_roletest_roletest_test_cocina_no_puede_ver_metricas_ni_equipo"
-    },
-    {
-      "label": ".test_cocina_puede_ver_y_avanzar_pedidos()",
-      "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L50",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_cocina_puede_ver_y_avanzar_pedidos()",
-      "id": "tests_feature_roletest_roletest_test_cocina_puede_ver_y_avanzar_pedidos"
-    },
-    {
-      "label": ".test_invitar_staff_con_rol()",
-      "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L35",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_invitar_staff_con_rol()",
-      "id": "tests_feature_roletest_roletest_test_invitar_staff_con_rol"
-    },
-    {
-      "label": ".test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas()",
-      "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L66",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas()",
-      "id": "tests_feature_roletest_roletest_test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas"
-    },
-    {
-      "label": ".userConRol()",
-      "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L24",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".userconrol()",
-      "id": "tests_feature_roletest_roletest_userconrol"
-    },
-    {
-      "label": ".setUp()",
-      "file_type": "code",
       "source_file": "tests/Feature/StaffTest.php",
       "source_location": "L18",
       "_callable": true,
@@ -1854,50 +1770,26 @@
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
-      "source_location": "L22",
+      "source_file": "database/migrations/2026_08_12_140000_add_layout_to_empresas.php",
+      "source_location": "L16",
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "community_name": "2026_08_12_140000_add_layout_to_empresas.php",
       "norm_label": "down()",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_down"
+      "id": "database_migrations_2026_08_12_140000_add_layout_to_empresas_down"
     },
     {
       "label": "up()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
+      "source_file": "database/migrations/2026_08_12_140000_add_layout_to_empresas.php",
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "community_name": "2026_08_12_140000_add_layout_to_empresas.php",
       "norm_label": "up()",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_up"
-    },
-    {
-      "label": "down()",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_155853_add_cancelado_to_pedidos.php",
-      "source_location": "L18",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "down()",
-      "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos_down"
-    },
-    {
-      "label": "up()",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_155853_add_cancelado_to_pedidos.php",
-      "source_location": "L9",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "up()",
-      "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos_up"
+      "id": "database_migrations_2026_08_12_140000_add_layout_to_empresas_up"
     },
     {
       "label": ".atenderLlamado()",
@@ -2116,6 +2008,30 @@
       "id": "app_models_platopresentacion_platopresentacion_plato"
     },
     {
+      "label": "down()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_11_155853_add_cancelado_to_pedidos.php",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Pedido",
+      "norm_label": "down()",
+      "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos_down"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_11_155853_add_cancelado_to_pedidos.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Pedido",
+      "norm_label": "up()",
+      "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos_up"
+    },
+    {
       "label": ".crearPedido()",
       "file_type": "code",
       "source_file": "database/seeders/DemoSeeder.php",
@@ -2207,7 +2123,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "0001_01_01_000001_create_cache_table.php",
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "down()",
       "id": "database_migrations_0001_01_01_000001_create_cache_table_down"
     },
@@ -2219,9 +2135,33 @@
       "_callable": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "0001_01_01_000001_create_cache_table.php",
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "up()",
       "id": "database_migrations_0001_01_01_000001_create_cache_table_up"
+    },
+    {
+      "label": "down()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "down()",
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_down"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "up()",
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_up"
     },
     {
       "label": "down()",
@@ -2446,10 +2386,10 @@
       "source_location": "L17",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table_down",
       "community": 26,
       "community_name": "2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table.php",
-      "norm_label": "down()"
+      "norm_label": "down()",
+      "id": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table_down"
     },
     {
       "label": "up()",
@@ -2458,10 +2398,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table_up",
       "community": 26,
       "community_name": "2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table.php",
-      "norm_label": "up()"
+      "norm_label": "up()",
+      "id": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table_up"
     },
     {
       "label": "down()",
@@ -2490,12 +2430,36 @@
     {
       "label": "down()",
       "file_type": "code",
+      "source_file": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "source_location": "L43",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
+      "norm_label": "down()",
+      "id": "database_migrations_0001_01_01_000000_create_users_table_down"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
+      "norm_label": "up()",
+      "id": "database_migrations_0001_01_01_000000_create_users_table_up"
+    },
+    {
+      "label": "down()",
+      "file_type": "code",
       "source_file": "database/migrations/0001_01_01_000002_create_jobs_table.php",
       "source_location": "L51",
       "_callable": true,
       "_origin": "ast",
       "community": 29,
-      "community_name": "0001_01_01_000002_create_jobs_table.php",
+      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
       "norm_label": "down()",
       "id": "database_migrations_0001_01_01_000002_create_jobs_table_down"
     },
@@ -2507,7 +2471,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 29,
-      "community_name": "0001_01_01_000002_create_jobs_table.php",
+      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
       "norm_label": "up()",
       "id": "database_migrations_0001_01_01_000002_create_jobs_table_up"
     },
@@ -2584,28 +2548,88 @@
       "id": "database_seeders_userseeder_userseeder_run"
     },
     {
-      "label": "down()",
+      "label": ".setUp()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_140000_add_layout_to_empresas.php",
-      "source_location": "L16",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L17",
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "Empresas Layout Migration",
-      "norm_label": "down()",
-      "id": "database_migrations_2026_08_12_140000_add_layout_to_empresas_down"
+      "community_name": "RoleTest",
+      "norm_label": ".setup()",
+      "id": "tests_feature_roletest_roletest_setup"
     },
     {
-      "label": "up()",
+      "label": ".test_admin_accede_a_todo()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_140000_add_layout_to_empresas.php",
-      "source_location": "L9",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L75",
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "Empresas Layout Migration",
-      "norm_label": "up()",
-      "id": "database_migrations_2026_08_12_140000_add_layout_to_empresas_up"
+      "community_name": "RoleTest",
+      "norm_label": ".test_admin_accede_a_todo()",
+      "id": "tests_feature_roletest_roletest_test_admin_accede_a_todo"
+    },
+    {
+      "label": ".test_cocina_no_puede_ver_metricas_ni_equipo()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "RoleTest",
+      "norm_label": ".test_cocina_no_puede_ver_metricas_ni_equipo()",
+      "id": "tests_feature_roletest_roletest_test_cocina_no_puede_ver_metricas_ni_equipo"
+    },
+    {
+      "label": ".test_cocina_puede_ver_y_avanzar_pedidos()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L50",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "RoleTest",
+      "norm_label": ".test_cocina_puede_ver_y_avanzar_pedidos()",
+      "id": "tests_feature_roletest_roletest_test_cocina_puede_ver_y_avanzar_pedidos"
+    },
+    {
+      "label": ".test_invitar_staff_con_rol()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "RoleTest",
+      "norm_label": ".test_invitar_staff_con_rol()",
+      "id": "tests_feature_roletest_roletest_test_invitar_staff_con_rol"
+    },
+    {
+      "label": ".test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L66",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "RoleTest",
+      "norm_label": ".test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas()",
+      "id": "tests_feature_roletest_roletest_test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas"
+    },
+    {
+      "label": ".userConRol()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "RoleTest",
+      "norm_label": ".userconrol()",
+      "id": "tests_feature_roletest_roletest_userconrol"
     },
     {
       "label": "down()",
@@ -2682,54 +2706,6 @@
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/0001_01_01_000000_create_users_table.php",
-      "source_location": "L43",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
-      "norm_label": "down()",
-      "id": "database_migrations_0001_01_01_000000_create_users_table_down"
-    },
-    {
-      "label": "up()",
-      "file_type": "code",
-      "source_file": "database/migrations/0001_01_01_000000_create_users_table.php",
-      "source_location": "L12",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
-      "norm_label": "up()",
-      "id": "database_migrations_0001_01_01_000000_create_users_table_up"
-    },
-    {
-      "label": "down()",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
-      "source_location": "L22",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
-      "norm_label": "down()",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_down"
-    },
-    {
-      "label": "up()",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
-      "source_location": "L9",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
-      "norm_label": "up()",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_up"
-    },
-    {
-      "label": "down()",
-      "file_type": "code",
       "source_file": "database/migrations/2026_08_11_140507_create_platos_table.php",
       "source_location": "L23",
       "_callable": true,
@@ -2759,7 +2735,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "UserFactory.php",
       "norm_label": ".definition()",
       "id": "database_factories_userfactory_userfactory_definition"
     },
@@ -2771,7 +2747,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "UserFactory.php",
       "norm_label": ".unverified()",
       "id": "database_factories_userfactory_userfactory_unverified"
     },
@@ -2806,10 +2782,10 @@
       "source_location": "L16",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table_down",
       "community": 47,
       "community_name": "2026_08_19_000001_add_ingredientes_to_platos_table.php",
-      "norm_label": "down()"
+      "norm_label": "down()",
+      "id": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table_down"
     },
     {
       "label": "up()",
@@ -2818,10 +2794,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table_up",
       "community": 47,
       "community_name": "2026_08_19_000001_add_ingredientes_to_platos_table.php",
-      "norm_label": "up()"
+      "norm_label": "up()",
+      "id": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table_up"
     },
     {
       "label": "down()",
@@ -2846,6 +2822,30 @@
       "community_name": "2026_08_19_144858_add_rol_to_users.php",
       "norm_label": "up()",
       "id": "database_migrations_2026_08_19_144858_add_rol_to_users_up"
+    },
+    {
+      "label": "down()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_114500_create_plato_presentaciones_table.php",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "2026_08_12_114500_create_plato_presentaciones_table.php",
+      "norm_label": "down()",
+      "id": "database_migrations_2026_08_12_114500_create_plato_presentaciones_table_down"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_114500_create_plato_presentaciones_table.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "2026_08_12_114500_create_plato_presentaciones_table.php",
+      "norm_label": "up()",
+      "id": "database_migrations_2026_08_12_114500_create_plato_presentaciones_table_up"
     },
     {
       "label": ".index()",
@@ -2878,10 +2878,10 @@
       "source_location": "L109",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".authorizeplato()"
+      "norm_label": ".authorizeplato()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato"
     },
     {
       "label": ".destroy()",
@@ -2890,10 +2890,10 @@
       "source_location": "L244",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_destroy",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".destroy()"
+      "norm_label": ".destroy()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_destroy"
     },
     {
       "label": ".extensionRule()",
@@ -2902,10 +2902,10 @@
       "source_location": "L19",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_extensionrule",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".extensionrule()"
+      "norm_label": ".extensionrule()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_extensionrule"
     },
     {
       "label": ".index()",
@@ -2914,10 +2914,10 @@
       "source_location": "L40",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_index",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".index()"
+      "norm_label": ".index()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_index"
     },
     {
       "label": ".reordenar()",
@@ -2926,10 +2926,10 @@
       "source_location": "L214",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_reordenar",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".reordenar()"
+      "norm_label": ".reordenar()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_reordenar"
     },
     {
       "label": ".show()",
@@ -2938,10 +2938,10 @@
       "source_location": "L116",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_show",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".show()"
+      "norm_label": ".show()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_show"
     },
     {
       "label": ".store()",
@@ -2950,10 +2950,10 @@
       "source_location": "L57",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_store",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".store()"
+      "norm_label": ".store()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_store"
     },
     {
       "label": ".storeWithOriginalExtension()",
@@ -2962,10 +2962,10 @@
       "source_location": "L33",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_storewithoriginalextension",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".storewithoriginalextension()"
+      "norm_label": ".storewithoriginalextension()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_storewithoriginalextension"
     },
     {
       "label": ".syncCustomization()",
@@ -2974,10 +2974,10 @@
       "source_location": "L187",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_synccustomization",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".synccustomization()"
+      "norm_label": ".synccustomization()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_synccustomization"
     },
     {
       "label": ".toggleDisponible()",
@@ -2986,10 +2986,10 @@
       "source_location": "L262",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_toggledisponible",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".toggledisponible()"
+      "norm_label": ".toggledisponible()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_toggledisponible"
     },
     {
       "label": ".update()",
@@ -2998,10 +2998,10 @@
       "source_location": "L125",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller_platocontroller_update",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".update()"
+      "norm_label": ".update()",
+      "id": "app_http_controllers_api_platocontroller_platocontroller_update"
     },
     {
       "label": ".plato()",
@@ -3022,10 +3022,10 @@
       "source_location": "L29",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_models_plato_plato_agregados",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".agregados()"
+      "norm_label": ".agregados()",
+      "id": "app_models_plato_plato_agregados"
     },
     {
       "label": ".empresa()",
@@ -3034,10 +3034,10 @@
       "source_location": "L19",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_models_plato_plato_empresa",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".empresa()"
+      "norm_label": ".empresa()",
+      "id": "app_models_plato_plato_empresa"
     },
     {
       "label": ".presentaciones()",
@@ -3046,10 +3046,34 @@
       "source_location": "L24",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_models_plato_plato_presentaciones",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": ".presentaciones()"
+      "norm_label": ".presentaciones()",
+      "id": "app_models_plato_plato_presentaciones"
+    },
+    {
+      "label": "down()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_down",
+      "community": 50,
+      "community_name": "2026_08_20_000000_add_logo_to_empresas_table.php",
+      "norm_label": "down()"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_up",
+      "community": 50,
+      "community_name": "2026_08_20_000000_add_logo_to_empresas_table.php",
+      "norm_label": "up()"
     },
     {
       "label": ".boot()",
@@ -3058,10 +3082,10 @@
       "source_location": "L23",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_providers_appserviceprovider_appserviceprovider_boot",
       "community": 7,
       "community_name": "App Service Provider",
-      "norm_label": ".boot()"
+      "norm_label": ".boot()",
+      "id": "app_providers_appserviceprovider_appserviceprovider_boot"
     },
     {
       "label": ".register()",
@@ -3070,10 +3094,34 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "id": "app_providers_appserviceprovider_appserviceprovider_register",
       "community": 7,
       "community_name": "App Service Provider",
-      "norm_label": ".register()"
+      "norm_label": ".register()",
+      "id": "app_providers_appserviceprovider_appserviceprovider_register"
+    },
+    {
+      "label": "down()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "norm_label": "down()",
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_down"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "norm_label": "up()",
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_up"
     },
     {
       "label": "down()",
@@ -3102,30 +3150,6 @@
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114500_create_plato_presentaciones_table.php",
-      "source_location": "L22",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
-      "norm_label": "down()",
-      "id": "database_migrations_2026_08_12_114500_create_plato_presentaciones_table_down"
-    },
-    {
-      "label": "up()",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114500_create_plato_presentaciones_table.php",
-      "source_location": "L9",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
-      "norm_label": "up()",
-      "id": "database_migrations_2026_08_12_114500_create_plato_presentaciones_table_up"
-    },
-    {
-      "label": "down()",
-      "file_type": "code",
       "source_file": "database/migrations/2026_08_11_140506_create_mesas_table.php",
       "source_location": "L19",
       "_callable": true,
@@ -3148,37 +3172,26 @@
       "id": "database_migrations_2026_08_11_140506_create_mesas_table_up"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\AuthController",
+      "label": "AuthController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/AuthController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_authcontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\authcontroller"
+      "norm_label": "authcontroller.php",
+      "id": "app_http_controllers_api_authcontroller"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\CocinaController",
+      "label": "CuponController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/CuponController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_cocinacontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\cocinacontroller"
-    },
-    {
-      "label": "App\\Http\\Controllers\\Api\\CuponController",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "app_http_controllers_api_cuponcontroller",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\cuponcontroller"
+      "norm_label": "cuponcontroller.php",
+      "id": "app_http_controllers_api_cuponcontroller"
     },
     {
       "label": "EmpresaController.php",
@@ -3192,81 +3205,81 @@
       "norm_label": "empresacontroller.php"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\MenuController",
+      "label": "MenuController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/MenuController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_menucontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\menucontroller"
+      "norm_label": "menucontroller.php",
+      "id": "app_http_controllers_api_menucontroller"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\MesaController",
+      "label": "MesaController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/MesaController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_mesacontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\mesacontroller"
+      "norm_label": "mesacontroller.php",
+      "id": "app_http_controllers_api_mesacontroller"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\MetricaController",
+      "label": "PedidoController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_metricacontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\metricacontroller"
+      "norm_label": "pedidocontroller.php",
+      "id": "app_http_controllers_api_pedidocontroller"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\PedidoController",
+      "label": "PlatoController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/PlatoController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_pedidocontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\pedidocontroller"
+      "norm_label": "platocontroller.php",
+      "id": "app_http_controllers_api_platocontroller"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\RegistroController",
+      "label": "RegistroController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/RegistroController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_registrocontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\registrocontroller"
+      "norm_label": "registrocontroller.php",
+      "id": "app_http_controllers_api_registrocontroller"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\SSEController",
+      "label": "SSEController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/SSEController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_ssecontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\ssecontroller"
+      "norm_label": "ssecontroller.php",
+      "id": "app_http_controllers_api_ssecontroller"
     },
     {
-      "label": "App\\Http\\Controllers\\Api\\StaffController",
+      "label": "StaffController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/Http/Controllers/Api/StaffController.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_staffcontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "app\\http\\controllers\\api\\staffcontroller"
+      "norm_label": "staffcontroller.php",
+      "id": "app_http_controllers_api_staffcontroller"
     },
     {
       "label": "App\\Http\\Controllers\\Controller",
@@ -3313,6 +3326,39 @@
       "id": "closure"
     },
     {
+      "label": "cache.php",
+      "file_type": "code",
+      "source_file": "config/cache.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "cache.php",
+      "id": "config_cache"
+    },
+    {
+      "label": "database.php",
+      "file_type": "code",
+      "source_file": "config/database.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "database.php",
+      "id": "config_database"
+    },
+    {
+      "label": "session.php",
+      "file_type": "code",
+      "source_file": "config/session.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "session.php",
+      "id": "config_session"
+    },
+    {
       "label": "2026_08_12_140002_seed_posiciones_mesas.php",
       "file_type": "code",
       "source_file": "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
@@ -3346,26 +3392,37 @@
       "id": "illuminate_http_response"
     },
     {
-      "label": "Illuminate\\Support\\Facades\\DB",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\support\\facades\\db",
-      "id": "illuminate_support_facades_db"
-    },
-    {
       "label": "Illuminate\\Support\\Facades\\Route",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_support_facades_route",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\support\\facades\\route"
+      "norm_label": "illuminate\\support\\facades\\route",
+      "id": "illuminate_support_facades_route"
+    },
+    {
+      "label": "Illuminate\\Support\\Facades\\Storage",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_support_facades_storage",
+      "community": 0,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "illuminate\\support\\facades\\storage"
+    },
+    {
+      "label": "Illuminate\\Support\\Str",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "illuminate\\support\\str",
+      "id": "illuminate_support_str"
     },
     {
       "label": "Illuminate\\Validation\\Rule",
@@ -3373,10 +3430,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_validation_rule",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\validation\\rule"
+      "norm_label": "illuminate\\validation\\rule",
+      "id": "illuminate_validation_rule"
     },
     {
       "label": "Illuminate\\Validation\\ValidationException",
@@ -3401,15 +3458,26 @@
       "id": "laravel_sanctum_personalaccesstoken"
     },
     {
+      "label": "Pdo\\Mysql",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "pdo\\mysql",
+      "id": "pdo_mysql"
+    },
+    {
       "label": "api.php",
       "file_type": "code",
       "source_file": "routes/api.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "routes_api",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "api.php"
+      "norm_label": "api.php",
+      "id": "routes_api"
     },
     {
       "label": "web.php",
@@ -4028,6 +4096,28 @@
       "id": "tests_feature_exampletest"
     },
     {
+      "label": "MesaTest.php",
+      "file_type": "code",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": "mesatest.php",
+      "id": "tests_feature_mesatest"
+    },
+    {
+      "label": "MetricaTest.php",
+      "file_type": "code",
+      "source_file": "tests/Feature/MetricaTest.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": "metricatest.php",
+      "id": "tests_feature_metricatest"
+    },
+    {
       "label": "PedidoTest.php",
       "file_type": "code",
       "source_file": "tests/Feature/PedidoTest.php",
@@ -4270,37 +4360,26 @@
       "id": "database_migrations_2026_08_11_155414_create_ar_vistas_table"
     },
     {
-      "label": "2026_08_11_140507_create_pedidos_table.php",
+      "label": "2026_08_12_140000_add_layout_to_empresas.php",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
+      "source_file": "database/migrations/2026_08_12_140000_add_layout_to_empresas.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 19,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "2026_08_11_140507_create_pedidos_table.php",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table"
+      "community_name": "2026_08_12_140000_add_layout_to_empresas.php",
+      "norm_label": "2026_08_12_140000_add_layout_to_empresas.php",
+      "id": "database_migrations_2026_08_12_140000_add_layout_to_empresas"
     },
     {
-      "label": "2026_08_11_155853_add_cancelado_to_pedidos.php",
+      "label": "CocinaController.php",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_155853_add_cancelado_to_pedidos.php",
+      "source_file": "app/Http/Controllers/Api/CocinaController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 19,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "2026_08_11_155853_add_cancelado_to_pedidos.php",
-      "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos"
-    },
-    {
-      "label": "Illuminate\\Support\\Facades\\Schema",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_support_facades_schema",
-      "community": 19,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "illuminate\\support\\facades\\schema"
+      "community": 2,
+      "community_name": "Pedido",
+      "norm_label": "cocinacontroller.php",
+      "id": "app_http_controllers_api_cocinacontroller"
     },
     {
       "label": "Cupon.php",
@@ -4374,10 +4453,10 @@
       "source_file": "app/Models/Plato.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_models_plato",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "plato.php"
+      "norm_label": "plato.php",
+      "id": "app_models_plato"
     },
     {
       "label": "PlatoAgregado.php",
@@ -4402,6 +4481,17 @@
       "id": "app_models_platopresentacion"
     },
     {
+      "label": "2026_08_11_155853_add_cancelado_to_pedidos.php",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_11_155853_add_cancelado_to_pedidos.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Pedido",
+      "norm_label": "2026_08_11_155853_add_cancelado_to_pedidos.php",
+      "id": "database_migrations_2026_08_11_155853_add_cancelado_to_pedidos"
+    },
+    {
       "label": "DemoSeeder.php",
       "file_type": "code",
       "source_file": "database/seeders/DemoSeeder.php",
@@ -4424,15 +4514,15 @@
       "norm_label": "illuminate\\database\\eloquent\\model"
     },
     {
-      "label": "MesaTest.php",
+      "label": "Illuminate\\Support\\Facades\\DB",
       "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "mesatest.php",
-      "id": "tests_feature_mesatest"
+      "norm_label": "illuminate\\support\\facades\\db",
+      "id": "illuminate_support_facades_db"
     },
     {
       "label": "2026_08_11_140509_create_llamados_table.php",
@@ -4463,9 +4553,31 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 22,
-      "community_name": "0001_01_01_000001_create_cache_table.php",
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "0001_01_01_000001_create_cache_table.php",
       "id": "database_migrations_0001_01_01_000001_create_cache_table"
+    },
+    {
+      "label": "2026_08_12_114501_create_plato_agregados_table.php",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "2026_08_12_114501_create_plato_agregados_table.php",
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table"
+    },
+    {
+      "label": "Illuminate\\Support\\Facades\\Schema",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_support_facades_schema",
+      "community": 22,
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "illuminate\\support\\facades\\schema"
     },
     {
       "label": "2026_08_11_145317_add_categoria_to_platos.php",
@@ -4495,10 +4607,10 @@
       "source_file": "database/migrations/2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table",
       "community": 26,
       "community_name": "2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table.php",
-      "norm_label": "2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table.php"
+      "norm_label": "2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table.php",
+      "id": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table"
     },
     {
       "label": "README.md",
@@ -4611,15 +4723,37 @@
       "id": "database_migrations_2026_08_12_114503_add_envio_cupones_to_pedidos"
     },
     {
+      "label": "0001_01_01_000000_create_users_table.php",
+      "file_type": "code",
+      "source_file": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
+      "norm_label": "0001_01_01_000000_create_users_table.php",
+      "id": "database_migrations_0001_01_01_000000_create_users_table"
+    },
+    {
       "label": "0001_01_01_000002_create_jobs_table.php",
       "file_type": "code",
       "source_file": "database/migrations/0001_01_01_000002_create_jobs_table.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 29,
-      "community_name": "0001_01_01_000002_create_jobs_table.php",
+      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
       "norm_label": "0001_01_01_000002_create_jobs_table.php",
       "id": "database_migrations_0001_01_01_000002_create_jobs_table"
+    },
+    {
+      "label": "Illuminate\\Database\\Schema\\Blueprint",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_database_schema_blueprint",
+      "community": 29,
+      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
+      "norm_label": "illuminate\\database\\schema\\blueprint"
     },
     {
       "label": "DatabaseSeeder.php",
@@ -4697,17 +4831,6 @@
       "community_name": "Illuminate\\Database\\Seeder",
       "norm_label": "illuminate\\database\\seeder",
       "id": "illuminate_database_seeder"
-    },
-    {
-      "label": "2026_08_12_140000_add_layout_to_empresas.php",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_140000_add_layout_to_empresas.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "Empresas Layout Migration",
-      "norm_label": "2026_08_12_140000_add_layout_to_empresas.php",
-      "id": "database_migrations_2026_08_12_140000_add_layout_to_empresas"
     },
     {
       "label": "2026_08_11_142426_add_performance_indexes.php",
@@ -5150,39 +5273,6 @@
       "id": "database_migrations_2026_08_12_140001_add_plano_to_mesas"
     },
     {
-      "label": "0001_01_01_000000_create_users_table.php",
-      "file_type": "code",
-      "source_file": "database/migrations/0001_01_01_000000_create_users_table.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
-      "norm_label": "0001_01_01_000000_create_users_table.php",
-      "id": "database_migrations_0001_01_01_000000_create_users_table"
-    },
-    {
-      "label": "2026_08_12_114501_create_plato_agregados_table.php",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
-      "norm_label": "2026_08_12_114501_create_plato_agregados_table.php",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table"
-    },
-    {
-      "label": "Illuminate\\Database\\Schema\\Blueprint",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_database_schema_blueprint",
-      "community": 43,
-      "community_name": "Illuminate\\Database\\Schema\\Blueprint",
-      "norm_label": "illuminate\\database\\schema\\blueprint"
-    },
-    {
       "label": "2026_08_11_140507_create_platos_table.php",
       "file_type": "code",
       "source_file": "database/migrations/2026_08_11_140507_create_platos_table.php",
@@ -5194,46 +5284,13 @@
       "id": "database_migrations_2026_08_11_140507_create_platos_table"
     },
     {
-      "label": "cache.php",
-      "file_type": "code",
-      "source_file": "config/cache.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
-      "norm_label": "cache.php",
-      "id": "config_cache"
-    },
-    {
-      "label": "database.php",
-      "file_type": "code",
-      "source_file": "config/database.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
-      "norm_label": "database.php",
-      "id": "config_database"
-    },
-    {
-      "label": "session.php",
-      "file_type": "code",
-      "source_file": "config/session.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
-      "norm_label": "session.php",
-      "id": "config_session"
-    },
-    {
       "label": "UserFactory.php",
       "file_type": "code",
       "source_file": "database/factories/UserFactory.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "UserFactory.php",
       "norm_label": "userfactory.php",
       "id": "database_factories_userfactory"
     },
@@ -5244,31 +5301,9 @@
       "source_location": "",
       "_origin": "ast",
       "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "UserFactory.php",
       "norm_label": "illuminate\\database\\eloquent\\factories\\factory",
       "id": "illuminate_database_eloquent_factories_factory"
-    },
-    {
-      "label": "Illuminate\\Support\\Str",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_support_str",
-      "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
-      "norm_label": "illuminate\\support\\str"
-    },
-    {
-      "label": "Pdo\\Mysql",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
-      "norm_label": "pdo\\mysql",
-      "id": "pdo_mysql"
     },
     {
       "label": "static",
@@ -5277,7 +5312,7 @@
       "source_location": "",
       "_origin": "ast",
       "community": 45,
-      "community_name": "Illuminate\\Support\\Str",
+      "community_name": "UserFactory.php",
       "norm_label": "static",
       "id": "static"
     },
@@ -5298,10 +5333,10 @@
       "source_file": "database/migrations/2026_08_19_000001_add_ingredientes_to_platos_table.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table",
       "community": 47,
       "community_name": "2026_08_19_000001_add_ingredientes_to_platos_table.php",
-      "norm_label": "2026_08_19_000001_add_ingredientes_to_platos_table.php"
+      "norm_label": "2026_08_19_000001_add_ingredientes_to_platos_table.php",
+      "id": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table"
     },
     {
       "label": "2026_08_19_144858_add_rol_to_users.php",
@@ -5315,15 +5350,26 @@
       "id": "database_migrations_2026_08_19_144858_add_rol_to_users"
     },
     {
-      "label": "PlatoController.php",
+      "label": "2026_08_12_114500_create_plato_presentaciones_table.php",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PlatoController.php",
+      "source_file": "database/migrations/2026_08_12_114500_create_plato_presentaciones_table.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_http_controllers_api_platocontroller",
+      "community": 49,
+      "community_name": "2026_08_12_114500_create_plato_presentaciones_table.php",
+      "norm_label": "2026_08_12_114500_create_plato_presentaciones_table.php",
+      "id": "database_migrations_2026_08_12_114500_create_plato_presentaciones_table"
+    },
+    {
+      "label": "MetricaController.php",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/MetricaController.php",
+      "source_location": "L1",
+      "_origin": "ast",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": "platocontroller.php"
+      "norm_label": "metricacontroller.php",
+      "id": "app_http_controllers_api_metricacontroller"
     },
     {
       "label": "ArVista.php",
@@ -5337,17 +5383,6 @@
       "id": "app_models_arvista"
     },
     {
-      "label": "Illuminate\\Support\\Facades\\Storage",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_support_facades_storage",
-      "community": 5,
-      "community_name": "Plato",
-      "norm_label": "illuminate\\support\\facades\\storage"
-    },
-    {
       "label": "self",
       "file_type": "code",
       "source_file": "",
@@ -5359,15 +5394,15 @@
       "norm_label": "self"
     },
     {
-      "label": "MetricaTest.php",
+      "label": "2026_08_20_000000_add_logo_to_empresas_table.php",
       "file_type": "code",
-      "source_file": "tests/Feature/MetricaTest.php",
+      "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
-      "community_name": "Plato",
-      "norm_label": "metricatest.php",
-      "id": "tests_feature_metricatest"
+      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
+      "community": 50,
+      "community_name": "2026_08_20_000000_add_logo_to_empresas_table.php",
+      "norm_label": "2026_08_20_000000_add_logo_to_empresas_table.php"
     },
     {
       "label": "CLAUDE.md",
@@ -5397,10 +5432,10 @@
       "source_file": "app/Providers/AppServiceProvider.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_providers_appserviceprovider",
       "community": 7,
       "community_name": "App Service Provider",
-      "norm_label": "appserviceprovider.php"
+      "norm_label": "appserviceprovider.php",
+      "id": "app_providers_appserviceprovider"
     },
     {
       "label": "providers.php",
@@ -5419,10 +5454,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_cache_ratelimiting_limit",
       "community": 7,
       "community_name": "App Service Provider",
-      "norm_label": "illuminate\\cache\\ratelimiting\\limit"
+      "norm_label": "illuminate\\cache\\ratelimiting\\limit",
+      "id": "illuminate_cache_ratelimiting_limit"
     },
     {
       "label": "Illuminate\\Support\\Facades\\RateLimiter",
@@ -5430,10 +5465,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_support_facades_ratelimiter",
       "community": 7,
       "community_name": "App Service Provider",
-      "norm_label": "illuminate\\support\\facades\\ratelimiter"
+      "norm_label": "illuminate\\support\\facades\\ratelimiter",
+      "id": "illuminate_support_facades_ratelimiter"
     },
     {
       "label": "Illuminate\\Support\\ServiceProvider",
@@ -5441,10 +5476,21 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_support_serviceprovider",
       "community": 7,
       "community_name": "App Service Provider",
-      "norm_label": "illuminate\\support\\serviceprovider"
+      "norm_label": "illuminate\\support\\serviceprovider",
+      "id": "illuminate_support_serviceprovider"
+    },
+    {
+      "label": "2026_08_11_140507_create_pedidos_table.php",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "norm_label": "2026_08_11_140507_create_pedidos_table.php",
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table"
     },
     {
       "label": "2026_08_11_140509_create_pedido_items_table.php",
@@ -5456,17 +5502,6 @@
       "community_name": "Illuminate\\Database\\Migrations\\Migration",
       "norm_label": "2026_08_11_140509_create_pedido_items_table.php",
       "id": "database_migrations_2026_08_11_140509_create_pedido_items_table"
-    },
-    {
-      "label": "2026_08_12_114500_create_plato_presentaciones_table.php",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114500_create_plato_presentaciones_table.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
-      "norm_label": "2026_08_12_114500_create_plato_presentaciones_table.php",
-      "id": "database_migrations_2026_08_12_114500_create_plato_presentaciones_table"
     },
     {
       "label": "Illuminate\\Database\\Migrations\\Migration",
@@ -5618,7 +5653,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller_show",
@@ -5629,7 +5664,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L64",
+      "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller_updatelayout",
@@ -5968,9 +6003,9 @@
       "source_location": "L246",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_destroy",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato"
     },
     {
       "relation": "calls",
@@ -5980,9 +6015,9 @@
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_index",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "calls",
@@ -5992,9 +6027,9 @@
       "source_location": "L229",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_reordenar",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "calls",
@@ -6004,9 +6039,9 @@
       "source_location": "L238",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_reordenar",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_update",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_update"
     },
     {
       "relation": "calls",
@@ -6016,9 +6051,9 @@
       "source_location": "L118",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_show",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato"
     },
     {
       "relation": "calls",
@@ -6028,9 +6063,9 @@
       "source_location": "L104",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_store",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_synccustomization",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_synccustomization"
     },
     {
       "relation": "calls",
@@ -6040,9 +6075,9 @@
       "source_location": "L88",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_store",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "calls",
@@ -6052,9 +6087,9 @@
       "source_location": "L264",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_toggledisponible",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato"
     },
     {
       "relation": "calls",
@@ -6064,9 +6099,9 @@
       "source_location": "L268",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_toggledisponible",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_update",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_update"
     },
     {
       "relation": "calls",
@@ -6076,9 +6111,9 @@
       "source_location": "L127",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_update",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato"
     },
     {
       "relation": "calls",
@@ -6088,9 +6123,9 @@
       "source_location": "L159",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_update",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_store",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_store"
     },
     {
       "relation": "calls",
@@ -6100,9 +6135,9 @@
       "source_location": "L181",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_update",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_synccustomization",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_synccustomization"
     },
     {
       "relation": "calls",
@@ -7836,6 +7871,18 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/EmpresaController.php",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_empresacontroller",
+      "target": "illuminate_support_facades_storage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/MenuController.php",
       "source_location": "L5",
       "weight": 1.0,
@@ -8200,9 +8247,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller",
-      "target": "illuminate_validation_rule",
-      "confidence_score": 1.0
+      "target": "illuminate_validation_rule"
     },
     {
       "relation": "imports",
@@ -8212,9 +8259,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller",
-      "target": "app_http_controllers_controller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_controller_controller"
     },
     {
       "relation": "imports",
@@ -8224,9 +8271,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "imports",
@@ -8236,9 +8283,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "imports",
@@ -8248,9 +8295,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller",
-      "target": "illuminate_support_facades_storage",
-      "confidence_score": 1.0
+      "target": "illuminate_support_facades_storage"
     },
     {
       "relation": "imports",
@@ -8260,9 +8307,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller",
-      "target": "illuminate_support_str",
-      "confidence_score": 1.0
+      "target": "illuminate_support_str"
     },
     {
       "relation": "imports",
@@ -8620,9 +8667,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_models_plato",
-      "target": "illuminate_database_eloquent_model",
-      "confidence_score": 1.0
+      "target": "illuminate_database_eloquent_model"
     },
     {
       "relation": "imports",
@@ -8704,9 +8751,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_providers_appserviceprovider",
-      "target": "illuminate_cache_ratelimiting_limit",
-      "confidence_score": 1.0
+      "target": "illuminate_cache_ratelimiting_limit"
     },
     {
       "relation": "imports",
@@ -8716,9 +8763,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_providers_appserviceprovider",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "imports",
@@ -8728,9 +8775,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_providers_appserviceprovider",
-      "target": "illuminate_support_facades_ratelimiter",
-      "confidence_score": 1.0
+      "target": "illuminate_support_facades_ratelimiter"
     },
     {
       "relation": "imports",
@@ -8740,9 +8787,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_providers_appserviceprovider",
-      "target": "illuminate_support_serviceprovider",
-      "confidence_score": 1.0
+      "target": "illuminate_support_serviceprovider"
     },
     {
       "relation": "imports",
@@ -9844,9 +9891,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table",
-      "target": "illuminate_database_migrations_migration",
-      "confidence_score": 1.0
+      "target": "illuminate_database_migrations_migration"
     },
     {
       "relation": "imports",
@@ -9856,9 +9903,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table",
-      "target": "illuminate_database_schema_blueprint",
-      "confidence_score": 1.0
+      "target": "illuminate_database_schema_blueprint"
     },
     {
       "relation": "imports",
@@ -9868,9 +9915,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table",
-      "target": "illuminate_support_facades_schema",
-      "confidence_score": 1.0
+      "target": "illuminate_support_facades_schema"
     },
     {
       "relation": "imports",
@@ -9916,9 +9963,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table",
-      "target": "illuminate_database_migrations_migration",
-      "confidence_score": 1.0
+      "target": "illuminate_database_migrations_migration"
     },
     {
       "relation": "imports",
@@ -9928,9 +9975,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table",
-      "target": "illuminate_database_schema_blueprint",
-      "confidence_score": 1.0
+      "target": "illuminate_database_schema_blueprint"
     },
     {
       "relation": "imports",
@@ -9940,9 +9987,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table",
-      "target": "illuminate_support_facades_schema",
-      "confidence_score": 1.0
+      "target": "illuminate_support_facades_schema"
     },
     {
       "relation": "imports",
@@ -9979,6 +10026,42 @@
       "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_144858_add_rol_to_users",
       "target": "illuminate_support_facades_schema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
+      "target": "illuminate_database_migrations_migration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
+      "target": "illuminate_database_schema_blueprint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
+      "target": "illuminate_support_facades_schema",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10276,9 +10359,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_pedidocontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller"
     },
     {
       "relation": "imports",
@@ -10288,9 +10371,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_platocontroller_platocontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller"
     },
     {
       "relation": "imports",
@@ -10300,9 +10383,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_registrocontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_registrocontroller_registrocontroller"
     },
     {
       "relation": "imports",
@@ -10312,9 +10395,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_ssecontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_ssecontroller_ssecontroller"
     },
     {
       "relation": "imports",
@@ -10324,9 +10407,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_staffcontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_staffcontroller_staffcontroller"
     },
     {
       "relation": "imports",
@@ -10336,9 +10419,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "illuminate_support_facades_route",
-      "confidence_score": 1.0
+      "target": "illuminate_support_facades_route"
     },
     {
       "relation": "imports",
@@ -10348,9 +10431,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_authcontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_authcontroller_authcontroller"
     },
     {
       "relation": "imports",
@@ -10360,9 +10443,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_cocinacontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_cocinacontroller_cocinacontroller"
     },
     {
       "relation": "imports",
@@ -10372,9 +10455,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_cuponcontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_cuponcontroller_cuponcontroller"
     },
     {
       "relation": "imports",
@@ -10384,9 +10467,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_empresacontroller_empresacontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_empresacontroller_empresacontroller"
     },
     {
       "relation": "imports",
@@ -10396,9 +10479,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_menucontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_menucontroller_menucontroller"
     },
     {
       "relation": "imports",
@@ -10408,9 +10491,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_mesacontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_mesacontroller_mesacontroller"
     },
     {
       "relation": "imports",
@@ -10420,9 +10503,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_metricacontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_metricacontroller_metricacontroller"
     },
     {
       "relation": "imports",
@@ -11340,7 +11423,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -11352,7 +11435,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -11364,7 +11447,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L42",
+      "source_location": "L64",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -11656,9 +11739,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "references",
@@ -11668,9 +11751,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_destroy",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "references",
@@ -11680,9 +11763,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_reordenar",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "references",
@@ -11692,9 +11775,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_show",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "references",
@@ -11704,9 +11787,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_store",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "references",
@@ -11716,9 +11799,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_synccustomization",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "references",
@@ -11728,9 +11811,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_toggledisponible",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "references",
@@ -11740,9 +11823,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_update",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "references",
@@ -11752,9 +11835,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller_update",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "references",
@@ -11961,7 +12044,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller",
@@ -12019,9 +12102,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller"
     },
     {
       "relation": "contains",
@@ -12173,9 +12256,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_models_plato",
-      "target": "app_models_plato_plato",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato"
     },
     {
       "relation": "contains",
@@ -12217,9 +12300,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_providers_appserviceprovider",
-      "target": "app_providers_appserviceprovider_appserviceprovider",
-      "confidence_score": 1.0
+      "target": "app_providers_appserviceprovider_appserviceprovider"
     },
     {
       "relation": "contains",
@@ -13306,9 +13389,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table",
-      "target": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table_down",
-      "confidence_score": 1.0
+      "target": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table_down"
     },
     {
       "relation": "contains",
@@ -13317,9 +13400,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table",
-      "target": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table_up",
-      "confidence_score": 1.0
+      "target": "database_migrations_2026_08_19_000000_add_abierto_tiempo_estimado_to_empresas_table_up"
     },
     {
       "relation": "contains",
@@ -13350,9 +13433,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table",
-      "target": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table_down",
-      "confidence_score": 1.0
+      "target": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table_down"
     },
     {
       "relation": "contains",
@@ -13361,9 +13444,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table",
-      "target": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table_up",
-      "confidence_score": 1.0
+      "target": "database_migrations_2026_08_19_000001_add_ingredientes_to_platos_table_up"
     },
     {
       "relation": "contains",
@@ -13386,6 +13469,28 @@
       "confidence_score": 1.0,
       "source": "database_migrations_2026_08_19_144858_add_rol_to_users",
       "target": "database_migrations_2026_08_19_144858_add_rol_to_users_down"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
+      "target": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_down",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
+      "target": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_up",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13721,7 +13826,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller",
@@ -13779,9 +13884,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_controller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_controller_controller"
     },
     {
       "relation": "inherits",
@@ -13900,9 +14005,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_models_plato_plato",
-      "target": "illuminate_database_eloquent_model",
-      "confidence_score": 1.0
+      "target": "illuminate_database_eloquent_model"
     },
     {
       "relation": "inherits",
@@ -13944,9 +14049,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_providers_appserviceprovider_appserviceprovider",
-      "target": "illuminate_support_serviceprovider",
-      "confidence_score": 1.0
+      "target": "illuminate_support_serviceprovider"
     },
     {
       "relation": "inherits",
@@ -14304,7 +14409,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller",
@@ -14315,7 +14420,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller",
@@ -14326,7 +14431,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L42",
+      "source_location": "L64",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller",
@@ -14527,9 +14632,9 @@
       "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_authorizeplato"
     },
     {
       "relation": "method",
@@ -14538,9 +14643,9 @@
       "source_location": "L116",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_show",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_show"
     },
     {
       "relation": "method",
@@ -14549,9 +14654,9 @@
       "source_location": "L125",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_update",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_update"
     },
     {
       "relation": "method",
@@ -14560,9 +14665,9 @@
       "source_location": "L187",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_synccustomization",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_synccustomization"
     },
     {
       "relation": "method",
@@ -14571,9 +14676,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_extensionrule",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_extensionrule"
     },
     {
       "relation": "method",
@@ -14582,9 +14687,9 @@
       "source_location": "L214",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_reordenar",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_reordenar"
     },
     {
       "relation": "method",
@@ -14593,9 +14698,9 @@
       "source_location": "L244",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_destroy",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_destroy"
     },
     {
       "relation": "method",
@@ -14604,9 +14709,9 @@
       "source_location": "L262",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_toggledisponible",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_toggledisponible"
     },
     {
       "relation": "method",
@@ -14615,9 +14720,9 @@
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_storewithoriginalextension",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_storewithoriginalextension"
     },
     {
       "relation": "method",
@@ -14626,9 +14731,9 @@
       "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_index",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_index"
     },
     {
       "relation": "method",
@@ -14637,9 +14742,9 @@
       "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_http_controllers_api_platocontroller_platocontroller",
-      "target": "app_http_controllers_api_platocontroller_platocontroller_store",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_api_platocontroller_platocontroller_store"
     },
     {
       "relation": "method",
@@ -14912,9 +15017,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_models_plato_plato",
-      "target": "app_models_plato_plato_empresa",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato_empresa"
     },
     {
       "relation": "method",
@@ -14923,9 +15028,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_models_plato_plato",
-      "target": "app_models_plato_plato_presentaciones",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato_presentaciones"
     },
     {
       "relation": "method",
@@ -14934,9 +15039,9 @@
       "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_models_plato_plato",
-      "target": "app_models_plato_plato_agregados",
-      "confidence_score": 1.0
+      "target": "app_models_plato_plato_agregados"
     },
     {
       "relation": "method",
@@ -14989,9 +15094,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_providers_appserviceprovider_appserviceprovider",
-      "target": "app_providers_appserviceprovider_appserviceprovider_register",
-      "confidence_score": 1.0
+      "target": "app_providers_appserviceprovider_appserviceprovider_register"
     },
     {
       "relation": "method",
@@ -15000,9 +15105,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_providers_appserviceprovider_appserviceprovider",
-      "target": "app_providers_appserviceprovider_appserviceprovider_boot",
-      "confidence_score": 1.0
+      "target": "app_providers_appserviceprovider_appserviceprovider_boot"
     },
     {
       "relation": "method",
@@ -16053,5 +16158,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "13f0e2d3343962ef5f537077092267dc62cb3016"
+  "built_at_commit": "ab170ff232864a696393981ba85575cd02946eec"
 }
