@@ -5,12 +5,12 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 474 nodes · 918 edges · 51 communities (43 shown, 8 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.8)
+- 474 nodes · 917 edges · 50 communities (42 shown, 8 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `89ff88d6`
+- Built from commit: `ab170ff2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,19 +23,18 @@
 - Plato
 - CLAUDE.md
 - App Service Provider
+- Illuminate\Database\Migrations\Migration
 - Cupon
 - Empresa
 - App Bootstrap Config
 - Logging Config
 - Unit Test Example
-- TokenFromQuery.php
 - Illuminate\Support\Facades\Schema
 - PedidoTest
 - README.md
-- RoleTest
-- Illuminate\Database\Migrations\Migration
-- Console Commands
 - Illuminate\Database\Schema\Blueprint
+- RoleTest
+- Console Commands
 - UserFactory.php
 
 ## God Nodes (most connected - your core abstractions)
@@ -44,8 +43,8 @@
 3. `Plato` - 39 edges
 4. `Mesa` - 31 edges
 5. `Pedido` - 31 edges
-6. `Controller` - 25 edges
-7. `TestCase` - 24 edges
+6. `TestCase` - 24 edges
+7. `Controller` - 23 edges
 8. `Cupon` - 20 edges
 9. `PedidoTest` - 20 edges
 10. `CuponTest` - 16 edges
@@ -65,19 +64,19 @@
 ## Import Cycles
 - None detected.
 
-## Communities (51 total, 8 thin omitted)
+## Communities (50 total, 8 thin omitted)
 
 ### Community 0 - "Illuminate\Http\Request"
-Cohesion: 0.05
-Nodes (23): AuthController, CocinaController, EmpresaController, MenuController, MesaController, RegistroController, SSEController, StaffController (+15 more)
+Cohesion: 0.06
+Nodes (23): AuthController, EmpresaController, MenuController, MesaController, RegistroController, SSEController, StaffController, App\Http\Controllers\Controller (+15 more)
 
 ### Community 1 - "Composer Package Config"
 Cohesion: 0.05
 Nodes (41): pestphp/pest-plugin, php-http/discovery, autoload, autoload-dev, psr-4, psr-4, config, allow-plugins (+33 more)
 
 ### Community 2 - "Pedido"
-Cohesion: 0.13
-Nodes (5): PedidoController, Pedido, PedidoItem, DemoSeeder, Illuminate\Support\Facades\DB
+Cohesion: 0.07
+Nodes (10): CocinaController, PedidoController, Llamado, Pedido, PedidoItem, PlatoAgregado, PlatoPresentacion, DemoSeeder (+2 more)
 
 ### Community 3 - "Illuminate\Database\Seeder"
 Cohesion: 0.14
@@ -96,7 +95,7 @@ Cohesion: 0.29
 Nodes (4): AppServiceProvider, Illuminate\Cache\RateLimiting\Limit, Illuminate\Support\Facades\RateLimiter, Illuminate\Support\ServiceProvider
 
 ### Community 10 - "Cupon"
-Cohesion: 0.18
+Cohesion: 0.19
 Nodes (3): CuponController, Cupon, CuponTest
 
 ### Community 11 - "Empresa"
@@ -111,37 +110,33 @@ Nodes (3): Illuminate\Foundation\Application, Illuminate\Foundation\Configuratio
 Cohesion: 0.40
 Nodes (4): Monolog\Handler\NullHandler, Monolog\Handler\StreamHandler, Monolog\Handler\SyslogUdpHandler, Monolog\Processor\PsrLogMessageProcessor
 
-### Community 19 - "TokenFromQuery.php"
-Cohesion: 0.32
-Nodes (4): EnsureRole, TokenFromQuery, Closure, Laravel\Sanctum\PersonalAccessToken
-
 ### Community 27 - "README.md"
 Cohesion: 0.22
 Nodes (8): About Laravel, Code of Conduct, Contributing, Laravel Sponsors, Learning Laravel, License, Premium Partners, Security Vulnerabilities
 
 ### Community 45 - "UserFactory.php"
-Cohesion: 0.38
+Cohesion: 0.47
 Nodes (3): UserFactory, Illuminate\Database\Eloquent\Factories\Factory, static
 
 ## Knowledge Gaps
-- **54 isolated node(s):** `$schema`, `name`, `type`, `description`, `laravel` (+49 more)
+- **54 isolated node(s):** `pestphp/pest-plugin`, `php-http/discovery`, `optimize-autoloader`, `preferred-install`, `sort-packages` (+49 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Empresa` connect `Empresa` to `Illuminate\Http\Request`, `Pedido`, `Illuminate\Database\Seeder`, `Plato`, `Cupon`, `UserFactory.php`, `PedidoTest`, `RoleTest`?**
-  _High betweenness centrality (0.217) - this node is a cross-community bridge._
+- **Why does `Empresa` connect `Empresa` to `Illuminate\Http\Request`, `Pedido`, `Illuminate\Database\Seeder`, `Plato`, `Cupon`, `PedidoTest`, `RoleTest`?**
+  _High betweenness centrality (0.215) - this node is a cross-community bridge._
 - **Why does `User` connect `Empresa` to `Illuminate\Http\Request`, `Illuminate\Database\Seeder`, `Cupon`, `UserFactory.php`, `PedidoTest`, `RoleTest`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
+  _High betweenness centrality (0.085) - this node is a cross-community bridge._
 - **Why does `Mesa` connect `Illuminate\Http\Request` to `Empresa`, `Pedido`, `Illuminate\Database\Seeder`?**
   _High betweenness centrality (0.069) - this node is a cross-community bridge._
-- **What connects `$schema`, `name`, `type` to the rest of the system?**
+- **What connects `pestphp/pest-plugin`, `php-http/discovery`, `optimize-autoloader` to the rest of the system?**
   _54 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Illuminate\Http\Request` be split into smaller, more focused modules?**
-  _Cohesion score 0.05028305028305028 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.060153776571687016 - nodes in this community are weakly interconnected._
 - **Should `Composer Package Config` be split into smaller, more focused modules?**
   _Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected._
 - **Should `Pedido` be split into smaller, more focused modules?**
-  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0696969696969697 - nodes in this community are weakly interconnected._

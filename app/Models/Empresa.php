@@ -7,14 +7,48 @@ use Illuminate\Http\Request;
 
 class Empresa extends Model
 {
-    protected $fillable = ['slug', 'nombre', 'whatsapp', 'logo', 'activo', 'abierto', 'tiempo_estimado', 'layout'];
+    protected $fillable = ['slug', 'nombre', 'whatsapp', 'logo', 'activo', 'abierto', 'horarios', 'tiempo_estimado', 'layout'];
 
     protected $casts = [
         'activo' => 'boolean',
         'abierto' => 'boolean',
+        'horarios' => 'array',
         'tiempo_estimado' => 'integer',
         'layout' => 'array',
     ];
+
+    const DIAS = ['dom', 'lun', 'mar', 'mie', 'jue', 'vie', 'sab'];
+
+    public function estaAbiertaAhora(): bool
+    {
+        $horarios = $this->horarios;
+
+        if (empty($horarios) || !is_array($horarios)) {
+            return (bool) $this->abierto;
+        }
+
+        $dias = static::DIAS;
+        $hoy = $dias[(int) now()->format('w')];
+        $rango = $horarios[$hoy] ?? null;
+
+        if (!$rango) {
+            return false;
+        }
+
+        $hora = now()->format('H:i');
+
+        foreach (explode(',', (string) $rango) as $bloque) {
+            $partes = array_map('trim', explode('-', $bloque));
+            if (count($partes) !== 2 || $partes[0] === '' || $partes[1] === '') {
+                continue;
+            }
+            if ($hora >= $partes[0] && $hora <= $partes[1]) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     public static function resolveFromRequest(Request $request): ?self
     {

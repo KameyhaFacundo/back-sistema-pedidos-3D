@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\MesaController;
 use App\Http\Controllers\Api\MetricaController;
 use App\Http\Controllers\Api\PedidoController;
 use App\Http\Controllers\Api\PlatoController;
+use App\Http\Controllers\Api\PagoController;
 use App\Http\Controllers\Api\RegistroController;
 use App\Http\Controllers\Api\SSEController;
 use App\Http\Controllers\Api\StaffController;
@@ -30,6 +31,9 @@ Route::post('mesas/{mesa}/llamar', [MesaController::class, 'llamar']);
 Route::post('pedidos', [PedidoController::class, 'store'])->middleware('throttle:pedidos');
 Route::get('pedidos/{pedido}', [PedidoController::class, 'show']);
 Route::post('cupones/validar', [PedidoController::class, 'validarCupon'])->middleware('throttle:cupones');
+
+Route::post('pagos/mp/preference', [PagoController::class, 'preference'])->middleware('throttle:pedidos');
+Route::post('pagos/mp/webhook', [PagoController::class, 'webhook']);
 
 Route::get('sse', [SSEController::class, 'stream'])->middleware('token.query');
 

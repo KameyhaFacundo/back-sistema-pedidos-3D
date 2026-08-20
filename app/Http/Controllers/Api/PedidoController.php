@@ -28,6 +28,14 @@ class PedidoController extends Controller
             $query->where('estado', $request->estado);
         }
 
+        if ($request->filled('desde')) {
+            $query->whereDate('created_at', '>=', $request->desde);
+        }
+
+        if ($request->filled('hasta')) {
+            $query->whereDate('created_at', '<=', $request->hasta);
+        }
+
         $perPage = min((int) $request->get('per_page', 50), 100);
         $pedidos = $query->orderBy('created_at', 'desc')
             ->paginate($perPage);
@@ -49,7 +57,7 @@ class PedidoController extends Controller
             'nombre' => 'nullable|string|max:100',
             'celular' => 'nullable|string|max:30',
             'direccion' => 'nullable|string|max:255',
-            'medio_pago' => ['required', Rule::in(['efectivo', 'transferencia'])],
+            'medio_pago' => ['required', Rule::in(['efectivo', 'transferencia', 'mercadopago'])],
             'cupon_codigo' => 'nullable|string|max:50',
             'items' => 'required|array|min:1',
             'items.*.plato_id' => 'required|integer',

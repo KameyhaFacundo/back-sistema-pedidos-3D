@@ -19,6 +19,9 @@ class MenuController extends Controller
             return response()->json(['message' => 'Empresa no encontrada'], 404);
         }
 
+        $empresa->abierto = $empresa->estaAbiertaAhora();
+        $empresa->mp_enabled = (bool) config('services.mercadopago.access_token');
+
         $platos = Plato::with(['presentaciones', 'agregados'])
             ->where('disponible', true)
             ->where('empresa_id', $empresa->id)

@@ -17,6 +17,9 @@ class EmpresaController extends Controller
             return response()->json(['message' => 'Empresa no encontrada'], 404);
         }
 
+        $empresa->abierto = $empresa->estaAbiertaAhora();
+        $empresa->mp_enabled = (bool) config('services.mercadopago.access_token');
+
         return response()->json($empresa);
     }
 
@@ -33,6 +36,14 @@ class EmpresaController extends Controller
             'whatsapp' => 'sometimes|nullable|string|max:40',
             'logo' => 'sometimes|nullable|image|mimes:jpeg,png,jpg,webp|max:8192',
             'abierto' => 'sometimes|boolean',
+            'horarios' => 'sometimes|nullable|array',
+            'horarios.dom' => 'nullable|string|max:200',
+            'horarios.lun' => 'nullable|string|max:200',
+            'horarios.mar' => 'nullable|string|max:200',
+            'horarios.mie' => 'nullable|string|max:200',
+            'horarios.jue' => 'nullable|string|max:200',
+            'horarios.vie' => 'nullable|string|max:200',
+            'horarios.sab' => 'nullable|string|max:200',
             'tiempo_estimado' => 'sometimes|nullable|integer|min:0|max:600',
         ]);
 
@@ -57,6 +68,9 @@ class EmpresaController extends Controller
         }
 
         $empresa->update($data);
+
+        $empresa->abierto = $empresa->estaAbiertaAhora();
+        $empresa->mp_enabled = (bool) config('services.mercadopago.access_token');
 
         return response()->json($empresa);
     }
