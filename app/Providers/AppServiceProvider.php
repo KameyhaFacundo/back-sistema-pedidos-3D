@@ -34,5 +34,20 @@ class AppServiceProvider extends ServiceProvider
         RateLimiter::for('registro', function (Request $request) {
             return Limit::perHour(5)->by($request->ip());
         });
+
+        // A client ordering from a table/queue can legitimately place a few
+        // orders in a row, but not hundreds per minute. Keyed by empresa+IP so
+        // one shared connection/IP can't be used to spam every endpoint.
+        RateLimiter::for('pedidos', function (Request $request) {
+            $empresa = $request->header('X-Empresa') ?? 'anon';
+
+            return Limit::perMinute(10)->by($empresa . '|' . $request->ip());
+        });
+
+        RateLimiter::for('cupones', function (Request $request) {
+            $empresa = $request->header('X-Empresa') ?? 'anon';
+
+            return Limit::perMinute(20)->by($empresa . '|' . $request->ip());
+        });
     }
 }

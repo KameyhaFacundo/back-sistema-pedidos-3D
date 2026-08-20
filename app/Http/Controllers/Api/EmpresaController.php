@@ -30,6 +30,8 @@ class EmpresaController extends Controller
         $validated = $request->validate([
             'nombre' => 'sometimes|string|max:120',
             'whatsapp' => 'sometimes|nullable|string|max:40',
+            'abierto' => 'sometimes|boolean',
+            'tiempo_estimado' => 'sometimes|nullable|integer|min:0|max:600',
         ]);
 
         $empresa->update($validated);

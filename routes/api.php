@@ -27,9 +27,9 @@ Route::post('ar-vistas/{plato}', [\App\Http\Controllers\Api\MetricaController::c
 Route::get('mesas', [MesaController::class, 'index']);
 Route::post('mesas/{mesa}/llamar', [MesaController::class, 'llamar']);
 
-Route::post('pedidos', [PedidoController::class, 'store']);
+Route::post('pedidos', [PedidoController::class, 'store'])->middleware('throttle:pedidos');
 Route::get('pedidos/{pedido}', [PedidoController::class, 'show']);
-Route::post('cupones/validar', [PedidoController::class, 'validarCupon']);
+Route::post('cupones/validar', [PedidoController::class, 'validarCupon'])->middleware('throttle:cupones');
 
 Route::get('sse', [SSEController::class, 'stream'])->middleware('token.query');
 

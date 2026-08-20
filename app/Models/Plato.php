@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Plato extends Model
 {
     protected $fillable = [
-        'empresa_id', 'nombre', 'categoria', 'descripcion', 'precio', 'orden', 'foto', 'modelo_glb', 'modelo_usdz', 'disponible',
+        'empresa_id', 'nombre', 'categoria', 'descripcion', 'ingredientes', 'precio', 'orden', 'foto', 'modelo_glb', 'modelo_usdz', 'disponible',
     ];
 
     protected $casts = [
         'precio' => 'float',
         'disponible' => 'boolean',
+        'ingredientes' => 'array',
     ];
 
     public function empresa()
