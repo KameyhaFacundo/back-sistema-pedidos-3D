@@ -40,9 +40,9 @@
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/RegistroController.php": {
-    "mtime": 1786570246.620311,
-    "ast_hash": "16c52933e99223fba591ebf15729eb7a",
-    "semantic_hash": "16c52933e99223fba591ebf15729eb7a"
+    "mtime": 1787162248.854277,
+    "ast_hash": "460004768f1a8bf157067438af6cc438",
+    "semantic_hash": ""
   },
   "app/Http/Controllers/Api/SSEController.php": {
     "mtime": 1786557976.5527122,
@@ -110,9 +110,9 @@
     "semantic_hash": "2ecba25e42f024edb6743180fdb3cc62"
   },
   "app/Models/User.php": {
-    "mtime": 1786551622.7003367,
-    "ast_hash": "0bdcfc38f23084d72b1a3ca07d95bb00",
-    "semantic_hash": "0bdcfc38f23084d72b1a3ca07d95bb00"
+    "mtime": 1787161752.5778131,
+    "ast_hash": "1be3148bbefe1f470cad13d030002e51",
+    "semantic_hash": ""
   },
   "app/Providers/AppServiceProvider.php": {
     "mtime": 1786570556.6840672,
@@ -125,9 +125,9 @@
     "semantic_hash": "e66bb13691f6184c762c196427d8e685"
   },
   "bootstrap/app.php": {
-    "mtime": 1786508935.8719192,
-    "ast_hash": "faf933c6478e6bfae86172dbebff2af0",
-    "semantic_hash": "faf933c6478e6bfae86172dbebff2af0"
+    "mtime": 1787161791.1239989,
+    "ast_hash": "45795cacacb8abd2a4d30e0250de969c",
+    "semantic_hash": ""
   },
   "bootstrap/providers.php": {
     "mtime": 1773492840.0,
@@ -360,8 +360,8 @@
     "semantic_hash": "5b74d2aaca8f3c0022d39904d96dae89"
   },
   "routes/api.php": {
-    "mtime": 1787147041.4055705,
-    "ast_hash": "f7a113f22fa62b09dd7af65e3c868ef7",
+    "mtime": 1787161811.6646097,
+    "ast_hash": "64d291e022042cfb40158c7e8cd8917e",
     "semantic_hash": ""
   },
   "routes/console.php": {
@@ -411,7 +411,7 @@
   },
   ".claude/settings.json": {
     "mtime": 1786846536.336687,
-    "ast_hash": "",
+    "ast_hash": "d63945663ac5a70eebb1756ab927f4f5",
     "semantic_hash": ""
   },
   "tests/Feature/AuthTest.php": {
@@ -435,8 +435,8 @@
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/StaffController.php": {
-    "mtime": 1787146959.3542588,
-    "ast_hash": "4fc28888864838b8a26fa6a3b463726f",
+    "mtime": 1787161769.318225,
+    "ast_hash": "3b58b09ad6f233d546e789470022e196",
     "semantic_hash": ""
   },
   "database/migrations/2026_08_19_000000_add_orden_to_platos.php": {
@@ -477,6 +477,21 @@
   ".github/workflows/backend-ci.yml": {
     "mtime": 1787147159.4281735,
     "ast_hash": "148729f264b953f6fa8f73a795a394d1",
+    "semantic_hash": ""
+  },
+  "app/Http/Middleware/EnsureRole.php": {
+    "mtime": 1787161783.9973018,
+    "ast_hash": "b34c41e134abb6ca5bf5e3212bd0eeb0",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_08_19_144858_add_rol_to_users.php": {
+    "mtime": 1787161746.5211687,
+    "ast_hash": "f36b351494b571d870b2e1d2c7fade8e",
+    "semantic_hash": ""
+  },
+  "tests/Feature/RoleTest.php": {
+    "mtime": 1787161909.2624922,
+    "ast_hash": "c42a81315f9a58eaa79de427f14b0151",
     "semantic_hash": ""
   }
 }

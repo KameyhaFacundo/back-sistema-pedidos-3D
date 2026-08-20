@@ -40,9 +40,9 @@
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/RegistroController.php": {
-    "mtime": 1786570246.620311,
-    "ast_hash": "16c52933e99223fba591ebf15729eb7a",
-    "semantic_hash": "16c52933e99223fba591ebf15729eb7a"
+    "mtime": 1787162248.854277,
+    "ast_hash": "460004768f1a8bf157067438af6cc438",
+    "semantic_hash": ""
   },
   "app/Http/Controllers/Api/SSEController.php": {
     "mtime": 1786557976.5527122,
@@ -411,7 +411,7 @@
   },
   ".claude/settings.json": {
     "mtime": 1786846536.336687,
-    "ast_hash": "d63945663ac5a70eebb1756ab927f4f5",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   "tests/Feature/AuthTest.php": {
