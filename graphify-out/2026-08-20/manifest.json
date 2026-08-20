@@ -10,13 +10,13 @@
     "semantic_hash": "3f1914f1f4de0ac5b77496f2dbd76931"
   },
   "app/Http/Controllers/Api/EmpresaController.php": {
-    "mtime": 1787228737.3796954,
-    "ast_hash": "c9368ccb8a465fe5ef2617be61e9e639",
+    "mtime": 1787230347.7171822,
+    "ast_hash": "17207e2f420446b9f268c048e28697f7",
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/MenuController.php": {
-    "mtime": 1787147021.8087814,
-    "ast_hash": "bf9597f801293a546b2968a399fbb68f",
+    "mtime": 1787230224.3792863,
+    "ast_hash": "7d785d0ad281eab9c22ff63eb17c90d0",
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/MesaController.php": {
@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/PedidoController.php": {
-    "mtime": 1787146937.5544016,
-    "ast_hash": "90e0e456d4e4c2d2aeec02cabd7adfa6",
+    "mtime": 1787230207.4664805,
+    "ast_hash": "7d0882f9fee838f9c34b08c2e2b89418",
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/PlatoController.php": {
@@ -70,8 +70,8 @@
     "semantic_hash": "54dbd748d681c50c7d2ce151a241f126"
   },
   "app/Models/Empresa.php": {
-    "mtime": 1787228723.0383115,
-    "ast_hash": "7fc7793f2d3cdd03a4b31e4c8b3fe79f",
+    "mtime": 1787229985.5545456,
+    "ast_hash": "96b9a32e31182d7ca05fa4b2598e7a4a",
     "semantic_hash": ""
   },
   "app/Models/Llamado.php": {
@@ -185,9 +185,9 @@
     "semantic_hash": "f98ce92e7bf51db1fabaf8a30e12fc5a"
   },
   "config/services.php": {
-    "mtime": 1773492840.0,
-    "ast_hash": "534a1b7af7009c373ea4ebfa18823d57",
-    "semantic_hash": "534a1b7af7009c373ea4ebfa18823d57"
+    "mtime": 1787230171.2984602,
+    "ast_hash": "9e03e051d997090d54bdd1944a296c92",
+    "semantic_hash": ""
   },
   "config/session.php": {
     "mtime": 1773492840.0,
@@ -360,8 +360,8 @@
     "semantic_hash": "5b74d2aaca8f3c0022d39904d96dae89"
   },
   "routes/api.php": {
-    "mtime": 1787191166.582109,
-    "ast_hash": "601cd943a8740e08238f6e98f2a563c4",
+    "mtime": 1787230200.078699,
+    "ast_hash": "2d38242e0afa1c09a9f369a7c8b7241d",
     "semantic_hash": ""
   },
   "routes/console.php": {
@@ -507,6 +507,16 @@
   "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php": {
     "mtime": 1787228719.578244,
     "ast_hash": "1d000a48fa9e6c8986571e54a27c75df",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Api/PagoController.php": {
+    "mtime": 1787230182.8468719,
+    "ast_hash": "86c00d859309cf7633f0b9d27dcd5893",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php": {
+    "mtime": 1787229975.3948326,
+    "ast_hash": "71da91a302748d3b1062b033cb6f59f1",
     "semantic_hash": ""
   }
 }

@@ -2215,11 +2215,11 @@
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
       "source_location": "L22",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_down",
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_down",
       "community": 22,
       "community_name": "Illuminate\\Database\\Migrations\\Migration",
       "norm_label": "down()"
@@ -2227,11 +2227,11 @@
     {
       "label": "up()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_up",
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_up",
       "community": 22,
       "community_name": "Illuminate\\Database\\Migrations\\Migration",
       "norm_label": "up()"
@@ -3175,30 +3175,6 @@
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
-      "source_location": "L22",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_down",
-      "community": 8,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "down()"
-    },
-    {
-      "label": "up()",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
-      "source_location": "L9",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_up",
-      "community": 8,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "up()"
-    },
-    {
-      "label": "down()",
-      "file_type": "code",
       "source_file": "database/migrations/2026_08_11_142426_add_performance_indexes.php",
       "source_location": "L20",
       "_callable": true,
@@ -3216,6 +3192,30 @@
       "_callable": true,
       "_origin": "ast",
       "id": "database_migrations_2026_08_11_142426_add_performance_indexes_up",
+      "community": 8,
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "up()"
+    },
+    {
+      "label": "down()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_down",
+      "community": 8,
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "down()"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_up",
       "community": 8,
       "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "up()"
@@ -4620,15 +4620,15 @@
       "norm_label": "0001_01_01_000001_create_cache_table.php"
     },
     {
-      "label": "2026_08_12_114501_create_plato_agregados_table.php",
+      "label": "2026_08_11_140507_create_pedidos_table.php",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table",
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table",
       "community": 22,
       "community_name": "Illuminate\\Database\\Migrations\\Migration",
-      "norm_label": "2026_08_12_114501_create_plato_agregados_table.php"
+      "norm_label": "2026_08_11_140507_create_pedidos_table.php"
     },
     {
       "label": "Illuminate\\Database\\Migrations\\Migration",
@@ -5588,17 +5588,6 @@
       "norm_label": "illuminate\\support\\serviceprovider"
     },
     {
-      "label": "2026_08_11_140507_create_pedidos_table.php",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table",
-      "community": 8,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "2026_08_11_140507_create_pedidos_table.php"
-    },
-    {
       "label": "2026_08_11_142426_add_performance_indexes.php",
       "file_type": "code",
       "source_file": "database/migrations/2026_08_11_142426_add_performance_indexes.php",
@@ -5608,6 +5597,17 @@
       "community": 8,
       "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "2026_08_11_142426_add_performance_indexes.php"
+    },
+    {
+      "label": "2026_08_12_114501_create_plato_agregados_table.php",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table",
+      "community": 8,
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "2026_08_12_114501_create_plato_agregados_table.php"
     },
     {
       "label": "Illuminate\\Support\\Facades\\Schema",
@@ -16497,5 +16497,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d2153f14eb69985e978dac540432450c774b3f42"
+  "built_at_commit": "0d404e14ad2200e57306085a64c5c46a4ce6f64a"
 }

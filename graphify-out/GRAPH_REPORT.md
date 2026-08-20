@@ -1,7 +1,7 @@
 # Graph Report - back-sistema-pedidos-3D  (2026-08-20)
 
 ## Corpus Check
-- 102 files · ~16,211 words
+- 102 files · ~16,213 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d2153f14`
+- Built from commit: `0d404e14`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

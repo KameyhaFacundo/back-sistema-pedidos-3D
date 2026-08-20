@@ -37,23 +37,23 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_menucontroller_menucontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "menucontroller",
-      "id": "app_http_controllers_api_menucontroller_menucontroller"
+      "norm_label": "menucontroller"
     },
     {
-      "label": "MesaController",
+      "label": "PagoController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MesaController.php",
-      "source_location": "L13",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L10",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pagocontroller_pagocontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "mesacontroller",
-      "id": "app_http_controllers_api_mesacontroller_mesacontroller"
+      "norm_label": "pagocontroller"
     },
     {
       "label": "RegistroController",
@@ -132,19 +132,6 @@
       "community_name": "Illuminate\\Http\\Request",
       "norm_label": "tokenfromquery",
       "id": "app_http_middleware_tokenfromquery_tokenfromquery"
-    },
-    {
-      "label": "Mesa",
-      "file_type": "code",
-      "source_file": "app/Models/Mesa.php",
-      "source_location": "L7",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "mesa",
-      "id": "app_models_mesa_mesa"
     },
     {
       "label": "CuponController",
@@ -251,19 +238,6 @@
       "id": "tests_feature_exampletest_exampletest"
     },
     {
-      "label": "MesaTest",
-      "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L14",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": "mesatest",
-      "id": "tests_feature_mesatest_mesatest"
-    },
-    {
       "label": "MetricaTest",
       "file_type": "code",
       "source_file": "tests/Feature/MetricaTest.php",
@@ -301,6 +275,19 @@
       "community_name": "Empresa",
       "norm_label": "registrotest",
       "id": "tests_feature_registrotest_registrotest"
+    },
+    {
+      "label": "RoleTest",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": "roletest",
+      "id": "tests_feature_roletest_roletest"
     },
     {
       "label": "StaffTest",
@@ -342,17 +329,17 @@
       "id": "tests_unit_exampletest_exampletest"
     },
     {
-      "label": "CocinaController",
+      "label": "MetricaController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/CocinaController.php",
-      "source_location": "L8",
+      "source_file": "app/Http/Controllers/Api/MetricaController.php",
+      "source_location": "L14",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "cocinacontroller",
-      "id": "app_http_controllers_api_cocinacontroller_cocinacontroller"
+      "norm_label": "metricacontroller",
+      "id": "app_http_controllers_api_metricacontroller_metricacontroller"
     },
     {
       "label": "PedidoController",
@@ -362,23 +349,23 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "pedidocontroller",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller"
+      "norm_label": "pedidocontroller"
     },
     {
-      "label": "Llamado",
+      "label": "ArVista",
       "file_type": "code",
-      "source_file": "app/Models/Llamado.php",
+      "source_file": "app/Models/ArVista.php",
       "source_location": "L7",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "llamado",
-      "id": "app_models_llamado_llamado"
+      "norm_label": "arvista",
+      "id": "app_models_arvista_arvista"
     },
     {
       "label": "Pedido",
@@ -459,6 +446,58 @@
       "id": "tests_feature_pedidotest_pedidotest"
     },
     {
+      "label": "CocinaController",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/CocinaController.php",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "cocinacontroller",
+      "id": "app_http_controllers_api_cocinacontroller_cocinacontroller"
+    },
+    {
+      "label": "MesaController",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/MesaController.php",
+      "source_location": "L13",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "mesacontroller",
+      "id": "app_http_controllers_api_mesacontroller_mesacontroller"
+    },
+    {
+      "label": "Llamado",
+      "file_type": "code",
+      "source_file": "app/Models/Llamado.php",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "llamado",
+      "id": "app_models_llamado_llamado"
+    },
+    {
+      "label": "Mesa",
+      "file_type": "code",
+      "source_file": "app/Models/Mesa.php",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "mesa",
+      "id": "app_models_mesa_mesa"
+    },
+    {
       "label": "DatabaseSeeder",
       "file_type": "code",
       "source_file": "database/seeders/DatabaseSeeder.php",
@@ -467,7 +506,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "databaseseeder",
       "id": "database_seeders_databaseseeder_databaseseeder"
     },
@@ -480,7 +519,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "demoempresaseeder",
       "id": "database_seeders_demoempresaseeder_demoempresaseeder"
     },
@@ -493,7 +532,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "empresaseeder",
       "id": "database_seeders_empresaseeder_empresaseeder"
     },
@@ -506,7 +545,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "mesaseeder",
       "id": "database_seeders_mesaseeder_mesaseeder"
     },
@@ -519,7 +558,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "platoseeder",
       "id": "database_seeders_platoseeder_platoseeder"
     },
@@ -532,22 +571,22 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "userseeder",
       "id": "database_seeders_userseeder_userseeder"
     },
     {
-      "label": "RoleTest",
+      "label": "MesaTest",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L11",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L14",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "RoleTest",
-      "norm_label": "roletest",
-      "id": "tests_feature_roletest_roletest"
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "mesatest",
+      "id": "tests_feature_mesatest_mesatest"
     },
     {
       "label": "UserFactory",
@@ -563,19 +602,6 @@
       "id": "database_factories_userfactory_userfactory"
     },
     {
-      "label": "MetricaController",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MetricaController.php",
-      "source_location": "L14",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "Plato",
-      "norm_label": "metricacontroller",
-      "id": "app_http_controllers_api_metricacontroller_metricacontroller"
-    },
-    {
       "label": "PlatoController",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PlatoController.php",
@@ -587,19 +613,6 @@
       "community_name": "Plato",
       "norm_label": "platocontroller",
       "id": "app_http_controllers_api_platocontroller_platocontroller"
-    },
-    {
-      "label": "ArVista",
-      "file_type": "code",
-      "source_file": "app/Models/ArVista.php",
-      "source_location": "L7",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "Plato",
-      "norm_label": "arvista",
-      "id": "app_models_arvista_arvista"
     },
     {
       "label": "Plato",
@@ -679,7 +692,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L23",
+      "source_location": "L26",
       "_callable": true,
       "_origin": "ast",
       "id": "app_http_controllers_api_empresacontroller_empresacontroller_update",
@@ -691,7 +704,7 @@
       "label": ".updateLayout()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L64",
+      "source_location": "L78",
       "_callable": true,
       "_origin": "ast",
       "id": "app_http_controllers_api_empresacontroller_empresacontroller_updatelayout",
@@ -706,82 +719,34 @@
       "source_location": "L12",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_menucontroller_menucontroller_index",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".index()",
-      "id": "app_http_controllers_api_menucontroller_menucontroller_index"
+      "norm_label": ".index()"
     },
     {
-      "label": ".destroy()",
+      "label": ".preference()",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MesaController.php",
-      "source_location": "L101",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L12",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pagocontroller_pagocontroller_preference",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".destroy()",
-      "id": "app_http_controllers_api_mesacontroller_mesacontroller_destroy"
+      "norm_label": ".preference()"
     },
     {
-      "label": ".index()",
+      "label": ".webhook()",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MesaController.php",
-      "source_location": "L15",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L65",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pagocontroller_pagocontroller_webhook",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".index()",
-      "id": "app_http_controllers_api_mesacontroller_mesacontroller_index"
-    },
-    {
-      "label": ".llamar()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MesaController.php",
-      "source_location": "L127",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".llamar()",
-      "id": "app_http_controllers_api_mesacontroller_mesacontroller_llamar"
-    },
-    {
-      "label": ".store()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MesaController.php",
-      "source_location": "L47",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".store()",
-      "id": "app_http_controllers_api_mesacontroller_mesacontroller_store"
-    },
-    {
-      "label": ".toggleActiva()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MesaController.php",
-      "source_location": "L114",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".toggleactiva()",
-      "id": "app_http_controllers_api_mesacontroller_mesacontroller_toggleactiva"
-    },
-    {
-      "label": ".update()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MesaController.php",
-      "source_location": "L79",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".update()",
-      "id": "app_http_controllers_api_mesacontroller_mesacontroller_update"
+      "norm_label": ".webhook()"
     },
     {
       "label": ".store()",
@@ -880,76 +845,16 @@
       "id": "app_http_middleware_tokenfromquery_tokenfromquery_handle"
     },
     {
-      "label": ".empresa()",
+      "label": ".resolveFromRequest()",
       "file_type": "code",
-      "source_file": "app/Models/Mesa.php",
-      "source_location": "L18",
+      "source_file": "app/Models/Empresa.php",
+      "source_location": "L53",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_models_empresa_empresa_resolvefromrequest",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".empresa()",
-      "id": "app_models_mesa_mesa_empresa"
-    },
-    {
-      "label": ".llamados()",
-      "file_type": "code",
-      "source_file": "app/Models/Mesa.php",
-      "source_location": "L28",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".llamados()",
-      "id": "app_models_mesa_mesa_llamados"
-    },
-    {
-      "label": ".pedidos()",
-      "file_type": "code",
-      "source_file": "app/Models/Mesa.php",
-      "source_location": "L23",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".pedidos()",
-      "id": "app_models_mesa_mesa_pedidos"
-    },
-    {
-      "label": ".posicionesPorDefecto()",
-      "file_type": "code",
-      "source_file": "app/Models/Mesa.php",
-      "source_location": "L33",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".posicionespordefecto()",
-      "id": "app_models_mesa_mesa_posicionespordefecto"
-    },
-    {
-      "label": "down()",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
-      "source_location": "L41",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "down()",
-      "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas_down"
-    },
-    {
-      "label": "up()",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
-      "source_location": "L9",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "up()",
-      "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas_up"
+      "norm_label": ".resolvefromrequest()"
     },
     {
       "label": ".destroy()",
@@ -1027,13 +932,13 @@
       "label": ".validarCupon()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L176",
+      "source_location": "L184",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon",
       "community": 10,
       "community_name": "Cupon",
-      "norm_label": ".validarcupon()",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon"
+      "norm_label": ".validarcupon()"
     },
     {
       "label": ".setUp()",
@@ -1156,10 +1061,22 @@
       "id": "tests_feature_cupontest_cupontest_test_validar_cupon_publico_resuelve_empresa_por_slug"
     },
     {
+      "label": ".estaAbiertaAhora()",
+      "file_type": "code",
+      "source_file": "app/Models/Empresa.php",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_models_empresa_empresa_estaabiertaahora",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": ".estaabiertaahora()"
+    },
+    {
       "label": ".mesas()",
       "file_type": "code",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L44",
+      "source_location": "L78",
       "_callable": true,
       "_origin": "ast",
       "id": "app_models_empresa_empresa_mesas",
@@ -1171,7 +1088,7 @@
       "label": ".pedidos()",
       "file_type": "code",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L39",
+      "source_location": "L73",
       "_callable": true,
       "_origin": "ast",
       "id": "app_models_empresa_empresa_pedidos",
@@ -1183,25 +1100,13 @@
       "label": ".platos()",
       "file_type": "code",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L34",
+      "source_location": "L68",
       "_callable": true,
       "_origin": "ast",
       "id": "app_models_empresa_empresa_platos",
       "community": 11,
       "community_name": "Empresa",
       "norm_label": ".platos()"
-    },
-    {
-      "label": ".resolveFromRequest()",
-      "file_type": "code",
-      "source_file": "app/Models/Empresa.php",
-      "source_location": "L19",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_models_empresa_empresa_resolvefromrequest",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".resolvefromrequest()"
     },
     {
       "label": ".casts()",
@@ -1346,90 +1251,6 @@
       "community_name": "Empresa",
       "norm_label": ".test_the_application_returns_a_successful_response()",
       "id": "tests_feature_exampletest_exampletest_test_the_application_returns_a_successful_response"
-    },
-    {
-      "label": ".setUp()",
-      "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L22",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".setup()",
-      "id": "tests_feature_mesatest_mesatest_setup"
-    },
-    {
-      "label": ".test_crear_mesa_con_admin()",
-      "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L100",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_crear_mesa_con_admin()",
-      "id": "tests_feature_mesatest_mesatest_test_crear_mesa_con_admin"
-    },
-    {
-      "label": ".test_index_publico_devuelve_mesas_con_estado_ocupada()",
-      "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L43",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_index_publico_devuelve_mesas_con_estado_ocupada()",
-      "id": "tests_feature_mesatest_mesatest_test_index_publico_devuelve_mesas_con_estado_ocupada"
-    },
-    {
-      "label": ".test_llamar_mozo_de_otra_empresa_devuelve_404()",
-      "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L72",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_llamar_mozo_de_otra_empresa_devuelve_404()",
-      "id": "tests_feature_mesatest_mesatest_test_llamar_mozo_de_otra_empresa_devuelve_404"
-    },
-    {
-      "label": ".test_llamar_mozo_publico_crea_un_llamado()",
-      "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L63",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_llamar_mozo_publico_crea_un_llamado()",
-      "id": "tests_feature_mesatest_mesatest_test_llamar_mozo_publico_crea_un_llamado"
-    },
-    {
-      "label": ".test_no_puede_modificar_mesa_de_otra_empresa()",
-      "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L122",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_no_puede_modificar_mesa_de_otra_empresa()",
-      "id": "tests_feature_mesatest_mesatest_test_no_puede_modificar_mesa_de_otra_empresa"
-    },
-    {
-      "label": ".test_toggle_y_eliminar_mesa()",
-      "file_type": "code",
-      "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L108",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "Empresa",
-      "norm_label": ".test_toggle_y_eliminar_mesa()",
-      "id": "tests_feature_mesatest_mesatest_test_toggle_y_eliminar_mesa"
     },
     {
       "label": ".setUp()",
@@ -1586,6 +1407,90 @@
       "community_name": "Empresa",
       "norm_label": ".test_registro_evita_slug_reservado()",
       "id": "tests_feature_registrotest_registrotest_test_registro_evita_slug_reservado"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": ".setup()",
+      "id": "tests_feature_roletest_roletest_setup"
+    },
+    {
+      "label": ".test_admin_accede_a_todo()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L75",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": ".test_admin_accede_a_todo()",
+      "id": "tests_feature_roletest_roletest_test_admin_accede_a_todo"
+    },
+    {
+      "label": ".test_cocina_no_puede_ver_metricas_ni_equipo()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": ".test_cocina_no_puede_ver_metricas_ni_equipo()",
+      "id": "tests_feature_roletest_roletest_test_cocina_no_puede_ver_metricas_ni_equipo"
+    },
+    {
+      "label": ".test_cocina_puede_ver_y_avanzar_pedidos()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L50",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": ".test_cocina_puede_ver_y_avanzar_pedidos()",
+      "id": "tests_feature_roletest_roletest_test_cocina_puede_ver_y_avanzar_pedidos"
+    },
+    {
+      "label": ".test_invitar_staff_con_rol()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": ".test_invitar_staff_con_rol()",
+      "id": "tests_feature_roletest_roletest_test_invitar_staff_con_rol"
+    },
+    {
+      "label": ".test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L66",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": ".test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas()",
+      "id": "tests_feature_roletest_roletest_test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas"
+    },
+    {
+      "label": ".userConRol()",
+      "file_type": "code",
+      "source_file": "tests/Feature/RoleTest.php",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Empresa",
+      "norm_label": ".userconrol()",
+      "id": "tests_feature_roletest_roletest_userconrol"
     },
     {
       "label": ".setUp()",
@@ -1792,52 +1697,52 @@
       "id": "database_migrations_2026_08_12_140000_add_layout_to_empresas_up"
     },
     {
-      "label": ".atenderLlamado()",
+      "label": ".index()",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/CocinaController.php",
-      "source_location": "L27",
+      "source_file": "app/Http/Controllers/Api/MetricaController.php",
+      "source_location": "L16",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".atenderllamado()",
-      "id": "app_http_controllers_api_cocinacontroller_cocinacontroller_atenderllamado"
+      "norm_label": ".index()",
+      "id": "app_http_controllers_api_metricacontroller_metricacontroller_index"
     },
     {
-      "label": ".llamados()",
+      "label": ".registrarVista()",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/CocinaController.php",
-      "source_location": "L10",
+      "source_file": "app/Http/Controllers/Api/MetricaController.php",
+      "source_location": "L70",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".llamados()",
-      "id": "app_http_controllers_api_cocinacontroller_cocinacontroller_llamados"
+      "norm_label": ".registrarvista()",
+      "id": "app_http_controllers_api_metricacontroller_metricacontroller_registrarvista"
     },
     {
       "label": ".authorizePedido()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L203",
+      "source_location": "L211",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".authorizepedido()",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido"
+      "norm_label": ".authorizepedido()"
     },
     {
       "label": ".cancelar()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L238",
+      "source_location": "L246",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".cancelar()",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar"
+      "norm_label": ".cancelar()"
     },
     {
       "label": ".index()",
@@ -1846,70 +1751,70 @@
       "source_location": "L19",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_index",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".index()",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_index"
+      "norm_label": ".index()"
     },
     {
       "label": ".show()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L255",
+      "source_location": "L263",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_show",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".show()",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_show"
+      "norm_label": ".show()"
     },
     {
       "label": ".store()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L38",
+      "source_location": "L46",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".store()",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_store"
+      "norm_label": ".store()"
     },
     {
       "label": ".updateEstado()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L210",
+      "source_location": "L218",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".updateestado()",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado"
+      "norm_label": ".updateestado()"
     },
     {
       "label": ".updatePago()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L285",
+      "source_location": "L293",
       "_callable": true,
       "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".updatepago()",
-      "id": "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago"
+      "norm_label": ".updatepago()"
     },
     {
-      "label": ".mesa()",
+      "label": ".plato()",
       "file_type": "code",
-      "source_file": "app/Models/Llamado.php",
-      "source_location": "L15",
+      "source_file": "app/Models/ArVista.php",
+      "source_location": "L17",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".mesa()",
-      "id": "app_models_llamado_llamado_mesa"
+      "norm_label": ".plato()",
+      "id": "app_models_arvista_arvista_plato"
     },
     {
       "label": ".cupon()",
@@ -2056,16 +1961,16 @@
       "id": "database_seeders_demoseeder_demoseeder_run"
     },
     {
-      "label": ".test_listar_y_atender_llamados()",
+      "label": ".test_index_publico_devuelve_mesas_con_estado_ocupada()",
       "file_type": "code",
       "source_file": "tests/Feature/MesaTest.php",
-      "source_location": "L82",
+      "source_location": "L43",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": ".test_listar_y_atender_llamados()",
-      "id": "tests_feature_mesatest_mesatest_test_listar_y_atender_llamados"
+      "norm_label": ".test_index_publico_devuelve_mesas_con_estado_ocupada()",
+      "id": "tests_feature_mesatest_mesatest_test_index_publico_devuelve_mesas_con_estado_ocupada"
     },
     {
       "label": "down()",
@@ -2123,7 +2028,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
       "norm_label": "down()",
       "id": "database_migrations_0001_01_01_000001_create_cache_table_down"
     },
@@ -2135,33 +2040,33 @@
       "_callable": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
       "norm_label": "up()",
       "id": "database_migrations_0001_01_01_000001_create_cache_table_up"
     },
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
       "source_location": "L22",
       "_callable": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
       "norm_label": "down()",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_down"
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_down"
     },
     {
       "label": "up()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
       "norm_label": "up()",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_up"
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_up"
     },
     {
       "label": "down()",
@@ -2476,6 +2381,186 @@
       "id": "database_migrations_0001_01_01_000002_create_jobs_table_up"
     },
     {
+      "label": ".atenderLlamado()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/CocinaController.php",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".atenderllamado()",
+      "id": "app_http_controllers_api_cocinacontroller_cocinacontroller_atenderllamado"
+    },
+    {
+      "label": ".llamados()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/CocinaController.php",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".llamados()",
+      "id": "app_http_controllers_api_cocinacontroller_cocinacontroller_llamados"
+    },
+    {
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/MesaController.php",
+      "source_location": "L101",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".destroy()",
+      "id": "app_http_controllers_api_mesacontroller_mesacontroller_destroy"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/MesaController.php",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".index()",
+      "id": "app_http_controllers_api_mesacontroller_mesacontroller_index"
+    },
+    {
+      "label": ".llamar()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/MesaController.php",
+      "source_location": "L127",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".llamar()",
+      "id": "app_http_controllers_api_mesacontroller_mesacontroller_llamar"
+    },
+    {
+      "label": ".store()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/MesaController.php",
+      "source_location": "L47",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".store()",
+      "id": "app_http_controllers_api_mesacontroller_mesacontroller_store"
+    },
+    {
+      "label": ".toggleActiva()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/MesaController.php",
+      "source_location": "L114",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".toggleactiva()",
+      "id": "app_http_controllers_api_mesacontroller_mesacontroller_toggleactiva"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "app/Http/Controllers/Api/MesaController.php",
+      "source_location": "L79",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".update()",
+      "id": "app_http_controllers_api_mesacontroller_mesacontroller_update"
+    },
+    {
+      "label": ".mesa()",
+      "file_type": "code",
+      "source_file": "app/Models/Llamado.php",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".mesa()",
+      "id": "app_models_llamado_llamado_mesa"
+    },
+    {
+      "label": ".empresa()",
+      "file_type": "code",
+      "source_file": "app/Models/Mesa.php",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".empresa()",
+      "id": "app_models_mesa_mesa_empresa"
+    },
+    {
+      "label": ".llamados()",
+      "file_type": "code",
+      "source_file": "app/Models/Mesa.php",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".llamados()",
+      "id": "app_models_mesa_mesa_llamados"
+    },
+    {
+      "label": ".pedidos()",
+      "file_type": "code",
+      "source_file": "app/Models/Mesa.php",
+      "source_location": "L23",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".pedidos()",
+      "id": "app_models_mesa_mesa_pedidos"
+    },
+    {
+      "label": ".posicionesPorDefecto()",
+      "file_type": "code",
+      "source_file": "app/Models/Mesa.php",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".posicionespordefecto()",
+      "id": "app_models_mesa_mesa_posicionespordefecto"
+    },
+    {
+      "label": "down()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "down()",
+      "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas_down"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "up()",
+      "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas_up"
+    },
+    {
       "label": ".run()",
       "file_type": "code",
       "source_file": "database/seeders/DatabaseSeeder.php",
@@ -2483,7 +2568,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": ".run()",
       "id": "database_seeders_databaseseeder_databaseseeder_run"
     },
@@ -2495,7 +2580,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": ".run()",
       "id": "database_seeders_demoempresaseeder_demoempresaseeder_run"
     },
@@ -2507,7 +2592,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": ".run()",
       "id": "database_seeders_empresaseeder_empresaseeder_run"
     },
@@ -2519,7 +2604,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": ".run()",
       "id": "database_seeders_mesaseeder_mesaseeder_run"
     },
@@ -2531,7 +2616,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": ".run()",
       "id": "database_seeders_platoseeder_platoseeder_run"
     },
@@ -2543,117 +2628,141 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": ".run()",
       "id": "database_seeders_userseeder_userseeder_run"
     },
     {
       "label": ".setUp()",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L17",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L22",
       "_callable": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "RoleTest",
+      "community": 3,
+      "community_name": "Mesa",
       "norm_label": ".setup()",
-      "id": "tests_feature_roletest_roletest_setup"
+      "id": "tests_feature_mesatest_mesatest_setup"
     },
     {
-      "label": ".test_admin_accede_a_todo()",
+      "label": ".test_crear_mesa_con_admin()",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L75",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L100",
       "_callable": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "RoleTest",
-      "norm_label": ".test_admin_accede_a_todo()",
-      "id": "tests_feature_roletest_roletest_test_admin_accede_a_todo"
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".test_crear_mesa_con_admin()",
+      "id": "tests_feature_mesatest_mesatest_test_crear_mesa_con_admin"
     },
     {
-      "label": ".test_cocina_no_puede_ver_metricas_ni_equipo()",
+      "label": ".test_listar_y_atender_llamados()",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L57",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L82",
       "_callable": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "RoleTest",
-      "norm_label": ".test_cocina_no_puede_ver_metricas_ni_equipo()",
-      "id": "tests_feature_roletest_roletest_test_cocina_no_puede_ver_metricas_ni_equipo"
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".test_listar_y_atender_llamados()",
+      "id": "tests_feature_mesatest_mesatest_test_listar_y_atender_llamados"
     },
     {
-      "label": ".test_cocina_puede_ver_y_avanzar_pedidos()",
+      "label": ".test_llamar_mozo_de_otra_empresa_devuelve_404()",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L50",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L72",
       "_callable": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "RoleTest",
-      "norm_label": ".test_cocina_puede_ver_y_avanzar_pedidos()",
-      "id": "tests_feature_roletest_roletest_test_cocina_puede_ver_y_avanzar_pedidos"
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".test_llamar_mozo_de_otra_empresa_devuelve_404()",
+      "id": "tests_feature_mesatest_mesatest_test_llamar_mozo_de_otra_empresa_devuelve_404"
     },
     {
-      "label": ".test_invitar_staff_con_rol()",
+      "label": ".test_llamar_mozo_publico_crea_un_llamado()",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L35",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L63",
       "_callable": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "RoleTest",
-      "norm_label": ".test_invitar_staff_con_rol()",
-      "id": "tests_feature_roletest_roletest_test_invitar_staff_con_rol"
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".test_llamar_mozo_publico_crea_un_llamado()",
+      "id": "tests_feature_mesatest_mesatest_test_llamar_mozo_publico_crea_un_llamado"
     },
     {
-      "label": ".test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas()",
+      "label": ".test_no_puede_modificar_mesa_de_otra_empresa()",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L66",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L122",
       "_callable": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "RoleTest",
-      "norm_label": ".test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas()",
-      "id": "tests_feature_roletest_roletest_test_mozo_puede_ver_llamados_pero_no_pedidos_ni_metricas"
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".test_no_puede_modificar_mesa_de_otra_empresa()",
+      "id": "tests_feature_mesatest_mesatest_test_no_puede_modificar_mesa_de_otra_empresa"
     },
     {
-      "label": ".userConRol()",
+      "label": ".test_toggle_y_eliminar_mesa()",
       "file_type": "code",
-      "source_file": "tests/Feature/RoleTest.php",
-      "source_location": "L24",
+      "source_file": "tests/Feature/MesaTest.php",
+      "source_location": "L108",
       "_callable": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "RoleTest",
-      "norm_label": ".userconrol()",
-      "id": "tests_feature_roletest_roletest_userconrol"
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": ".test_toggle_y_eliminar_mesa()",
+      "id": "tests_feature_mesatest_mesatest_test_toggle_y_eliminar_mesa"
     },
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_142426_add_performance_indexes.php",
-      "source_location": "L20",
+      "source_file": "database/migrations/2026_08_11_140509_create_pedido_items_table.php",
+      "source_location": "L21",
       "_callable": true,
       "_origin": "ast",
-      "community": 31,
-      "community_name": "2026_08_11_142426_add_performance_indexes.php",
+      "community": 30,
+      "community_name": "2026_08_11_140509_create_pedido_items_table.php",
       "norm_label": "down()",
-      "id": "database_migrations_2026_08_11_142426_add_performance_indexes_down"
+      "id": "database_migrations_2026_08_11_140509_create_pedido_items_table_down"
     },
     {
       "label": "up()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_142426_add_performance_indexes.php",
+      "source_file": "database/migrations/2026_08_11_140509_create_pedido_items_table.php",
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "community": 31,
-      "community_name": "2026_08_11_142426_add_performance_indexes.php",
+      "community": 30,
+      "community_name": "2026_08_11_140509_create_pedido_items_table.php",
       "norm_label": "up()",
-      "id": "database_migrations_2026_08_11_142426_add_performance_indexes_up"
+      "id": "database_migrations_2026_08_11_140509_create_pedido_items_table_up"
+    },
+    {
+      "label": "down()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table_down",
+      "community": 31,
+      "community_name": "2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "norm_label": "down()"
+    },
+    {
+      "label": "up()",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table_up",
+      "community": 31,
+      "community_name": "2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "norm_label": "up()"
     },
     {
       "label": "down()",
@@ -2848,30 +2957,6 @@
       "id": "database_migrations_2026_08_12_114500_create_plato_presentaciones_table_up"
     },
     {
-      "label": ".index()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MetricaController.php",
-      "source_location": "L16",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "Plato",
-      "norm_label": ".index()",
-      "id": "app_http_controllers_api_metricacontroller_metricacontroller_index"
-    },
-    {
-      "label": ".registrarVista()",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MetricaController.php",
-      "source_location": "L70",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "Plato",
-      "norm_label": ".registrarvista()",
-      "id": "app_http_controllers_api_metricacontroller_metricacontroller_registrarvista"
-    },
-    {
       "label": ".authorizePlato()",
       "file_type": "code",
       "source_file": "app/Http/Controllers/Api/PlatoController.php",
@@ -3004,18 +3089,6 @@
       "id": "app_http_controllers_api_platocontroller_platocontroller_update"
     },
     {
-      "label": ".plato()",
-      "file_type": "code",
-      "source_file": "app/Models/ArVista.php",
-      "source_location": "L17",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "Plato",
-      "norm_label": ".plato()",
-      "id": "app_models_arvista_arvista_plato"
-    },
-    {
       "label": ".agregados()",
       "file_type": "code",
       "source_file": "app/Models/Plato.php",
@@ -3058,10 +3131,10 @@
       "source_location": "L16",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_down",
       "community": 50,
       "community_name": "2026_08_20_000000_add_logo_to_empresas_table.php",
-      "norm_label": "down()"
+      "norm_label": "down()",
+      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_down"
     },
     {
       "label": "up()",
@@ -3070,10 +3143,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_up",
       "community": 50,
       "community_name": "2026_08_20_000000_add_logo_to_empresas_table.php",
-      "norm_label": "up()"
+      "norm_label": "up()",
+      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_up"
     },
     {
       "label": ".boot()",
@@ -3102,50 +3175,50 @@
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
-      "source_location": "L22",
+      "source_file": "database/migrations/2026_08_11_142426_add_performance_indexes.php",
+      "source_location": "L20",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "down()",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_down"
+      "id": "database_migrations_2026_08_11_142426_add_performance_indexes_down"
     },
     {
       "label": "up()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
+      "source_file": "database/migrations/2026_08_11_142426_add_performance_indexes.php",
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "up()",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table_up"
+      "id": "database_migrations_2026_08_11_142426_add_performance_indexes_up"
     },
     {
       "label": "down()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140509_create_pedido_items_table.php",
-      "source_location": "L21",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_location": "L22",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "down()",
-      "id": "database_migrations_2026_08_11_140509_create_pedido_items_table_down"
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_down"
     },
     {
       "label": "up()",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140509_create_pedido_items_table.php",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
       "norm_label": "up()",
-      "id": "database_migrations_2026_08_11_140509_create_pedido_items_table_up"
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table_up"
     },
     {
       "label": "down()",
@@ -3172,26 +3245,26 @@
       "id": "database_migrations_2026_08_11_140506_create_mesas_table_up"
     },
     {
-      "label": "AuthController.php",
+      "label": "App\\Http\\Controllers\\Api\\AuthController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/AuthController.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_http_controllers_api_authcontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "authcontroller.php",
-      "id": "app_http_controllers_api_authcontroller"
+      "norm_label": "app\\http\\controllers\\api\\authcontroller"
     },
     {
-      "label": "CuponController.php",
+      "label": "App\\Http\\Controllers\\Api\\CuponController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/CuponController.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_http_controllers_api_cuponcontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "cuponcontroller.php",
-      "id": "app_http_controllers_api_cuponcontroller"
+      "norm_label": "app\\http\\controllers\\api\\cuponcontroller"
     },
     {
       "label": "EmpresaController.php",
@@ -3210,76 +3283,65 @@
       "source_file": "app/Http/Controllers/Api/MenuController.php",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "app_http_controllers_api_menucontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "menucontroller.php",
-      "id": "app_http_controllers_api_menucontroller"
+      "norm_label": "menucontroller.php"
     },
     {
-      "label": "MesaController.php",
+      "label": "App\\Http\\Controllers\\Api\\MesaController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MesaController.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_http_controllers_api_mesacontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "mesacontroller.php",
-      "id": "app_http_controllers_api_mesacontroller"
+      "norm_label": "app\\http\\controllers\\api\\mesacontroller"
     },
     {
-      "label": "PedidoController.php",
+      "label": "PagoController.php",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "app_http_controllers_api_pagocontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "pedidocontroller.php",
-      "id": "app_http_controllers_api_pedidocontroller"
+      "norm_label": "pagocontroller.php"
     },
     {
-      "label": "PlatoController.php",
+      "label": "App\\Http\\Controllers\\Api\\RegistroController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/PlatoController.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_http_controllers_api_registrocontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "platocontroller.php",
-      "id": "app_http_controllers_api_platocontroller"
+      "norm_label": "app\\http\\controllers\\api\\registrocontroller"
     },
     {
-      "label": "RegistroController.php",
+      "label": "App\\Http\\Controllers\\Api\\SSEController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/RegistroController.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_http_controllers_api_ssecontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "registrocontroller.php",
-      "id": "app_http_controllers_api_registrocontroller"
+      "norm_label": "app\\http\\controllers\\api\\ssecontroller"
     },
     {
-      "label": "SSEController.php",
+      "label": "App\\Http\\Controllers\\Api\\StaffController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/SSEController.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_http_controllers_api_staffcontroller",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "ssecontroller.php",
-      "id": "app_http_controllers_api_ssecontroller"
-    },
-    {
-      "label": "StaffController.php",
-      "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/StaffController.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "staffcontroller.php",
-      "id": "app_http_controllers_api_staffcontroller"
+      "norm_label": "app\\http\\controllers\\api\\staffcontroller"
     },
     {
       "label": "App\\Http\\Controllers\\Controller",
@@ -3326,50 +3388,6 @@
       "id": "closure"
     },
     {
-      "label": "cache.php",
-      "file_type": "code",
-      "source_file": "config/cache.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "cache.php",
-      "id": "config_cache"
-    },
-    {
-      "label": "database.php",
-      "file_type": "code",
-      "source_file": "config/database.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "database.php",
-      "id": "config_database"
-    },
-    {
-      "label": "session.php",
-      "file_type": "code",
-      "source_file": "config/session.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "session.php",
-      "id": "config_session"
-    },
-    {
-      "label": "2026_08_12_140002_seed_posiciones_mesas.php",
-      "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "2026_08_12_140002_seed_posiciones_mesas.php",
-      "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas"
-    },
-    {
       "label": "Illuminate\\Http\\Request",
       "file_type": "code",
       "source_file": "",
@@ -3392,15 +3410,26 @@
       "id": "illuminate_http_response"
     },
     {
+      "label": "Illuminate\\Support\\Facades\\Http",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_support_facades_http",
+      "community": 0,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "illuminate\\support\\facades\\http"
+    },
+    {
       "label": "Illuminate\\Support\\Facades\\Route",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "illuminate_support_facades_route",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\support\\facades\\route",
-      "id": "illuminate_support_facades_route"
+      "norm_label": "illuminate\\support\\facades\\route"
     },
     {
       "label": "Illuminate\\Support\\Facades\\Storage",
@@ -3414,26 +3443,15 @@
       "norm_label": "illuminate\\support\\facades\\storage"
     },
     {
-      "label": "Illuminate\\Support\\Str",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\support\\str",
-      "id": "illuminate_support_str"
-    },
-    {
       "label": "Illuminate\\Validation\\Rule",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "illuminate_validation_rule",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\validation\\rule",
-      "id": "illuminate_validation_rule"
+      "norm_label": "illuminate\\validation\\rule"
     },
     {
       "label": "Illuminate\\Validation\\ValidationException",
@@ -3458,26 +3476,15 @@
       "id": "laravel_sanctum_personalaccesstoken"
     },
     {
-      "label": "Pdo\\Mysql",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "pdo\\mysql",
-      "id": "pdo_mysql"
-    },
-    {
       "label": "api.php",
       "file_type": "code",
       "source_file": "routes/api.php",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "routes_api",
       "community": 0,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "api.php",
-      "id": "routes_api"
+      "norm_label": "api.php"
     },
     {
       "label": "web.php",
@@ -4371,26 +4378,48 @@
       "id": "database_migrations_2026_08_12_140000_add_layout_to_empresas"
     },
     {
-      "label": "CocinaController.php",
+      "label": "App\\Http\\Controllers\\Api\\MetricaController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/CocinaController.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_http_controllers_api_metricacontroller",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "cocinacontroller.php",
-      "id": "app_http_controllers_api_cocinacontroller"
+      "norm_label": "app\\http\\controllers\\api\\metricacontroller"
     },
     {
-      "label": "Cupon.php",
+      "label": "PedidoController.php",
       "file_type": "code",
-      "source_file": "app/Models/Cupon.php",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_http_controllers_api_pedidocontroller",
+      "community": 2,
+      "community_name": "Pedido",
+      "norm_label": "pedidocontroller.php"
+    },
+    {
+      "label": "ArVista.php",
+      "file_type": "code",
+      "source_file": "app/Models/ArVista.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "cupon.php",
-      "id": "app_models_cupon"
+      "norm_label": "arvista.php",
+      "id": "app_models_arvista"
+    },
+    {
+      "label": "App\\Models\\Cupon",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "app_models_cupon",
+      "community": 2,
+      "community_name": "Pedido",
+      "norm_label": "app\\models\\cupon"
     },
     {
       "label": "Empresa.php",
@@ -4404,59 +4433,48 @@
       "norm_label": "empresa.php"
     },
     {
-      "label": "Llamado.php",
+      "label": "App\\Models\\Mesa",
       "file_type": "code",
-      "source_file": "app/Models/Llamado.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_models_mesa",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "llamado.php",
-      "id": "app_models_llamado"
+      "norm_label": "app\\models\\mesa"
     },
     {
-      "label": "Mesa.php",
+      "label": "App\\Models\\Pedido",
       "file_type": "code",
-      "source_file": "app/Models/Mesa.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_models_pedido",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "mesa.php",
-      "id": "app_models_mesa"
+      "norm_label": "app\\models\\pedido"
     },
     {
-      "label": "Pedido.php",
+      "label": "App\\Models\\PedidoItem",
       "file_type": "code",
-      "source_file": "app/Models/Pedido.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_models_pedidoitem",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "pedido.php",
-      "id": "app_models_pedido"
+      "norm_label": "app\\models\\pedidoitem"
     },
     {
-      "label": "PedidoItem.php",
+      "label": "App\\Models\\Plato",
       "file_type": "code",
-      "source_file": "app/Models/PedidoItem.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_models_plato",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "pedidoitem.php",
-      "id": "app_models_pedidoitem"
-    },
-    {
-      "label": "Plato.php",
-      "file_type": "code",
-      "source_file": "app/Models/Plato.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Pedido",
-      "norm_label": "plato.php",
-      "id": "app_models_plato"
+      "norm_label": "app\\models\\plato"
     },
     {
       "label": "PlatoAgregado.php",
@@ -4519,10 +4537,21 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "illuminate_support_facades_db",
       "community": 2,
       "community_name": "Pedido",
-      "norm_label": "illuminate\\support\\facades\\db",
-      "id": "illuminate_support_facades_db"
+      "norm_label": "illuminate\\support\\facades\\db"
+    },
+    {
+      "label": "Pedido",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "pedido",
+      "community": 2,
+      "community_name": "Pedido",
+      "norm_label": "pedido"
     },
     {
       "label": "2026_08_11_140509_create_llamados_table.php",
@@ -4553,31 +4582,31 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
       "norm_label": "0001_01_01_000001_create_cache_table.php",
       "id": "database_migrations_0001_01_01_000001_create_cache_table"
     },
     {
-      "label": "2026_08_12_114501_create_plato_agregados_table.php",
+      "label": "2026_08_11_140507_create_pedidos_table.php",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
+      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "2026_08_12_114501_create_plato_agregados_table.php",
-      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table"
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "norm_label": "2026_08_11_140507_create_pedidos_table.php",
+      "id": "database_migrations_2026_08_11_140507_create_pedidos_table"
     },
     {
-      "label": "Illuminate\\Support\\Facades\\Schema",
+      "label": "Illuminate\\Database\\Migrations\\Migration",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_support_facades_schema",
+      "id": "illuminate_database_migrations_migration",
       "community": 22,
-      "community_name": "Illuminate\\Support\\Facades\\Schema",
-      "norm_label": "illuminate\\support\\facades\\schema"
+      "community_name": "Illuminate\\Database\\Migrations\\Migration",
+      "norm_label": "illuminate\\database\\migrations\\migration"
     },
     {
       "label": "2026_08_11_145317_add_categoria_to_platos.php",
@@ -4756,13 +4785,46 @@
       "norm_label": "illuminate\\database\\schema\\blueprint"
     },
     {
+      "label": "App\\Http\\Controllers\\Api\\CocinaController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "app_http_controllers_api_cocinacontroller",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "app\\http\\controllers\\api\\cocinacontroller"
+    },
+    {
+      "label": "Llamado.php",
+      "file_type": "code",
+      "source_file": "app/Models/Llamado.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "llamado.php",
+      "id": "app_models_llamado"
+    },
+    {
+      "label": "2026_08_12_140002_seed_posiciones_mesas.php",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_12_140002_seed_posiciones_mesas.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Mesa",
+      "norm_label": "2026_08_12_140002_seed_posiciones_mesas.php",
+      "id": "database_migrations_2026_08_12_140002_seed_posiciones_mesas"
+    },
+    {
       "label": "DatabaseSeeder.php",
       "file_type": "code",
       "source_file": "database/seeders/DatabaseSeeder.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "databaseseeder.php",
       "id": "database_seeders_databaseseeder"
     },
@@ -4773,7 +4835,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "demoempresaseeder.php",
       "id": "database_seeders_demoempresaseeder"
     },
@@ -4784,7 +4846,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "empresaseeder.php",
       "id": "database_seeders_empresaseeder"
     },
@@ -4795,7 +4857,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "mesaseeder.php",
       "id": "database_seeders_mesaseeder"
     },
@@ -4806,7 +4868,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "platoseeder.php",
       "id": "database_seeders_platoseeder"
     },
@@ -4817,7 +4879,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "userseeder.php",
       "id": "database_seeders_userseeder"
     },
@@ -4828,20 +4890,31 @@
       "source_location": "",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Illuminate\\Database\\Seeder",
+      "community_name": "Mesa",
       "norm_label": "illuminate\\database\\seeder",
       "id": "illuminate_database_seeder"
     },
     {
-      "label": "2026_08_11_142426_add_performance_indexes.php",
+      "label": "2026_08_11_140509_create_pedido_items_table.php",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_142426_add_performance_indexes.php",
+      "source_file": "database/migrations/2026_08_11_140509_create_pedido_items_table.php",
       "source_location": "L1",
       "_origin": "ast",
+      "community": 30,
+      "community_name": "2026_08_11_140509_create_pedido_items_table.php",
+      "norm_label": "2026_08_11_140509_create_pedido_items_table.php",
+      "id": "database_migrations_2026_08_11_140509_create_pedido_items_table"
+    },
+    {
+      "label": "2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "file_type": "code",
+      "source_file": "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table",
       "community": 31,
-      "community_name": "2026_08_11_142426_add_performance_indexes.php",
-      "norm_label": "2026_08_11_142426_add_performance_indexes.php",
-      "id": "database_migrations_2026_08_11_142426_add_performance_indexes"
+      "community_name": "2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "norm_label": "2026_08_20_000001_add_horarios_to_empresas_table.php"
     },
     {
       "label": "2026_08_12_160000_add_token_to_pedidos.php",
@@ -5245,10 +5318,10 @@
       "source_file": "config/services.php",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "config_services",
       "community": 40,
       "community_name": "Services Config",
-      "norm_label": "services.php",
-      "id": "config_services"
+      "norm_label": "services.php"
     },
     {
       "label": "router.php",
@@ -5361,26 +5434,70 @@
       "id": "database_migrations_2026_08_12_114500_create_plato_presentaciones_table"
     },
     {
-      "label": "MetricaController.php",
+      "label": "App\\Http\\Controllers\\Api\\PlatoController",
       "file_type": "code",
-      "source_file": "app/Http/Controllers/Api/MetricaController.php",
-      "source_location": "L1",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
+      "id": "app_http_controllers_api_platocontroller",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": "metricacontroller.php",
-      "id": "app_http_controllers_api_metricacontroller"
+      "norm_label": "app\\http\\controllers\\api\\platocontroller"
     },
     {
-      "label": "ArVista.php",
+      "label": "cache.php",
       "file_type": "code",
-      "source_file": "app/Models/ArVista.php",
+      "source_file": "config/cache.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 5,
       "community_name": "Plato",
-      "norm_label": "arvista.php",
-      "id": "app_models_arvista"
+      "norm_label": "cache.php",
+      "id": "config_cache"
+    },
+    {
+      "label": "database.php",
+      "file_type": "code",
+      "source_file": "config/database.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Plato",
+      "norm_label": "database.php",
+      "id": "config_database"
+    },
+    {
+      "label": "session.php",
+      "file_type": "code",
+      "source_file": "config/session.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Plato",
+      "norm_label": "session.php",
+      "id": "config_session"
+    },
+    {
+      "label": "Illuminate\\Support\\Str",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_support_str",
+      "community": 5,
+      "community_name": "Plato",
+      "norm_label": "illuminate\\support\\str"
+    },
+    {
+      "label": "Pdo\\Mysql",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Plato",
+      "norm_label": "pdo\\mysql",
+      "id": "pdo_mysql"
     },
     {
       "label": "self",
@@ -5399,10 +5516,10 @@
       "source_file": "database/migrations/2026_08_20_000000_add_logo_to_empresas_table.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
       "community": 50,
       "community_name": "2026_08_20_000000_add_logo_to_empresas_table.php",
-      "norm_label": "2026_08_20_000000_add_logo_to_empresas_table.php"
+      "norm_label": "2026_08_20_000000_add_logo_to_empresas_table.php",
+      "id": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table"
     },
     {
       "label": "CLAUDE.md",
@@ -5482,37 +5599,37 @@
       "id": "illuminate_support_serviceprovider"
     },
     {
-      "label": "2026_08_11_140507_create_pedidos_table.php",
+      "label": "2026_08_11_142426_add_performance_indexes.php",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140507_create_pedidos_table.php",
+      "source_file": "database/migrations/2026_08_11_142426_add_performance_indexes.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
-      "norm_label": "2026_08_11_140507_create_pedidos_table.php",
-      "id": "database_migrations_2026_08_11_140507_create_pedidos_table"
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "2026_08_11_142426_add_performance_indexes.php",
+      "id": "database_migrations_2026_08_11_142426_add_performance_indexes"
     },
     {
-      "label": "2026_08_11_140509_create_pedido_items_table.php",
+      "label": "2026_08_12_114501_create_plato_agregados_table.php",
       "file_type": "code",
-      "source_file": "database/migrations/2026_08_11_140509_create_pedido_items_table.php",
+      "source_file": "database/migrations/2026_08_12_114501_create_plato_agregados_table.php",
       "source_location": "L1",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
-      "norm_label": "2026_08_11_140509_create_pedido_items_table.php",
-      "id": "database_migrations_2026_08_11_140509_create_pedido_items_table"
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "2026_08_12_114501_create_plato_agregados_table.php",
+      "id": "database_migrations_2026_08_12_114501_create_plato_agregados_table"
     },
     {
-      "label": "Illuminate\\Database\\Migrations\\Migration",
+      "label": "Illuminate\\Support\\Facades\\Schema",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_database_migrations_migration",
+      "id": "illuminate_support_facades_schema",
       "community": 8,
-      "community_name": "Illuminate\\Database\\Migrations\\Migration",
-      "norm_label": "illuminate\\database\\migrations\\migration"
+      "community_name": "Illuminate\\Support\\Facades\\Schema",
+      "norm_label": "illuminate\\support\\facades\\schema"
     },
     {
       "label": "2026_08_11_140506_create_mesas_table.php",
@@ -5664,7 +5781,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L86",
+      "source_location": "L100",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller_updatelayout",
@@ -5682,18 +5799,6 @@
       "_origin": "ast",
       "source": "app_http_controllers_api_menucontroller_menucontroller_index",
       "target": "app_models_empresa_empresa"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/Http/Controllers/Api/MenuController.php",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_http_controllers_api_menucontroller_menucontroller_index",
-      "target": "app_models_plato_plato"
     },
     {
       "relation": "calls",
@@ -5856,12 +5961,12 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L240",
+      "source_location": "L248",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5871,21 +5976,21 @@
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_index",
-      "target": "app_models_pedido_pedido"
+      "target": "pedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L159",
+      "source_location": "L106",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
-      "target": "app_models_pedidoitem_pedidoitem"
+      "target": "pedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5893,7 +5998,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L40",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
@@ -5903,73 +6008,25 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L67",
+      "source_location": "L220",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
-      "target": "app_models_plato_plato"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L81",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
-      "target": "app_models_cupon_cupon"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L91",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
-      "target": "app_models_mesa_mesa"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L98",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
-      "target": "app_models_pedido_pedido"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L212",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L287",
+      "source_location": "L295",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5977,23 +6034,11 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L180",
+      "source_location": "L188",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon",
       "target": "app_models_empresa_empresa"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L186",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon",
-      "target": "app_models_cupon_cupon"
     },
     {
       "relation": "calls",
@@ -7887,9 +7932,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_menucontroller",
-      "target": "app_http_controllers_controller_controller"
+      "target": "app_http_controllers_controller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -7899,9 +7944,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_menucontroller",
-      "target": "app_models_empresa_empresa"
+      "target": "app_models_empresa_empresa",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -7911,9 +7956,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_menucontroller",
-      "target": "app_models_plato_plato"
+      "target": "app_models_plato",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -7923,9 +7968,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_menucontroller",
-      "target": "illuminate_http_request"
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8111,13 +8156,61 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pagocontroller",
+      "target": "app_http_controllers_controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pagocontroller",
+      "target": "app_models_pedido",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pagocontroller",
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pagocontroller",
+      "target": "illuminate_support_facades_http",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "app_models_pedidoitem_pedidoitem"
+      "target": "app_models_pedidoitem",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8127,9 +8220,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "app_models_plato_plato"
+      "target": "app_models_plato",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8139,9 +8232,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "illuminate_http_request"
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8151,9 +8244,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "illuminate_support_facades_db"
+      "target": "illuminate_support_facades_db",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8163,9 +8256,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "illuminate_support_str"
+      "target": "illuminate_support_str",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8175,9 +8268,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "illuminate_validation_rule"
+      "target": "illuminate_validation_rule",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8187,9 +8280,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "app_http_controllers_controller_controller"
+      "target": "app_http_controllers_controller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8199,9 +8292,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "app_models_cupon_cupon"
+      "target": "app_models_cupon",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8211,9 +8304,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "app_models_empresa_empresa"
+      "target": "app_models_empresa_empresa",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8223,9 +8316,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "app_models_mesa_mesa"
+      "target": "app_models_mesa",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8235,9 +8328,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "app_models_pedido_pedido"
+      "target": "app_models_pedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10035,9 +10128,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
-      "target": "illuminate_database_migrations_migration",
-      "confidence_score": 1.0
+      "target": "illuminate_database_migrations_migration"
     },
     {
       "relation": "imports",
@@ -10047,9 +10140,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
-      "target": "illuminate_database_schema_blueprint",
-      "confidence_score": 1.0
+      "target": "illuminate_database_schema_blueprint"
     },
     {
       "relation": "imports",
@@ -10059,7 +10152,43 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
+      "target": "illuminate_support_facades_schema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table",
+      "target": "illuminate_database_migrations_migration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table",
+      "target": "illuminate_database_schema_blueprint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table",
       "target": "illuminate_support_facades_schema",
       "confidence_score": 1.0
     },
@@ -10359,9 +10488,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10371,9 +10500,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_platocontroller_platocontroller"
+      "target": "app_http_controllers_api_platocontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10383,9 +10512,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_registrocontroller_registrocontroller"
+      "target": "app_http_controllers_api_pagocontroller_pagocontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10395,9 +10524,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_ssecontroller_ssecontroller"
+      "target": "app_http_controllers_api_registrocontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10407,9 +10536,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_staffcontroller_staffcontroller"
+      "target": "app_http_controllers_api_ssecontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10419,9 +10548,21 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "illuminate_support_facades_route"
+      "target": "app_http_controllers_api_staffcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "routes/api.php",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "routes_api",
+      "target": "illuminate_support_facades_route",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10431,9 +10572,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_authcontroller_authcontroller"
+      "target": "app_http_controllers_api_authcontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10443,9 +10584,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_cocinacontroller_cocinacontroller"
+      "target": "app_http_controllers_api_cocinacontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10455,9 +10596,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_cuponcontroller_cuponcontroller"
+      "target": "app_http_controllers_api_cuponcontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10467,9 +10608,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_empresacontroller_empresacontroller"
+      "target": "app_http_controllers_api_empresacontroller_empresacontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10479,9 +10620,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_menucontroller_menucontroller"
+      "target": "app_http_controllers_api_menucontroller_menucontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10491,9 +10632,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_mesacontroller_mesacontroller"
+      "target": "app_http_controllers_api_mesacontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10503,9 +10644,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "routes_api",
-      "target": "app_http_controllers_api_metricacontroller_metricacontroller"
+      "target": "app_http_controllers_api_metricacontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -11435,7 +11576,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L23",
+      "source_location": "L26",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -11447,7 +11588,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L64",
+      "source_location": "L78",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -11463,9 +11604,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_menucontroller_menucontroller_index",
-      "target": "illuminate_http_request"
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -11614,26 +11755,50 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L203",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L12",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido",
-      "target": "app_models_pedido_pedido"
+      "source": "app_http_controllers_api_pagocontroller_pagocontroller_preference",
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pagocontroller_pagocontroller_webhook",
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L238",
+      "source_location": "L211",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
+      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido",
+      "target": "app_models_pedido",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L246",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar",
-      "target": "app_models_pedido_pedido"
+      "target": "app_models_pedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -11643,93 +11808,93 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_index",
-      "target": "illuminate_http_request"
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L255",
+      "source_location": "L263",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_show",
-      "target": "app_models_pedido_pedido"
+      "target": "app_models_pedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L255",
+      "source_location": "L263",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_show",
-      "target": "illuminate_http_request"
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L38",
+      "source_location": "L46",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
-      "target": "illuminate_http_request"
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L210",
+      "source_location": "L218",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado",
-      "target": "app_models_pedido_pedido"
+      "target": "app_models_pedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L210",
+      "source_location": "L218",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado",
-      "target": "illuminate_http_request"
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L285",
+      "source_location": "L293",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago",
-      "target": "app_models_pedido_pedido"
+      "target": "app_models_pedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L176",
+      "source_location": "L184",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon",
-      "target": "illuminate_http_request"
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -11951,7 +12116,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L19",
+      "source_location": "L53",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -11963,7 +12128,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L19",
+      "source_location": "L53",
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
@@ -12058,9 +12223,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_menucontroller",
-      "target": "app_http_controllers_api_menucontroller_menucontroller"
+      "target": "app_http_controllers_api_menucontroller_menucontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12087,13 +12252,24 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pagocontroller",
+      "target": "app_http_controllers_api_pagocontroller_pagocontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13477,9 +13653,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
-      "target": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_down",
-      "confidence_score": 1.0
+      "target": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_down"
     },
     {
       "relation": "contains",
@@ -13488,8 +13664,30 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table",
-      "target": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_up",
+      "target": "database_migrations_2026_08_20_000000_add_logo_to_empresas_table_up"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table",
+      "target": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table_down",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database/migrations/2026_08_20_000001_add_horarios_to_empresas_table.php",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table",
+      "target": "database_migrations_2026_08_20_000001_add_horarios_to_empresas_table_up",
       "confidence_score": 1.0
     },
     {
@@ -13840,9 +14038,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_menucontroller_menucontroller",
-      "target": "app_http_controllers_controller_controller"
+      "target": "app_http_controllers_controller",
+      "confidence_score": 1.0
     },
     {
       "relation": "inherits",
@@ -13869,13 +14067,24 @@
     {
       "relation": "inherits",
       "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pagocontroller_pagocontroller",
+      "target": "app_http_controllers_controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_controller_controller"
+      "target": "app_http_controllers_controller",
+      "confidence_score": 1.0
     },
     {
       "relation": "inherits",
@@ -14420,7 +14629,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L23",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller",
@@ -14431,7 +14640,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/EmpresaController.php",
-      "source_location": "L64",
+      "source_location": "L78",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_http_controllers_api_empresacontroller_empresacontroller",
@@ -14445,9 +14654,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_menucontroller_menucontroller",
-      "target": "app_http_controllers_api_menucontroller_menucontroller_index"
+      "target": "app_http_controllers_api_menucontroller_menucontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14540,13 +14749,35 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L176",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
+      "source": "app_http_controllers_api_pagocontroller_pagocontroller",
+      "target": "app_http_controllers_api_pagocontroller_pagocontroller_preference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PagoController.php",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pagocontroller_pagocontroller",
+      "target": "app_http_controllers_api_pagocontroller_pagocontroller_webhook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L184",
+      "weight": 1.0,
+      "_origin": "ast",
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14555,75 +14786,75 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_index"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L203",
+      "source_location": "L211",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_authorizepedido",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L210",
+      "source_location": "L218",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_updateestado",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L238",
+      "source_location": "L246",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_cancelar",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L255",
+      "source_location": "L263",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_show"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L285",
+      "source_location": "L293",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_updatepago",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Http/Controllers/Api/PedidoController.php",
-      "source_location": "L38",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_http_controllers_api_pedidocontroller_pedidocontroller",
-      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_store"
+      "target": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14849,7 +15080,18 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L19",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_models_empresa_empresa",
+      "target": "app_models_empresa_empresa_estaabiertaahora",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/Models/Empresa.php",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_models_empresa_empresa",
@@ -14860,7 +15102,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L34",
+      "source_location": "L68",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_models_empresa_empresa",
@@ -14871,7 +15113,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L39",
+      "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_models_empresa_empresa",
@@ -14882,7 +15124,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/Models/Empresa.php",
-      "source_location": "L44",
+      "source_location": "L78",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_models_empresa_empresa",
@@ -16137,6 +16379,78 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "app/Http/Controllers/Api/MenuController.php",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_menucontroller_menucontroller_index",
+      "target": "app_models_plato_plato"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
+      "target": "app_models_pedidoitem_pedidoitem"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
+      "target": "app_models_plato_plato"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
+      "target": "app_models_cupon_cupon"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_store",
+      "target": "app_models_mesa_mesa"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/Http/Controllers/Api/PedidoController.php",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_http_controllers_api_pedidocontroller_pedidocontroller_validarcupon",
+      "target": "app_models_cupon_cupon"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "app/Http/Controllers/Api/PlatoController.php",
       "source_location": "L67",
       "weight": 1.0,
@@ -16158,5 +16472,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ab170ff232864a696393981ba85575cd02946eec"
+  "built_at_commit": "0d404e14ad2200e57306085a64c5c46a4ce6f64a"
 }

@@ -155,9 +155,9 @@
     "semantic_hash": "022fdf20e95ddb79949954243e367003"
   },
   "config/cors.php": {
-    "mtime": 1786462725.4606345,
-    "ast_hash": "3eb7db2d81e88171b3d7e98611539e01",
-    "semantic_hash": "3eb7db2d81e88171b3d7e98611539e01"
+    "mtime": 1787234025.1350389,
+    "ast_hash": "a78da2f68f54608a883c5be97cc55a67",
+    "semantic_hash": ""
   },
   "config/database.php": {
     "mtime": 1773492840.0,
